@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[kali软件小技巧]]></title>
+    <url>%2Fkali%E5%BA%94%E7%94%A8%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[kali应用总结卸载软件删除配置 apt-get purge XXXX 安装截图软件下载安装python-xlib apt-get install python-xlib 下载安装截图软件包 wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb 安装软件包 dpkg -i deepin-scrot* 运气比较好，安装没有报错。据说如果报错啥的可能需要安装依赖，可以通过强制执行安装依赖命令解决问题 报错了参考下面的方法 强制安装依赖包 apt-get -f install 重新安装截图软件包 sudo dpkg -i deepin-scrot* 如果顺利的话 此时应该执行deepin-scrot就可截图了 设置快捷键在设置页面自定义快捷件，由于用QQ截图习惯了，我设置的Ctrl+Alt+A ![参考图片] (“https://s2.ax1x.com/2019/01/31/k1YJIJ.png&quot;)]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[hexo-admin插件]]></title>
     <url>%2Fhexo-admin%E6%8F%92%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[hexo倒腾系列 原由近几天将hexo的next主题倒腾差不多了，开始尝试着写博客了，听说用hexo-admin插件编辑文章还是挺方便的 安装进入hexo源文件目录，执行命令： npm install –save hexo-admin 配置编辑根目录下：_config.yml文件，添加： 12345&gt;&gt;admin:&gt;&gt; username: myfavoritename&gt;&gt; password_hash: be121740bf988b2225a313fa1f107ca1&gt;&gt; secret: a secret something&gt;&gt; 其中：username为登录的用户名，password_hash为密码的bcrypt哈希值，secret用于使cookie安全,可以尽可能复杂。 生成password_hash方法 安装模块：sudo npm install bcrypt-nodejs 执行： 1234&gt;&gt;$ node&gt;&gt;&gt;const bcrypt = require(&apos;bcrypt-nodejs&apos;)&gt;&gt;&gt; bcrypt.hashSync(&apos;your_password&apos;)&gt;&gt; #your_password为登录密码。 参考博客]]></content>
