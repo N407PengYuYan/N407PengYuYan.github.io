@@ -4,6 +4,9 @@
     <title><![CDATA[kali软件小技巧]]></title>
     <url>%2Fkali%E5%BA%94%E7%94%A8%E6%80%BB%E7%BB%93%2F</url>
     <content type="text"><![CDATA[kali应用总结卸载软件删除配置 apt-get purge XXXX 安装截图软件下载安装python-xlib apt-get install python-xlib 下载安装截图软件包 wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb 安装软件包 dpkg -i deepin-scrot* 运气比较好，安装没有报错。据说如果报错啥的可能需要安装依赖，可以通过强制执行安装依赖命令解决问题 报错了参考下面的方法 强制安装依赖包 apt-get -f install 重新安装截图软件包 sudo dpkg -i deepin-scrot* 如果顺利的话 此时应该执行deepin-scrot就可截图了 设置快捷键在设置页面自定义快捷件，由于用QQ截图习惯了，我设置的Ctrl+Alt+A]]></content>
+      <categories>
+        <category>linux学习</category>
+      </categories>
       <tags>
         <tag>kali软件</tag>
       </tags>
