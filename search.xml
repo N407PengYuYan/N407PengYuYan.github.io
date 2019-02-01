@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[next主题添加音乐播放器]]></title>
+    <url>%2Fnext%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%2F</url>
+    <content type="text"><![CDATA[添加APlayer播放器原由之前把播放器嵌在站点概览里，在手机端显示不了导致不能停止音乐 下载项目地址下载解压后将dist文件夹复制到themes\next\source文件夹下 安装在themes\next\source文件夹下创建music.js文件12345678910111213141516171819202122232425262728const ap = new APlayer(&#123; container: document.getElementById(&apos;aplayer&apos;), fixed: true, //吸底模式 autoplay: true, //自动播放 theme: &apos;#FADFA3&apos;, //主题色 loop: &apos;all&apos;, //音频循环播放, 可选值: &apos;all&apos;全部循环, &apos;one&apos;单曲循环, &apos;none&apos;不循环 order: &apos;random&apos;, //音频循环顺序, 可选值: &apos;list&apos;列表循环, &apos;random&apos;随机循环 preload: &apos;auto&apos;, //预加载，可选值: &apos;none&apos;, &apos;metadata&apos;, &apos;auto&apos; volume: 0.7, //默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效 mutex: true, //互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器 listFolded: false, //列表默认折叠 listMaxHeight: 90, //列表最大高度 lrcType: 0, //歌词传递方式 audio: [ &#123; name: &quot;思念是一种病&quot;, artist: &apos;张震岳 / 蔡健雅&apos;, url: &apos;http://www.ytmp3.cn/down/50020.mp3&apos;, cover: &apos;http://p2.music.126.net/N61oLy0iLfEkZTHD2j87iA==/18693896697392706.jpg?param=130y130&apos;, &#125;, &#123; name: &quot;这就是爱情&quot;, artist: &apos;李代沫&apos;, url: &apos;http://www.ytmp3.cn/down/54477.mp3&apos;, cover: &apos;http://p1.music.126.net/RQBF9kqZb7PtLCaOxi9ngQ==/109951163053984533.jpg?param=130y130&apos;, &#125;, ]&#125;); 源码中的参数可以参考官方文档 audio对应的便是音频文件，在里面添加音乐 音乐的外链可以去这个音乐网站搜索复制音乐图片我是在网易云里搜索同一首歌曲找到的 运行程序打开themes\next\layout_layout.swig文件，将下述程序添加添加到&lt; body itemscope … &gt;后面就行，即在&lt; body &gt;&lt; /body &gt;里面1234&lt;link rel=&quot;stylesheet&quot; href=&quot;/dist/APlayer.min.css&quot;&gt;&lt;div id=&quot;aplayer&quot;&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/dist/music.js&quot;&gt;&lt;/script&gt;]]></content>
+      <categories>
+        <category>WEB学习</category>
+      </categories>
+      <tags>
+        <tag>hexo倒腾</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo代码复制]]></title>
+    <url>%2Fhexo%E4%BB%A3%E7%A0%81%E5%A4%8D%E5%88%B6%2F</url>
+    <content type="text"><![CDATA[hexo-next添加代码块复制功能clipboard.js下载项目地址详细内容可以前往查看，如是只需实现功能即可右键下载。将clipboard.js保存到theme/next/source/js/src下 使用在theme/next/source/js/src下创建clipboard-use.js文件代码如下 1234567891011121314151617/*页面载入完成后，创建复制按钮*/!function (e, t, a) &#123; /* code */ var initCopyCode = function()&#123; var copyHtml = &apos;&apos;; copyHtml += &apos;&lt;button class=&quot;btn-copy&quot; data-clipboard-snippet=&quot;&quot;&gt;&apos;; copyHtml += &apos;&lt;span&gt;复制&lt;/span&gt;&apos;; copyHtml += &apos;&lt;/button&gt;&apos;; $(&quot;.highlight .code pre&quot;).before(copyHtml); new ClipboardJS(&apos;.btn-copy&apos;, &#123; target: function(trigger) &#123; return trigger.nextElementSibling; &#125; &#125;); &#125; initCopyCode();&#125;(window, document); 在theme/next/source/css/_custom/custom.styl样式中添加如下代码：123456789101112131415161718192021222324252627282930313233343536//代码块复制按钮.highlight&#123; //方便copy代码按钮（btn-copy）的定位 position: relative;&#125;.btn-copy &#123; display: inline-block; cursor: pointer; background-color: #eee; background-image: linear-gradient(#fcfcfc,#eee); border: 1px solid #d5d5d5; border-radius: 3px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-appearance: none; font-size: 13px; font-weight: 700; line-height: 20px; color: #333; -webkit-transition: opacity .3s ease-in-out; -o-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out; padding: 2px 6px; position: absolute; right: 5px; top: 5px; opacity: 0;&#125;.btn-copy span &#123; margin-left: 5px;&#125;.highlight:hover .btn-copy&#123; opacity: 1;&#125; 引用在themes/next/layout/_layout.swig文件中引用（/body）之前添加：123&lt;!-- 代码块复制功能 --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/clipboard.js&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/clipboard-use.js&quot;&gt;&lt;/script&gt;]]></content>
+      <categories>
+        <category>WEB学习</category>
+      </categories>
+      <tags>
+        <tag>hexo倒腾</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[kali科学上网]]></title>
+    <url>%2F%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%2F</url>
+    <content type="text"><![CDATA[kali 科学上网32位的kali貌似没有图形化操作界面的科学上网软件，于是只好使用命令行操作了。 安装终端输入： sudo apt install shadowsocks 编辑帐号密码终端输入： vi /etc/shadowsocks.json 在配置文件中按照下面的格式填写配置信息，也就帐号密码之类的 1234567891011&#123; &quot;server&quot;:&quot;服务器地址&quot;, &quot;server_port&quot;:服务器端口号, &quot;local_address&quot;: &quot;127.0.0.1&quot;, &quot;local_port&quot;:1080, &quot;password&quot;:&quot;密码&quot;, &quot;timeout&quot;:300, &quot;method&quot;:&quot;加密方式&quot;, &quot;fast_open&quot;: true, &quot;workers&quot;: 1&#125; 设置proxychains打开配置文件 vi /etc/proxychains.conf 1.去掉dynamic_chain前面的注释符 2.在最下方，默认是sock4 xxxx xxx改为sock5 127.0.0.1 xxxx （xxxx是自己刚才设定的端口号，也就是上边配置ss时输入的local_port:xxxx） 根据上面的设置此处就应该该为sock5 127.0.0.1:1080 测试代理是否正常 proxyresolv www.target.com 如果出现命令未找到，终端执行 cp /usr/lib/proxychains3/proxyresolv /usr/bin/ 正常情况是没有开代理返回timeout 开启代理开启代理 sslocal -c /etc/shadowsocks.json -d start 转发启动软件 火狐：proxychains firefox 不用了就关闭代理 sslocal -c /etc/shadowsocks.json -d stop 整个安装使用过程比较顺利，这可能和之前使用了ss的一些依赖环境有关 需要关闭火狐再使用转发启动软件]]></content>
+      <categories>
+        <category>linux学习</category>
+      </categories>
+      <tags>
+        <tag>科学上网</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[kali软件小技巧]]></title>
     <url>%2Fkali%E5%BA%94%E7%94%A8%E6%80%BB%E7%BB%93%2F</url>
     <content type="text"><![CDATA[kali应用总结卸载软件删除配置 apt-get purge XXXX 安装截图软件下载安装python-xlib apt-get install python-xlib 下载安装截图软件包 wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb 安装软件包 dpkg -i deepin-scrot* 运气比较好，安装没有报错。据说如果报错啥的可能需要安装依赖，可以通过强制执行安装依赖命令解决问题 报错了参考下面的方法 强制安装依赖包 apt-get -f install 重新安装截图软件包 sudo dpkg -i deepin-scrot* 如果顺利的话 此时应该执行deepin-scrot就可截图了 设置快捷键在设置页面自定义快捷件，由于用QQ截图习惯了，我设置的Ctrl+Alt+A]]></content>
@@ -14,7 +47,7 @@
   <entry>
     <title><![CDATA[hexo-admin插件]]></title>
     <url>%2Fhexo-admin%E6%8F%92%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[hexo倒腾系列 原由近几天将hexo的next主题倒腾差不多了，开始尝试着写博客了，听说用hexo-admin插件编辑文章还是挺方便的 安装进入hexo源文件目录，执行命令： npm install –save hexo-admin 配置编辑根目录下：_config.yml文件，添加： 12345&gt;&gt;admin:&gt;&gt; username: myfavoritename&gt;&gt; password_hash: be121740bf988b2225a313fa1f107ca1&gt;&gt; secret: a secret something&gt;&gt; 其中：username为登录的用户名，password_hash为密码的bcrypt哈希值，secret用于使cookie安全,可以尽可能复杂。 生成password_hash方法 安装模块：sudo npm install bcrypt-nodejs 执行： 1234&gt;&gt;$ node&gt;&gt;&gt;const bcrypt = require(&apos;bcrypt-nodejs&apos;)&gt;&gt;&gt; bcrypt.hashSync(&apos;your_password&apos;)&gt;&gt; #your_password为登录密码。 参考博客]]></content>
+    <content type="text"><![CDATA[hexo倒腾系列 原由近几天将hexo的next主题倒腾差不多了，开始尝试着写博客了，听说用hexo-admin插件编辑文章还是挺方便的 安装进入hexo源文件目录，执行命令： npm install –save hexo-admin 配置编辑根目录下：_config.yml文件，添加：1234admin: username: myfavoritename password_hash: be121740bf988b2225a313fa1f107ca1 secret: a secret something 其中：username为登录的用户名，password_hash为密码的bcrypt哈希值，secret用于使cookie安全,可以尽可能复杂。 生成password_hash方法 安装模块：sudo npm install bcrypt-nodejs 执行：123$ node&gt;const bcrypt = require(&apos;bcrypt-nodejs&apos;)&gt; bcrypt.hashSync(&apos;your_password&apos;) #your_password为登录密码。 参考博客]]></content>
       <categories>
         <category>WEB学习</category>
       </categories>
