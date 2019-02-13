@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[安卓手机安装kali]]></title>
+    <url>%2F%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85kali%2F</url>
+    <content type="text"><![CDATA[前提安装好了前面ubuntu那篇文章中的三个软件 添加源我使用的是中科大的源 http://mirrors.ustc.edu.cn/kali/ 源的格式 中科大 - http://mirrors.ustc.edu.cn/+Linux&#39;s Name/ 阿里云 - http://mirrors.aliyun.com/+Linux&#39;s Name/ 问题获取管理员权限sudo出现问题12sudo: PERM_ROOT: setresuid(0, -1, -1): 权限不够sudo: 无法初始化策略插件 相关问题，参考文章-github地址网传解决方法是把用户名设为root然后再重新配置，这个方法没有解决我的问题，还导致我不能登录设备 最后我先用普通用户ssh登录，然后su，默认密码是toor。这样也能获取管理员权限 推荐阅读基础文章进阶文章 可继续学习博客 小结之前在学校捣腾了一下午，失败告终，今日再度从0开始学习总算成功了。]]></content>
+      <tags>
+        <tag>玩手机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[安卓手机安装ubuntu]]></title>
     <url>%2F%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85ubuntu%2F</url>
     <content type="text"><![CDATA[工具一台安卓4.2的手机 将手机ROOT，ROOT工具一键ROOT ROOT工具下载 一台电脑 软件Linux系统支撑软件:Linux deploy Linux deploy支撑软件:Busy Box 手机端SSH连接软件:ConnectBox 我参考了一篇17年的安卓4.1文章，为保险起见我安装的是17年的Linux deploy 安装首先安装的是Busy Box Busy Box默认界面语言是英文，可以改成中文，点击右上角部分，在弹出的菜单中选择Settings，接着进入设置界面，找到Language项，点击后选择简体中文 点击安装，等待程序自行运行，在界面中输出## END后退出程序 安装运行Linux deploy 点击左上角选择设置找到PATH变量，赋予其值 /system/xbin 这里的路径是Busy Box的安装路径 先移除环境再更新环境 选择锁定WIFI 防止下载掉线 退回主界面，点击右下角部分,文中没有的为默认的，配置如下： 123456789属性:linuxContainerization method (chroot)发行版（Ubuntu）架构（armhf）发行版版本（xenial）源地址 （http://mirrors.ustc.edu.cn/ubuntu-ports）安装类型（文件）安装路径（$&#123;ENV_DIR&#125;/linux.img）本地化（zh_CN.UTF-8） 安装路径是Linux系统的安装路径，如要安装在手机自带的存储空间中，则在路径开头加上${ENV_DIR}，这代表的是存储空间根目录。如要安装在sdcard中，则加上${EXTERNAL_STORAGE}。 用户名和密码自定义，本地、远程连接该系统用。 INIT 选择Enable MOUNTS 选择Enable (挂载功能可让Linux系统访问手机上的文件挂载列表中添加访问手机内容的目录，/sdcard:sdcard为手机自带存储空间根目录，/storage/sdcard1为sd卡根目录。) SSH 选择Enable 图形界面 选择Enable (桌面环境选择Xfce) 退出系统设置界面，点击主界面右上角，选择安装。&lt;&lt;&lt;deploy则安装完毕。没有报错则安装成功。注意：安装完毕后要先点击停止按钮，再按启动按钮 安装ConnectBot 点击右上角 +号创建 输入用户名，主机输入localhost 点击右上角 +号保存信息，主界面会多出来添加的选项，点击进行SSH连接 效果ss连接上后 总结整个安装过程不太顺利，需要多次调试。强烈推荐中科大的源安装速度快好用得很 参考文章首先参考文章图形化界面操作文章中科大源]]></content>
