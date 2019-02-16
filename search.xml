@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[WiFi小结]]></title>
+    <url>%2FWiFi%E7%A0%B4%E8%A7%A3%E5%B0%8F%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[学习小结 免责声明:以下内容仅供学习参考 跑包GUP跑包转换格式使用hashcat密码破解,首先使用工具将cap转换成hccapx方法一：在线转换网站方法二：下载工具工具下载：下载下载完成后进入src目录编译cap2hccapx.c gcc cap2hccapx.c -o cap2hccapx 转换文件 ./cap2hccapx input.pcap output.hccapx 解密方法一：使用naive-hashcat解密，我的垃圾电脑跑不了，这个只是了解参考。项目地址 方法二:在线解密 这个需要支付BTC:穷，玩不起，没使用 这个可以免费跑2千万个密码:结果会发送到填写的邮箱 欺骗用户设备一台PC–kali系统 一个usb无线网卡–RT3070 两台手机–一台开热点一台模拟合法用户 软件下载最新版本 git clone https://github.com/FluxionNetwork/fluxion.git 我使用的是3.10版本的，在项目地址自行下载 运行 cd fluxion sudo ./fluxion.sh 按照提示进行使用，可参考[sevge博客]的fluxion一文，其实在项目的网站说明了需要使用外置的usb网卡我一开始是使用的内置无线网卡，使用程序一直卡在创建AP处。后来请教sevge大佬，解决了这个问题 问题我使用的V3.10存在不管密码是否正确，程序都会结束wifi干扰 结果获得正确的密码 社会工程学定位使用路由器mac地址来定位地址，查询网站。测试效果精确 参考文章Wifi小结-github 关于定位的文章 fluxion使用文章]]></content>
+      <categories>
+        <category>无线学习</category>
+      </categories>
+      <tags>
+        <tag>无线安全</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[安卓手机安装kali(2)]]></title>
     <url>%2F%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85kali-2%2F</url>
     <content type="text"><![CDATA[使用VNC前面已经安装好了kali，接下来是看看图形化界面了。 安卓手机由于我的安卓版本比较低，使用不了网上博文中提供VNC viewer,安卓4.4+使用的VNC viewer,该地址还提供其他系统的版本我的垃圾手机是没有这个福利了，只好找其他替代软件了，经过几番查找找到了一个140多k的软件 kali电脑下载VNC viewer apt-get install tigervnc-viewer 运行 viewer 安装中文库使用ssh连接手机后root执行下面的命令 apt-get install xfonts-intl-chinese apt-get install ttf-wqy-microhei 启动VNC服务端执行命令 vncserver 返回结果123New &apos;X&apos; desktop is localhost:1Starting applications specified in /home/android/.vnc/xstartupLog file is /home/android/.vnc/localhost:1.log 证明vncserver已启动成功因为刚刚终端返回的信息:New ‘X’ desktop is localhost:1指定了此次桌面会话号为1，所以端口就为5900+1=5901。如果我们开启了多个虚拟桌面，它们的会话号为2,3,4…，那么各自的端口即为5902,5903,5904…依次类推。 问题停止Linux系统再启动Linux系统后，再次执行vncserver命令会出现报错解决办法：12rm -rf /tmp/.X[1-9]-lockrm -rf /tmp/.X11-unix/X[1-9] 分辨率vncserver默认的分辨率是1024×768手机屏幕的分辨率都是720P(1280×720)，1080P(1920×1080)，甚至2K(2560×1440)启动vncserver时，执行： vncserver -geometry 1280x720 命令中的1280x720里的x是小写字母x 自动更改分辨率 vim ~/.bashrc #编辑~/.bashrcalias vncserver=’vncserver -geometry 1280x720’ 参考文章美丽应用安装vncserver]]></content>
