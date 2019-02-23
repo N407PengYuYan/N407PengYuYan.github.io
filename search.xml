@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo搬迁]]></title>
+    <url>%2Fhexo%E6%90%AC%E8%BF%81%2F</url>
+    <content type="text"><![CDATA[环境之前的博客是在kali上搭建的,开学了旧电脑懒得带自能搬家博客了。 系统：win10 博客安装环境：nodejs、hexo 之前参看本专业大神的博客试着搭建过，后来没成功，但是环境没卸载。当时的参考文章 搬迁网上有通过github的方式进行搬迁，我嫌太麻烦了，就直接从kali上把博客的文件夹拷贝了。1.d盘创建myBlog文件夹2.将文件解压到文件夹下 问题暂时就gulp不能正常使用解决办法：npm install -g gulp 总结先凑合着用，以后发现有什么需要改进的地方再解决]]></content>
+      <categories>
+        <category>WEB学习</category>
+      </categories>
+      <tags>
+        <tag>hexo倒腾</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[WiFi小结]]></title>
     <url>%2FWiFi%E7%A0%B4%E8%A7%A3%E5%B0%8F%E7%BB%93%2F</url>
     <content type="text"><![CDATA[学习小结 免责声明:以下内容仅供学习参考 跑包GUP跑包转换格式使用hashcat密码破解,首先使用工具将cap转换成hccapx方法一：在线转换网站方法二：下载工具工具下载：下载下载完成后进入src目录编译cap2hccapx.c gcc cap2hccapx.c -o cap2hccapx 转换文件 ./cap2hccapx input.pcap output.hccapx 解密方法一：使用naive-hashcat解密，我的垃圾电脑跑不了，这个只是了解参考。项目地址 方法二:在线解密 这个需要支付BTC:穷，玩不起，没使用 这个可以免费跑2千万个密码:结果会发送到填写的邮箱 欺骗用户设备一台PC–kali系统 一个usb无线网卡–RT3070 两台手机–一台开热点一台模拟合法用户 软件下载最新版本 git clone https://github.com/FluxionNetwork/fluxion.git 我使用的是3.10版本的，在项目地址自行下载 运行 cd fluxion sudo ./fluxion.sh 按照提示进行使用，可参考[sevge博客]的fluxion一文，其实在项目的网站说明了需要使用外置的usb网卡我一开始是使用的内置无线网卡，使用程序一直卡在创建AP处。后来请教sevge大佬，解决了这个问题 问题我使用的V3.10存在不管密码是否正确，程序都会结束wifi干扰 结果获得正确的密码 社会工程学定位使用路由器mac地址来定位地址，查询网站。测试效果精确 参考文章Wifi小结-github 关于定位的文章 fluxion使用文章]]></content>
