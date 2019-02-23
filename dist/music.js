@@ -25,10 +25,10 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/RQBF9kqZb7PtLCaOxi9ngQ==/109951163053984533.jpg?param=130y130',
       },
           {
-        name: "你的爱情",
-        artist: '逃跑计划',
-        url: 'http://www.170hi.com/kw/sk.sycdn.kuwo.cn/resource/n2/29/49/2849561093.mp3',
-        cover: 'http://img2.kuwo.cn/star/starheads/240/69/82/4224884544.jpg',
+        name: "推开世界的门",
+        artist: '杨乃文',
+        url: 'http://other.web.rl01.sycdn.kuwo.cn/resource/n3/9/57/91236734.mp3',
+        cover: 'http://p2.music.126.net/4ESdAPfVH-tAMl-pRYNE3A==/3399689972238493.jpg?param=130y130',
       },
     ]
 });
