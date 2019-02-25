@@ -3,12 +3,23 @@
   <entry>
     <title><![CDATA[hexo搬迁]]></title>
     <url>%2Fhexo%E6%90%AC%E8%BF%81%2F</url>
-    <content type="text"><![CDATA[环境之前的博客是在kali上搭建的,开学了旧电脑懒得带自能搬家博客了。 系统：win10 博客安装环境：nodejs、hexo 之前参看本专业大神的博客试着搭建过，后来没成功，但是环境没卸载。当时的参考文章 搬迁网上有通过github的方式进行搬迁，我嫌太麻烦了，就直接从kali上把博客的文件夹拷贝了。1.d盘创建myBlog文件夹2.将文件解压到文件夹下 问题暂时就gulp不能正常使用解决办法：npm install -g gulp 总结先凑合着用，以后发现有什么需要改进的地方再解决]]></content>
+    <content type="text"><![CDATA[环境之前的博客是在kali上搭建的,开学了旧电脑懒得带自能搬家博客了。 系统：win10 博客安装环境：nodejs、hexo 之前参看本专业大神的博客试着搭建过，后来没成功，但是环境没卸载。当时的参考文章 搬迁网上有通过github的方式进行搬迁，我嫌太麻烦了，就直接从kali上把博客的文件夹拷贝了。1.d盘创建myBlog文件夹2.将文件解压到文件夹下 问题暂时就gulp不能正常使用解决办法：npm install -g gulp 总结先凑合着用，以后发现有什么需要改进的地方再解决 更新： 2019/2/25 写文章TyporaTypora是一个markdown编辑器，之前一直是用admin插件在写文章，听说这款软件不错，于是想试试。 下载地址:官网 PicGoPicGo是一个快捷的图片部署工具 下载安装项目地址帮助文档 配置PicGo支持Github图床，我是参考这篇文章来进行的配置 登陆GitHub新建repo, 命名为img设置好token 访问：https://github.com/settings/tokens 选择generate new token 打勾repo 选择generate token 注意：这个token生成后只会显示一次！ 在PicGo页面根据提示进行填写imagine图片压缩工具，下载：项目地址 软件样式]]></content>
       <categories>
         <category>WEB学习</category>
       </categories>
       <tags>
         <tag>hexo倒腾</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[kali 科学上网]]></title>
+    <url>%2F%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%2F</url>
+    <content type="text"><![CDATA[kali 科学上网32位的kali貌似没有图形化操作界面的科学上网软件，于是只好使用命令行操作了。 安装终端输入： sudo apt install shadowsocks 编辑帐号密码终端输入： vi /etc/shadowsocks.json 在配置文件中按照下面的格式填写配置信息，也就帐号密码之类的 1234567891011&#123; &quot;server&quot;:&quot;服务器地址&quot;, &quot;server_port&quot;:服务器端口号, &quot;local_address&quot;: &quot;127.0.0.1&quot;, &quot;local_port&quot;:1080, &quot;password&quot;:&quot;密码&quot;, &quot;timeout&quot;:300, &quot;method&quot;:&quot;加密方式&quot;, &quot;fast_open&quot;: true, &quot;workers&quot;: 1&#125; 设置proxychains打开配置文件 vi /etc/proxychains.conf 1.去掉dynamic_chain前面的注释符 2.在最下方，默认是sock4 xxxx xxx改为sock5 127.0.0.1 xxxx （xxxx是自己刚才设定的端口号，也就是上边配置ss时输入的local_port:xxxx） 根据上面的设置此处就应该该为sock5 127.0.0.1:1080 测试代理是否正常 proxyresolv www.target.com 如果出现命令未找到，终端执行 cp /usr/lib/proxychains3/proxyresolv /usr/bin/ 正常情况是没有开代理返回timeout 开启代理开启代理 sslocal -c /etc/shadowsocks.json -d start 转发启动软件 火狐：proxychains firefox 不用了就关闭代理 sslocal -c /etc/shadowsocks.json -d stop 整个安装使用过程比较顺利，这可能和之前使用了ss的一些依赖环境有关 需要关闭火狐再使用转发启动软件]]></content>
+      <categories>
+        <category>linux学习</category>
+      </categories>
+      <tags>
+        <tag>科学上网</tag>
       </tags>
   </entry>
   <entry>
@@ -86,17 +97,6 @@
       </categories>
       <tags>
         <tag>hexo倒腾</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[kali科学上网]]></title>
-    <url>%2F%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%2F</url>
-    <content type="text"><![CDATA[kali 科学上网32位的kali貌似没有图形化操作界面的科学上网软件，于是只好使用命令行操作了。 安装终端输入： sudo apt install shadowsocks 编辑帐号密码终端输入： vi /etc/shadowsocks.json 在配置文件中按照下面的格式填写配置信息，也就帐号密码之类的 1234567891011&#123; &quot;server&quot;:&quot;服务器地址&quot;, &quot;server_port&quot;:服务器端口号, &quot;local_address&quot;: &quot;127.0.0.1&quot;, &quot;local_port&quot;:1080, &quot;password&quot;:&quot;密码&quot;, &quot;timeout&quot;:300, &quot;method&quot;:&quot;加密方式&quot;, &quot;fast_open&quot;: true, &quot;workers&quot;: 1&#125; 设置proxychains打开配置文件 vi /etc/proxychains.conf 1.去掉dynamic_chain前面的注释符 2.在最下方，默认是sock4 xxxx xxx改为sock5 127.0.0.1 xxxx （xxxx是自己刚才设定的端口号，也就是上边配置ss时输入的local_port:xxxx） 根据上面的设置此处就应该该为sock5 127.0.0.1:1080 测试代理是否正常 proxyresolv www.target.com 如果出现命令未找到，终端执行 cp /usr/lib/proxychains3/proxyresolv /usr/bin/ 正常情况是没有开代理返回timeout 开启代理开启代理 sslocal -c /etc/shadowsocks.json -d start 转发启动软件 火狐：proxychains firefox 不用了就关闭代理 sslocal -c /etc/shadowsocks.json -d stop 整个安装使用过程比较顺利，这可能和之前使用了ss的一些依赖环境有关 需要关闭火狐再使用转发启动软件]]></content>
-      <categories>
-        <category>linux学习</category>
-      </categories>
-      <tags>
-        <tag>科学上网</tag>
       </tags>
   </entry>
   <entry>
