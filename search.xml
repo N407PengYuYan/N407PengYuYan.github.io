@@ -1,135 +1,332 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[hexo搬迁]]></title>
-    <url>%2Fhexo%E6%90%AC%E8%BF%81%2F</url>
-    <content type="text"><![CDATA[环境之前的博客是在kali上搭建的,开学了旧电脑懒得带自能搬家博客了。 系统：win10 博客安装环境：nodejs、hexo 之前参看本专业大神的博客试着搭建过，后来没成功，但是环境没卸载。当时的参考文章 搬迁网上有通过github的方式进行搬迁，我嫌太麻烦了，就直接从kali上把博客的文件夹拷贝了。1.d盘创建myBlog文件夹2.将文件解压到文件夹下 问题暂时就gulp不能正常使用解决办法：npm install -g gulp 总结先凑合着用，以后发现有什么需要改进的地方再解决 更新： 2019/2/25 写文章TyporaTypora是一个markdown编辑器，之前一直是用admin插件在写文章，听说这款软件不错，于是想试试。 下载地址:官网 PicGoPicGo是一个快捷的图片部署工具 下载安装项目地址帮助文档 配置PicGo支持Github图床，我是参考这篇文章来进行的配置 登陆GitHub新建repo, 命名为img设置好token 访问：https://github.com/settings/tokens 选择generate new token 打勾repo 选择generate token 注意：这个token生成后只会显示一次！ 在PicGo页面根据提示进行填写imagine图片压缩工具，下载：项目地址 软件样式]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>三月总结</title>
+      <link href="/%E4%B8%89%E6%9C%88%E6%80%BB%E7%BB%93/"/>
+      <url>/%E4%B8%89%E6%9C%88%E6%80%BB%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<hr><h1 id="三月总结"><a href="#三月总结" class="headerlink" title="三月总结"></a>三月总结</h1><h2 id="渗透学习"><a href="#渗透学习" class="headerlink" title="渗透学习"></a>渗透学习</h2><p>1.通过已有黑页后面找马，尝试使用弱口令登陆</p><blockquote><p>intext：请于用于非法用途，后果作者概不负责！</p></blockquote><p>2.学习文章，多见识已有思想。</p><p>secwiki:<a href="https://www.sec-wiki.com" target="_blank" rel="noopener">SecWiki官网</a></p><p>先知社区:<a href="https://xz.aliyun.com/" target="_blank" rel="noopener">链接</a></p><p>3.常用弱口令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">administrator:password</span><br><span class="line">admin:12345</span><br><span class="line">root:secret</span><br><span class="line">guest:guest</span><br><span class="line">root:toor</span><br></pre></td></tr></table></figure><h2 id="常看文章"><a href="#常看文章" class="headerlink" title="常看文章"></a>常看文章</h2><p>25端口渗透：<a href="https://www.sqlsec.com/2017/08/smtp.html" target="_blank" rel="noopener">国光</a>可伪造邮件进行钓鱼等</p><p>iis短文件名泄露:<a href="https://github.com/lijiejie/IIS_shortname_Scanner" target="_blank" rel="noopener">github的代码</a>感觉危害不大，没利用过</p><p>thinkphp 5.0漏洞:<a href="https://www.jianshu.com/p/46ceb2c338bc?appinstall=0&amp;from=groupmessage" target="_blank" rel="noopener">命令执行漏洞</a>好好利用可getshell</p><h2 id="推荐阅读博客"><a href="#推荐阅读博客" class="headerlink" title="推荐阅读博客"></a>推荐阅读博客</h2><p><a href="https://www.cnblogs.com/someone9/" target="_blank" rel="noopener">hof的博客</a></p><p><a href="https://lfforu.com" target="_blank" rel="noopener">Allesa学姐的博客</a></p><p><a href="https://www.cnblogs.com/yakoazz" target="_blank" rel="noopener">老潘的博客</a></p>]]></content>
+      
+      
       <categories>
-        <category>WEB学习</category>
+          
+          <category> 总结 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo倒腾</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[kali 科学上网]]></title>
-    <url>%2F%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%2F</url>
-    <content type="text"><![CDATA[kali 科学上网32位的kali貌似没有图形化操作界面的科学上网软件，于是只好使用命令行操作了。 安装终端输入： sudo apt install shadowsocks 编辑帐号密码终端输入： vi /etc/shadowsocks.json 在配置文件中按照下面的格式填写配置信息，也就帐号密码之类的 1234567891011&#123; &quot;server&quot;:&quot;服务器地址&quot;, &quot;server_port&quot;:服务器端口号, &quot;local_address&quot;: &quot;127.0.0.1&quot;, &quot;local_port&quot;:1080, &quot;password&quot;:&quot;密码&quot;, &quot;timeout&quot;:300, &quot;method&quot;:&quot;加密方式&quot;, &quot;fast_open&quot;: true, &quot;workers&quot;: 1&#125; 设置proxychains打开配置文件 vi /etc/proxychains.conf 1.去掉dynamic_chain前面的注释符 2.在最下方，默认是sock4 xxxx xxx改为sock5 127.0.0.1 xxxx （xxxx是自己刚才设定的端口号，也就是上边配置ss时输入的local_port:xxxx） 根据上面的设置此处就应该该为sock5 127.0.0.1:1080 测试代理是否正常 proxyresolv www.target.com 如果出现命令未找到，终端执行 cp /usr/lib/proxychains3/proxyresolv /usr/bin/ 正常情况是没有开代理返回timeout 开启代理开启代理 sslocal -c /etc/shadowsocks.json -d start 转发启动软件 火狐：proxychains firefox 不用了就关闭代理 sslocal -c /etc/shadowsocks.json -d stop 整个安装使用过程比较顺利，这可能和之前使用了ss的一些依赖环境有关 需要关闭火狐再使用转发启动软件]]></content>
+      
+      
+        <tags>
+            
+            <tag> 总结 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo搬迁</title>
+      <link href="/hexo%E6%90%AC%E8%BF%81/"/>
+      <url>/hexo%E6%90%AC%E8%BF%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>之前的博客是在<code>kali</code>上搭建的,开学了旧电脑懒得带自能搬家博客了。</p><p>系统：<code>win10</code></p><p>博客安装环境：<code>nodejs、hexo</code> 之前参看本专业大神的博客试着搭建过，后来没成功，但是环境没卸载。当时的<a href="https://orangice.gitee.io/2017/03/18/hexo00/" target="_blank" rel="noopener">参考文章</a></p><h1 id="搬迁"><a href="#搬迁" class="headerlink" title="搬迁"></a>搬迁</h1><p>网上有通过github的方式进行搬迁，我嫌太麻烦了，就直接从kali上把博客的文件夹拷贝了。<br>1.<code>d盘</code>创建myBlog文件夹<br>2.将文件解压到文件夹下</p><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>暂时就gulp不能正常使用<br>解决办法：<code>npm install -g gulp</code></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>先凑合着用，以后发现有什么需要改进的地方再解决</p><hr><p>更新： 2019/2/25</p><h1 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h1><h2 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h2><p>Typora是一个markdown编辑器，之前一直是用admin插件在写文章，听说这款软件不错，于是想试试。</p><p>下载地址:<a href="https://www.typora.io/" target="_blank" rel="noopener">官网</a></p><h2 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a>PicGo</h2><p>PicGo是一个快捷的图片部署工具</p><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">项目地址</a><a href="https://picgo.github.io/PicGo-Doc/zh/" target="_blank" rel="noopener">帮助文档</a></p><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>PicGo支持Github图床，我是参考这篇<a href="https://www.jianshu.com/p/87ea6603a824" target="_blank" rel="noopener">文章</a>来进行的配置</p><h4 id="登陆GitHub"><a href="#登陆GitHub" class="headerlink" title="登陆GitHub"></a>登陆GitHub</h4><h4 id="新建repo-命名为img"><a href="#新建repo-命名为img" class="headerlink" title="新建repo, 命名为img"></a>新建repo, 命名为img</h4><h4 id="设置好token"><a href="#设置好token" class="headerlink" title="设置好token"></a>设置好token</h4><ul><li>访问：<a href="https://github.com/settings/tokens" target="_blank" rel="noopener">https://github.com/settings/tokens</a></li><li><p>选择<code>generate new token</code></p></li><li><p>打勾<code>repo</code></p></li><li><p>选择<code>generate token</code></p></li></ul><p><strong>注意</strong>：这个token生成后只会显示一次！</p><h4 id="在PicGo页面根据提示进行填写"><a href="#在PicGo页面根据提示进行填写" class="headerlink" title="在PicGo页面根据提示进行填写"></a>在PicGo页面根据提示进行填写</h4><h3 id="imagine"><a href="#imagine" class="headerlink" title="imagine"></a>imagine</h3><p>图片压缩工具，下载：<a href="https://github.com/meowtec/Imagine/releases" target="_blank" rel="noopener">项目地址</a></p><h3 id="软件样式"><a href="#软件样式" class="headerlink" title="软件样式"></a>软件样式</h3><p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/0.png" alt=""></p>]]></content>
+      
+      
       <categories>
-        <category>linux学习</category>
+          
+          <category> WEB学习 </category>
+          
       </categories>
-      <tags>
-        <tag>科学上网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[WiFi小结]]></title>
-    <url>%2FWiFi%E7%A0%B4%E8%A7%A3%E5%B0%8F%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[学习小结 免责声明:以下内容仅供学习参考 跑包GUP跑包转换格式使用hashcat密码破解,首先使用工具将cap转换成hccapx方法一：在线转换网站方法二：下载工具工具下载：下载下载完成后进入src目录编译cap2hccapx.c gcc cap2hccapx.c -o cap2hccapx 转换文件 ./cap2hccapx input.pcap output.hccapx 解密方法一：使用naive-hashcat解密，我的垃圾电脑跑不了，这个只是了解参考。项目地址 方法二:在线解密 这个需要支付BTC:穷，玩不起，没使用 这个可以免费跑2千万个密码:结果会发送到填写的邮箱 欺骗用户设备一台PC–kali系统 一个usb无线网卡–RT3070 两台手机–一台开热点一台模拟合法用户 软件下载最新版本 git clone https://github.com/FluxionNetwork/fluxion.git 我使用的是3.10版本的，在项目地址自行下载 运行 cd fluxion sudo ./fluxion.sh 按照提示进行使用，可参考[sevge博客]的fluxion一文，其实在项目的网站说明了需要使用外置的usb网卡我一开始是使用的内置无线网卡，使用程序一直卡在创建AP处。后来请教sevge大佬，解决了这个问题 问题我使用的V3.10存在不管密码是否正确，程序都会结束wifi干扰 结果获得正确的密码 社会工程学定位使用路由器mac地址来定位地址，查询网站。测试效果精确 参考文章Wifi小结-github 关于定位的文章 fluxion使用文章]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo倒腾 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>kali 科学上网</title>
+      <link href="/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <url>/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</url>
+      
+        <content type="html"><![CDATA[<hr><h1 id="kali-科学上网"><a href="#kali-科学上网" class="headerlink" title="kali 科学上网"></a>kali 科学上网</h1><p>32位的kali貌似没有图形化操作界面的科学上网软件，于是只好使用命令行操作了。</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>终端输入：</p><blockquote><p>sudo apt install shadowsocks</p></blockquote><h3 id="编辑帐号密码"><a href="#编辑帐号密码" class="headerlink" title="编辑帐号密码"></a>编辑帐号密码</h3><p>终端输入：</p><blockquote><p>vi /etc/shadowsocks.json</p></blockquote><p>在配置文件中按照下面的格式填写配置信息，也就帐号密码之类的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123; </span><br><span class="line">  &quot;server&quot;:&quot;服务器地址&quot;, </span><br><span class="line">  &quot;server_port&quot;:服务器端口号, </span><br><span class="line">  &quot;local_address&quot;: &quot;127.0.0.1&quot;, </span><br><span class="line">  &quot;local_port&quot;:1080, </span><br><span class="line">  &quot;password&quot;:&quot;密码&quot;, </span><br><span class="line">  &quot;timeout&quot;:300, </span><br><span class="line">  &quot;method&quot;:&quot;加密方式&quot;, </span><br><span class="line">  &quot;fast_open&quot;: true, </span><br><span class="line">  &quot;workers&quot;: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="设置proxychains"><a href="#设置proxychains" class="headerlink" title="设置proxychains"></a>设置proxychains</h3><h4 id="打开配置文件"><a href="#打开配置文件" class="headerlink" title="打开配置文件"></a>打开配置文件</h4><blockquote><p>vi /etc/proxychains.conf</p></blockquote><p>1.去掉dynamic_chain前面的注释符</p><p>2.在最下方，默认是sock4 xxxx xxx改为sock5 127.0.0.1 xxxx （xxxx是自己刚才设定的端口号，也就是上边配置ss时输入的local_port:xxxx）</p><p>根据上面的设置此处就应该该为sock5 127.0.0.1:1080</p><h4 id="测试代理是否正常"><a href="#测试代理是否正常" class="headerlink" title="测试代理是否正常"></a>测试代理是否正常</h4><blockquote><p>proxyresolv <a href="http://www.target.com" target="_blank" rel="noopener">www.target.com</a></p></blockquote><p>如果出现命令未找到，终端执行</p><blockquote><p>cp /usr/lib/proxychains3/proxyresolv /usr/bin/</p></blockquote><p>正常情况是没有开代理返回<strong><em>timeout</em></strong></p><h2 id="开启代理"><a href="#开启代理" class="headerlink" title="开启代理"></a>开启代理</h2><p>开启代理</p><blockquote><p>sslocal -c /etc/shadowsocks.json -d start</p></blockquote><p>转发启动软件</p><blockquote><p>火狐：proxychains firefox</p></blockquote><p>不用了就关闭代理</p><blockquote><p>sslocal -c /etc/shadowsocks.json -d stop</p></blockquote><ul><li>整个安装使用过程比较顺利，这可能和之前使用了ss的一些依赖环境有关</li><li>需要关闭火狐再使用转发启动软件</li></ul>]]></content>
+      
+      
       <categories>
-        <category>无线学习</category>
+          
+          <category> linux学习 </category>
+          
       </categories>
-      <tags>
-        <tag>无线安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[安卓手机安装kali(2)]]></title>
-    <url>%2F%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85kali-2%2F</url>
-    <content type="text"><![CDATA[使用VNC前面已经安装好了kali，接下来是看看图形化界面了。 安卓手机由于我的安卓版本比较低，使用不了网上博文中提供VNC viewer,安卓4.4+使用的VNC viewer,该地址还提供其他系统的版本我的垃圾手机是没有这个福利了，只好找其他替代软件了，经过几番查找找到了一个140多k的软件 kali电脑下载VNC viewer apt-get install tigervnc-viewer 运行 viewer 安装中文库使用ssh连接手机后root执行下面的命令 apt-get install xfonts-intl-chinese apt-get install ttf-wqy-microhei 启动VNC服务端执行命令 vncserver 返回结果123New &apos;X&apos; desktop is localhost:1Starting applications specified in /home/android/.vnc/xstartupLog file is /home/android/.vnc/localhost:1.log 证明vncserver已启动成功因为刚刚终端返回的信息:New ‘X’ desktop is localhost:1指定了此次桌面会话号为1，所以端口就为5900+1=5901。如果我们开启了多个虚拟桌面，它们的会话号为2,3,4…，那么各自的端口即为5902,5903,5904…依次类推。 问题停止Linux系统再启动Linux系统后，再次执行vncserver命令会出现报错解决办法：12rm -rf /tmp/.X[1-9]-lockrm -rf /tmp/.X11-unix/X[1-9] 分辨率vncserver默认的分辨率是1024×768手机屏幕的分辨率都是720P(1280×720)，1080P(1920×1080)，甚至2K(2560×1440)启动vncserver时，执行： vncserver -geometry 1280x720 命令中的1280x720里的x是小写字母x 自动更改分辨率 vim ~/.bashrc #编辑~/.bashrcalias vncserver=’vncserver -geometry 1280x720’ 参考文章美丽应用安装vncserver]]></content>
+      
+      
+        <tags>
+            
+            <tag> 科学上网 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WiFi小结</title>
+      <link href="/WiFi%E7%A0%B4%E8%A7%A3%E5%B0%8F%E7%BB%93/"/>
+      <url>/WiFi%E7%A0%B4%E8%A7%A3%E5%B0%8F%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<h1 id="学习小结"><a href="#学习小结" class="headerlink" title="学习小结"></a><em>学习小结</em></h1><ul><li>免责声明:以下内容仅供学习参考</li></ul><h1 id="跑包"><a href="#跑包" class="headerlink" title="跑包"></a>跑包</h1><h2 id="GUP跑包"><a href="#GUP跑包" class="headerlink" title="GUP跑包"></a>GUP跑包</h2><h3 id="转换格式"><a href="#转换格式" class="headerlink" title="转换格式"></a>转换格式</h3><p>使用<code>hashcat</code>密码破解,首先使用工具将cap转换成hccapx<br>方法一：<a href="https://hashcat.net/cap2hccapx/" target="_blank" rel="noopener">在线转换网站</a><br>方法二：下载工具<br>工具下载：<a href="https://github.com/hashcat/hashcat-utils/tree/master" target="_blank" rel="noopener">下载</a><br>下载完成后进入src目录编译cap2hccapx.c</p><blockquote><p>gcc cap2hccapx.c -o cap2hccapx</p></blockquote><p>转换文件</p><blockquote><p>./cap2hccapx input.pcap output.hccapx</p></blockquote><h3 id="解密"><a href="#解密" class="headerlink" title="解密"></a>解密</h3><p>方法一：使用<code>naive-hashcat</code>解密，我的垃圾电脑跑不了，这个只是了解参考。<a href="https://github.com/brannondorsey/naive-hashcat" target="_blank" rel="noopener">项目地址</a></p><p>方法二:在线解密</p><p><a href="https://gpuhash.me" target="_blank" rel="noopener">这个需要支付BTC</a>:穷，玩不起，没使用</p><p><a href="https://www.onlinehashcrack.com/wifi-wpa-rsna-psk-crack.php" target="_blank" rel="noopener">这个可以免费跑2千万个密码</a>:结果会发送到填写的邮箱</p><h1 id="欺骗用户"><a href="#欺骗用户" class="headerlink" title="欺骗用户"></a>欺骗用户</h1><h2 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h2><p>一台PC–<code>kali</code>系统</p><p>一个usb无线网卡–<code>RT3070</code></p><p>两台手机–一台<code>开热点</code>一台模拟<code>合法用户</code></p><h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><p>下载最新版本</p><blockquote><p>git clone <a href="https://github.com/FluxionNetwork/fluxion.git" target="_blank" rel="noopener">https://github.com/FluxionNetwork/fluxion.git</a></p></blockquote><p>我使用的是3.10版本的，在<a href="https://github.com/FluxionNetwork/fluxion" target="_blank" rel="noopener">项目地址</a>自行下载</p><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><blockquote><p>cd fluxion</p></blockquote><blockquote><p>sudo ./fluxion.sh</p></blockquote><p>按照提示进行使用，可参考[sevge博客]的fluxion一文，其实在项目的网站说明了需要使用<code>外置的usb网卡</code>我一开始是使用的内置无线网卡，使用程序一直<strong>卡在创建AP</strong>处。后来请教sevge大佬，解决了这个问题</p><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>我使用的V3.10存在不管密码是否正确，程序都会结束wifi干扰</p><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>获得正确的密码<br><img src="https://s2.ax1x.com/2019/02/16/ksELZt.png" alt="ksELZt.png"></p><h1 id="社会工程学"><a href="#社会工程学" class="headerlink" title="社会工程学"></a>社会工程学</h1><h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p>使用路由器mac地址来定位地址，<a href="https://www.opengps.cn/Data/WIFI/Search.aspx" target="_blank" rel="noopener">查询网站</a>。测试效果精确</p><h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://github.com/brannondorsey/wifi-cracking" target="_blank" rel="noopener">Wifi小结-github</a></p><p><a href="http://www.jianshu.com/p/ce2433d0a0d3" target="_blank" rel="noopener">关于定位的文章</a></p><p><a href="https://www.jianshu.com/p/04e258635466?from=timeline&amp;isappinstalled=0" target="_blank" rel="noopener">fluxion使用文章</a></p>]]></content>
+      
+      
       <categories>
-        <category>linux学习</category>
+          
+          <category> 无线学习 </category>
+          
       </categories>
-      <tags>
-        <tag>玩手机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[安卓手机安装kali]]></title>
-    <url>%2F%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85kali%2F</url>
-    <content type="text"><![CDATA[前提安装好了前面ubuntu那篇文章中的三个软件 添加源我使用的是中科大的源 http://mirrors.ustc.edu.cn/kali/ 源的格式 中科大 - http://mirrors.ustc.edu.cn/+Linux&#39;s Name/ 阿里云 - http://mirrors.aliyun.com/+Linux&#39;s Name/ 问题获取管理员权限sudo出现问题12sudo: PERM_ROOT: setresuid(0, -1, -1): 权限不够sudo: 无法初始化策略插件 相关问题，参考文章-github地址网传解决方法是把用户名设为root然后再重新配置，这个方法没有解决我的问题，还导致我不能登录设备 最后我先用普通用户ssh登录，然后su，默认密码是toor。这样也能获取管理员权限 推荐阅读基础文章进阶文章 可继续学习博客 小结之前在学校捣腾了一下午，失败告终，今日再度从0开始学习总算成功了。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 无线安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安卓手机安装kali(2)</title>
+      <link href="/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85kali-2/"/>
+      <url>/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85kali-2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用VNC"><a href="#使用VNC" class="headerlink" title="使用VNC"></a><strong><em>使用VNC</em></strong></h1><p>前面已经安装好了kali，接下来是看看图形化界面了。</p><h1 id="安卓手机"><a href="#安卓手机" class="headerlink" title="安卓手机"></a>安卓手机</h1><p>由于我的安卓版本比较低，使用不了网上博文中提供VNC viewer,安卓4.4+使用的<a href="https://www.realvnc.com/en/connect/download/viewer/android/" target="_blank" rel="noopener">VNC viewer</a>,该地址还提供其他系统的版本<br>我的垃圾手机是没有这个福利了，只好找其他替代软件了，经过几番查找找到了一个<a href="https://android-vnc-viewer.en.softonic.com/android/download" target="_blank" rel="noopener">140多k的软件</a></p><h1 id="kali电脑"><a href="#kali电脑" class="headerlink" title="kali电脑"></a>kali电脑</h1><p>下载VNC viewer</p><blockquote><p>apt-get install tigervnc-viewer </p></blockquote><p>运行</p><blockquote><p>viewer</p></blockquote><h1 id="安装中文库"><a href="#安装中文库" class="headerlink" title="安装中文库"></a>安装中文库</h1><p>使用ssh连接手机后root执行下面的命令</p><blockquote><p>apt-get install xfonts-intl-chinese</p></blockquote><blockquote><p>apt-get install ttf-wqy-microhei</p></blockquote><h1 id="启动VNC服务端"><a href="#启动VNC服务端" class="headerlink" title="启动VNC服务端"></a>启动VNC服务端</h1><p>执行命令</p><blockquote><p>vncserver</p></blockquote><p>返回结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">New &apos;X&apos; desktop is localhost:1</span><br><span class="line">Starting applications specified in /home/android/.vnc/xstartup</span><br><span class="line">Log file is /home/android/.vnc/localhost:1.log</span><br></pre></td></tr></table></figure></p><p>证明vncserver已启动成功<br>因为刚刚终端返回的信息:<strong><em>New ‘X’ desktop is localhost:1</em></strong>指定了此次桌面会话号为<strong>1</strong>，所以端口就为<strong>5900+1=5901</strong>。如果我们开启了多个虚拟桌面，它们的会话号为2,3,4…，那么各自的端口即为5902,5903,5904…依次类推。</p><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>停止Linux系统再启动Linux系统后，再次执行vncserver命令会出现报错<br><a href="https://imgchr.com/i/kB3jHJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/02/14/kB3jHJ.png" alt="kB3jHJ.png"></a><br>解决办法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm -rf /tmp/.X[1-9]-lock</span><br><span class="line">rm -rf /tmp/.X11-unix/X[1-9]</span><br></pre></td></tr></table></figure></p><h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><p>vncserver默认的分辨率是1024×768<br>手机屏幕的分辨率都是720P(1280×720)，1080P(1920×1080)，甚至2K(2560×1440)<br>启动vncserver时，执行：</p><blockquote><p> vncserver -geometry 1280x720</p></blockquote><ul><li>命令中的1280x720里的x是小写字母x</li></ul><p>自动更改分辨率</p><blockquote><p>vim ~/.bashrc #编辑~/.bashrc<br>alias vncserver=’vncserver -geometry 1280x720’ </p></blockquote><h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://mlapp.cn/337.html" target="_blank" rel="noopener">美丽应用</a><br><a href="www.360doc.com/content/18/1123/02/40461272_796637204.shtml">安装vncserver</a></p>]]></content>
+      
+      
       <categories>
-        <category>linux学习</category>
+          
+          <category> linux学习 </category>
+          
       </categories>
-      <tags>
-        <tag>玩手机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[安卓手机安装ubuntu]]></title>
-    <url>%2F%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85ubuntu%2F</url>
-    <content type="text"><![CDATA[工具一台安卓4.2的手机 将手机ROOT，ROOT工具一键ROOT ROOT工具下载 一台电脑 软件Linux系统支撑软件:Linux deploy Linux deploy支撑软件:Busy Box 手机端SSH连接软件:ConnectBox 我参考了一篇17年的安卓4.1文章，为保险起见我安装的是17年的Linux deploy 安装首先安装的是Busy Box Busy Box默认界面语言是英文，可以改成中文，点击右上角部分，在弹出的菜单中选择Settings，接着进入设置界面，找到Language项，点击后选择简体中文 点击安装，等待程序自行运行，在界面中输出## END后退出程序 安装运行Linux deploy 点击左上角选择设置找到PATH变量，赋予其值 /system/xbin 这里的路径是Busy Box的安装路径 先移除环境再更新环境 选择锁定WIFI 防止下载掉线 退回主界面，点击右下角部分,文中没有的为默认的，配置如下： 123456789属性:linuxContainerization method (chroot)发行版（Ubuntu）架构（armhf）发行版版本（xenial）源地址 （http://mirrors.ustc.edu.cn/ubuntu-ports）安装类型（文件）安装路径（$&#123;ENV_DIR&#125;/linux.img）本地化（zh_CN.UTF-8） 安装路径是Linux系统的安装路径，如要安装在手机自带的存储空间中，则在路径开头加上${ENV_DIR}，这代表的是存储空间根目录。如要安装在sdcard中，则加上${EXTERNAL_STORAGE}。 用户名和密码自定义，本地、远程连接该系统用。 INIT 选择Enable MOUNTS 选择Enable (挂载功能可让Linux系统访问手机上的文件挂载列表中添加访问手机内容的目录，/sdcard:sdcard为手机自带存储空间根目录，/storage/sdcard1为sd卡根目录。) SSH 选择Enable 图形界面 选择Enable (桌面环境选择Xfce) 退出系统设置界面，点击主界面右上角，选择安装。&lt;&lt;&lt;deploy则安装完毕。没有报错则安装成功。注意：安装完毕后要先点击停止按钮，再按启动按钮 安装ConnectBot 点击右上角 +号创建 输入用户名，主机输入localhost 点击右上角 +号保存信息，主界面会多出来添加的选项，点击进行SSH连接 效果ss连接上后 总结整个安装过程不太顺利，需要多次调试。强烈推荐中科大的源安装速度快好用得很 参考文章首先参考文章图形化界面操作文章中科大源]]></content>
+      
+      
+        <tags>
+            
+            <tag> 玩手机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安卓手机安装kali</title>
+      <link href="/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85kali/"/>
+      <url>/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85kali/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><p>安装好了前面<strong><em>ubuntu</em></strong>那篇文章中的三个软件</p><h1 id="添加源"><a href="#添加源" class="headerlink" title="添加源"></a>添加源</h1><p>我使用的是中科大的源</p><blockquote><p><a href="http://mirrors.ustc.edu.cn/kali/" target="_blank" rel="noopener">http://mirrors.ustc.edu.cn/kali/</a></p></blockquote><p>源的格式</p><ul><li>中科大 - <a href="http://mirrors.ustc.edu.cn/+Linux&#39;s" target="_blank" rel="noopener">http://mirrors.ustc.edu.cn/+Linux&#39;s</a> Name/</li><li>阿里云 - <a href="http://mirrors.aliyun.com/+Linux&#39;s" target="_blank" rel="noopener">http://mirrors.aliyun.com/+Linux&#39;s</a> Name/</li></ul><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>获取管理员权限sudo出现问题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo: PERM_ROOT: setresuid(0, -1, -1): 权限不够</span><br><span class="line">sudo: 无法初始化策略插件</span><br></pre></td></tr></table></figure></p><p>相关问题，参考文章-<a href="https://github.com/meefik/linuxdeploy/issues/224" target="_blank" rel="noopener">github地址</a><br>网传解决方法是把用户名设为root然后再重新配置，这个方法没有解决我的问题，还导致我不能登录设备</p><ul><li>最后我先用普通用户ssh登录，然后su，默认密码是toor。这样也能获取管理员权限<br><img src="https://s2.ax1x.com/2019/02/14/kBC7Sx.png" alt="kBC7Sx.png"></li></ul><h1 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h1><p><a href="https://www.freebuf.com/articles/terminal/13209.html" target="_blank" rel="noopener">基础文章</a><br><a href="https://blog.csdn.net/notzuonotdied/article/details/53933076" target="_blank" rel="noopener">进阶文章</a></p><blockquote><p><a href="https://mlapp.cn/134.html" target="_blank" rel="noopener">可继续学习博客</a></p></blockquote><h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>之前在学校捣腾了一下午，失败告终，今日再度从0开始学习总算成功了。</p>]]></content>
+      
+      
       <categories>
-        <category>linux学习</category>
+          
+          <category> linux学习 </category>
+          
       </categories>
-      <tags>
-        <tag>玩手机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[添加页面标题欺骗]]></title>
-    <url>%2F%E6%B7%BB%E5%8A%A0%E9%A1%B5%E9%9D%A2%E6%A0%87%E9%A2%98%E6%AC%BA%E9%AA%97%2F</url>
-    <content type="text"><![CDATA[效果离开网页，标题出现一行文字重新回到网页，标题又显示另一行文字 代码在next\source\js\src文件夹下创建crash_cheat.js，代码如下：1234567891011121314151617&lt;!--崩溃欺骗--&gt; var OriginTitle = document.title; var titleTime; document.addEventListener(&apos;visibilitychange&apos;, function () &#123; if (document.hidden) &#123; $(&apos;[rel=&quot;icon&quot;]&apos;).attr(&apos;href&apos;, &quot;/images/panda16.icon&quot;); document.title = &apos;页面崩溃点击恢复&apos;; clearTimeout(titleTime); &#125; else &#123; $(&apos;[rel=&quot;icon&quot;]&apos;).attr(&apos;href&apos;, &quot;/images/panda16.icon&quot;); document.title = &apos;页面修复成功&apos; ; titleTime = setTimeout(function () &#123; document.title = OriginTitle; &#125;, 2000); &#125; &#125;); 引用代码在next\layout_layout.swig文件中，添加引用（注：在/body前即可）：12&lt;!--崩溃欺骗--&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/crash_cheat.js&quot;&gt;&lt;/script&gt; 参考文章asdfv1929的博客]]></content>
+      
+      
+        <tags>
+            
+            <tag> 玩手机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安卓手机安装ubuntu</title>
+      <link href="/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85ubuntu/"/>
+      <url>/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85ubuntu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p>一台安卓4.2的手机</p><blockquote><p>将手机ROOT，ROOT工具一键ROOT <a href="root.360.cn/#firstPage">ROOT工具下载</a></p></blockquote><p>一台电脑</p><h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><p>Linux系统支撑软件:<a href="https://github.com/meefik/linuxdeploy/releases" target="_blank" rel="noopener">Linux deploy</a></p><p>Linux deploy支撑软件:<a href="https://github.com/meefik/busybox/releases" target="_blank" rel="noopener">Busy Box</a></p><p>手机端SSH连接软件:<a href="https://github.com/connectbot/connectbot/releases" target="_blank" rel="noopener">ConnectBox</a></p><blockquote><p>我参考了一篇17年的安卓4.1文章，为保险起见我安装的是17年的Linux deploy</p></blockquote><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="首先安装的是Busy-Box"><a href="#首先安装的是Busy-Box" class="headerlink" title="首先安装的是Busy Box"></a>首先安装的是Busy Box</h2><ul><li><p>Busy Box默认界面语言是英文，可以改成中文，点击右上角部分，在弹出的菜单中选择Settings，接着进入设置界面，找到Language项，点击后选择简体中文</p></li><li><p>点击安装，等待程序自行运行，在界面中输出## END后退出程序</p></li></ul><h2 id="安装运行Linux-deploy"><a href="#安装运行Linux-deploy" class="headerlink" title="安装运行Linux deploy"></a>安装运行Linux deploy</h2><ul><li>点击<strong><em>左上角</em></strong>选择设置找到PATH变量，赋予其值 /system/xbin 这里的路径是Busy Box的安装路径</li><li>先移除环境再更新环境</li><li>选择锁定WIFI 防止下载掉线</li><li>退回主界面，点击<strong><em>右下角</em></strong>部分,文中没有的为默认的，配置如下：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">属性:linux</span><br><span class="line">Containerization method (chroot)</span><br><span class="line">发行版（Ubuntu）</span><br><span class="line">架构（armhf）</span><br><span class="line">发行版版本（xenial）</span><br><span class="line">源地址 （http://mirrors.ustc.edu.cn/ubuntu-ports）</span><br><span class="line">安装类型（文件）</span><br><span class="line">安装路径（$&#123;ENV_DIR&#125;/linux.img）</span><br><span class="line">本地化（zh_CN.UTF-8）</span><br></pre></td></tr></table></figure><ul><li>安装路径是Linux系统的安装路径，如要安装在手机自带的存储空间中，则在路径开头加上${ENV_DIR}，这代表的是存储空间根目录。如要安装在sdcard中，则加上${EXTERNAL_STORAGE}。</li><li>用户名和密码自定义，本地、远程连接该系统用。</li></ul><blockquote><p>INIT 选择Enable</p></blockquote><blockquote><p>MOUNTS 选择Enable (挂载功能可让Linux系统访问手机上的文件<br>挂载列表中添加访问手机内容的目录，/sdcard:sdcard为手机自带存储空间根目录，/storage/sdcard1为sd卡根目录。)</p></blockquote><blockquote><p>SSH 选择Enable</p></blockquote><blockquote><p>图形界面 选择Enable (桌面环境选择Xfce)</p></blockquote><ul><li>退出系统设置界面，点击主界面右上角，选择安装。&lt;&lt;&lt;deploy则安装完毕。没有报错则安装成功。注意：安装完毕后要<strong><em>先点击停止按钮，再按启动按钮</em></strong></li></ul><h2 id="安装ConnectBot"><a href="#安装ConnectBot" class="headerlink" title="安装ConnectBot"></a>安装ConnectBot</h2><ul><li>点击右上角 +号创建 </li><li>输入用户名，主机输入localhost</li><li>点击右上角 +号保存信息，主界面会多出来添加的选项，点击进行SSH连接 </li></ul><h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p><strong><em>ss连接上后</em></strong><img src="https://s2.ax1x.com/2019/02/13/k0hRl6.png" alt="k0hRl6.png"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>整个安装过程不太顺利，需要多次调试。强烈推荐中科大的源安装速度快好用得很</p><h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://blog.csdn.net/weixin_38235758/article/details/79219050" target="_blank" rel="noopener">首先参考文章</a><br><a href="https://www.linuxidc.com/Linux/2017-05/144274.htm" target="_blank" rel="noopener">图形化界面操作文章</a><br><a href="mirrors.ustc.edu.cn">中科大源</a></p>]]></content>
+      
+      
       <categories>
-        <category>WEB学习</category>
+          
+          <category> linux学习 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo倒腾</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[next主题添加音乐播放器]]></title>
-    <url>%2Fnext%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%2F</url>
-    <content type="text"><![CDATA[添加APlayer播放器原由之前把播放器嵌在站点概览里，在手机端显示不了导致不能停止音乐 下载项目地址下载解压后将dist文件夹复制到themes\next\source文件夹下 安装在themes\next\source\dist文件夹下创建music.js文件12345678910111213141516171819202122232425262728const ap = new APlayer(&#123; container: document.getElementById(&apos;aplayer&apos;), fixed: true, //吸底模式 autoplay: true, //自动播放 theme: &apos;#FADFA3&apos;, //主题色 loop: &apos;all&apos;, //音频循环播放, 可选值: &apos;all&apos;全部循环, &apos;one&apos;单曲循环, &apos;none&apos;不循环 order: &apos;random&apos;, //音频循环顺序, 可选值: &apos;list&apos;列表循环, &apos;random&apos;随机循环 preload: &apos;auto&apos;, //预加载，可选值: &apos;none&apos;, &apos;metadata&apos;, &apos;auto&apos; volume: 0.7, //默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效 mutex: true, //互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器 listFolded: false, //列表默认折叠 listMaxHeight: 90, //列表最大高度 lrcType: 0, //歌词传递方式 audio: [ &#123; name: &quot;思念是一种病&quot;, artist: &apos;张震岳 / 蔡健雅&apos;, url: &apos;http://www.ytmp3.cn/down/50020.mp3&apos;, cover: &apos;http://p2.music.126.net/N61oLy0iLfEkZTHD2j87iA==/18693896697392706.jpg?param=130y130&apos;, &#125;, &#123; name: &quot;这就是爱情&quot;, artist: &apos;李代沫&apos;, url: &apos;http://www.ytmp3.cn/down/54477.mp3&apos;, cover: &apos;http://p1.music.126.net/RQBF9kqZb7PtLCaOxi9ngQ==/109951163053984533.jpg?param=130y130&apos;, &#125;, ]&#125;); 源码中的参数可以参考官方文档 audio对应的便是音频文件，在里面添加音乐 音乐的外链可以去下面的网站搜索复制音乐图片我是在网易云里搜索同一首歌曲找到的 运行程序打开themes\next\layout_layout.swig文件，将下述程序添加添加到&lt; body itemscope … &gt;后面就行，即在&lt; body &gt;&lt; /body &gt;里面1234&lt;link rel=&quot;stylesheet&quot; href=&quot;/dist/APlayer.min.css&quot;&gt;&lt;div id=&quot;aplayer&quot;&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/dist/music.js&quot;&gt;&lt;/script&gt; 音乐外链音乐网站1:www.ytmp3.cn 音乐网站2:www.170hi.com]]></content>
+      
+      
+        <tags>
+            
+            <tag> 玩手机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>添加页面标题欺骗</title>
+      <link href="/%E6%B7%BB%E5%8A%A0%E9%A1%B5%E9%9D%A2%E6%A0%87%E9%A2%98%E6%AC%BA%E9%AA%97/"/>
+      <url>/%E6%B7%BB%E5%8A%A0%E9%A1%B5%E9%9D%A2%E6%A0%87%E9%A2%98%E6%AC%BA%E9%AA%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p>离开网页，标题出现一行文字<br>重新回到网页，标题又显示另一行文字</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>在next\source\js\src文件夹下创建crash_cheat.js，代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--崩溃欺骗--&gt;</span><br><span class="line"> var OriginTitle = document.title;</span><br><span class="line"> var titleTime;</span><br><span class="line"> document.addEventListener(&apos;visibilitychange&apos;, function () &#123;</span><br><span class="line">     if (document.hidden) &#123;</span><br><span class="line">         $(&apos;[rel=&quot;icon&quot;]&apos;).attr(&apos;href&apos;, &quot;/images/panda16.icon&quot;);</span><br><span class="line">         document.title = &apos;页面崩溃点击恢复&apos;;</span><br><span class="line">         clearTimeout(titleTime);</span><br><span class="line">     &#125;</span><br><span class="line">     else &#123;</span><br><span class="line">         $(&apos;[rel=&quot;icon&quot;]&apos;).attr(&apos;href&apos;, &quot;/images/panda16.icon&quot;);</span><br><span class="line">         document.title = &apos;页面修复成功&apos; ;</span><br><span class="line">         titleTime = setTimeout(function () &#123;</span><br><span class="line">             document.title = OriginTitle;</span><br><span class="line">         &#125;, 2000);</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;);</span><br></pre></td></tr></table></figure></p><h1 id="引用代码"><a href="#引用代码" class="headerlink" title="引用代码"></a>引用代码</h1><p>在next\layout_layout.swig文件中，添加引用（注：在/body前即可）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--崩溃欺骗--&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/crash_cheat.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://asdfv1929.github.io/2018/01/25/crash-cheat/" target="_blank" rel="noopener">asdfv1929的博客</a></p>]]></content>
+      
+      
       <categories>
-        <category>WEB学习</category>
+          
+          <category> WEB学习 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo倒腾</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[hexo代码复制]]></title>
-    <url>%2Fhexo%E4%BB%A3%E7%A0%81%E5%A4%8D%E5%88%B6%2F</url>
-    <content type="text"><![CDATA[hexo-next添加代码块复制功能clipboard.js下载项目地址详细内容可以前往查看，如是只需实现功能即可右键下载。将clipboard.js保存到theme/next/source/js/src下 使用在theme/next/source/js/src下创建clipboard-use.js文件代码如下 1234567891011121314151617/*页面载入完成后，创建复制按钮*/!function (e, t, a) &#123; /* code */ var initCopyCode = function()&#123; var copyHtml = &apos;&apos;; copyHtml += &apos;&lt;button class=&quot;btn-copy&quot; data-clipboard-snippet=&quot;&quot;&gt;&apos;; copyHtml += &apos;&lt;span&gt;复制&lt;/span&gt;&apos;; copyHtml += &apos;&lt;/button&gt;&apos;; $(&quot;.highlight .code pre&quot;).before(copyHtml); new ClipboardJS(&apos;.btn-copy&apos;, &#123; target: function(trigger) &#123; return trigger.nextElementSibling; &#125; &#125;); &#125; initCopyCode();&#125;(window, document); 在theme/next/source/css/_custom/custom.styl样式中添加如下代码：123456789101112131415161718192021222324252627282930313233343536//代码块复制按钮.highlight&#123; //方便copy代码按钮（btn-copy）的定位 position: relative;&#125;.btn-copy &#123; display: inline-block; cursor: pointer; background-color: #eee; background-image: linear-gradient(#fcfcfc,#eee); border: 1px solid #d5d5d5; border-radius: 3px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-appearance: none; font-size: 13px; font-weight: 700; line-height: 20px; color: #333; -webkit-transition: opacity .3s ease-in-out; -o-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out; padding: 2px 6px; position: absolute; right: 5px; top: 5px; opacity: 0;&#125;.btn-copy span &#123; margin-left: 5px;&#125;.highlight:hover .btn-copy&#123; opacity: 1;&#125; 引用在themes/next/layout/_layout.swig文件中引用（/body）之前添加：123&lt;!-- 代码块复制功能 --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/clipboard.js&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/clipboard-use.js&quot;&gt;&lt;/script&gt;]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo倒腾 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>next主题添加音乐播放器</title>
+      <link href="/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/"/>
+      <url>/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="添加APlayer播放器"><a href="#添加APlayer播放器" class="headerlink" title="添加APlayer播放器"></a>添加APlayer播放器</h1><h2 id="原由"><a href="#原由" class="headerlink" title="原由"></a>原由</h2><p>之前把播放器嵌在站点概览里，在手机端显示不了导致不能停止音乐</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener">项目地址</a>下载解压后将<strong><em>dist</em></strong>文件夹复制到themes\next\source文件夹下</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在<code>themes\next\source\dist</code>文件夹下创建music.js文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">const ap = new APlayer(&#123;</span><br><span class="line">    container: document.getElementById(&apos;aplayer&apos;),</span><br><span class="line">    fixed: true,   //吸底模式</span><br><span class="line">    autoplay: true, //自动播放</span><br><span class="line">    theme: &apos;#FADFA3&apos;, //主题色</span><br><span class="line">    loop: &apos;all&apos;, //音频循环播放, 可选值: &apos;all&apos;全部循环, &apos;one&apos;单曲循环, &apos;none&apos;不循环</span><br><span class="line">    order: &apos;random&apos;, //音频循环顺序, 可选值: &apos;list&apos;列表循环, &apos;random&apos;随机循环</span><br><span class="line">    preload: &apos;auto&apos;, //预加载，可选值: &apos;none&apos;, &apos;metadata&apos;, &apos;auto&apos;</span><br><span class="line">    volume: 0.7, //默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</span><br><span class="line">    mutex: true, //互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</span><br><span class="line">    listFolded: false, //列表默认折叠</span><br><span class="line">    listMaxHeight: 90, //列表最大高度</span><br><span class="line">    lrcType: 0, //歌词传递方式</span><br><span class="line">    audio: [</span><br><span class="line">&#123;</span><br><span class="line">        name: &quot;思念是一种病&quot;,</span><br><span class="line">        artist: &apos;张震岳 / 蔡健雅&apos;,</span><br><span class="line">        url: &apos;http://www.ytmp3.cn/down/50020.mp3&apos;,</span><br><span class="line">        cover: &apos;http://p2.music.126.net/N61oLy0iLfEkZTHD2j87iA==/18693896697392706.jpg?param=130y130&apos;,</span><br><span class="line">      &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">        name: &quot;这就是爱情&quot;,</span><br><span class="line">        artist: &apos;李代沫&apos;,</span><br><span class="line">        url: &apos;http://www.ytmp3.cn/down/54477.mp3&apos;,</span><br><span class="line">        cover: &apos;http://p1.music.126.net/RQBF9kqZb7PtLCaOxi9ngQ==/109951163053984533.jpg?param=130y130&apos;,</span><br><span class="line">      &#125;,</span><br><span class="line">    ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p><p>源码中的参数可以参考<a href="https://aplayer.js.org/#/zh-Hans/" target="_blank" rel="noopener">官方文档</a></p><ul><li>audio对应的便是音频文件，在里面添加音乐</li></ul><p>音乐的外链可以去下面的网站搜索复制<br>音乐图片我是在网易云里搜索同一首歌曲找到的</p><h2 id="运行程序"><a href="#运行程序" class="headerlink" title="运行程序"></a>运行程序</h2><p>打开themes\next\layout_layout.swig文件，将下述程序添加添加到&lt; body itemscope … &gt;后面就行，即在&lt; body &gt;&lt; /body &gt;里面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;/dist/APlayer.min.css&quot;&gt;</span><br><span class="line">&lt;div id=&quot;aplayer&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/dist/music.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><hr><h1 id="音乐外链"><a href="#音乐外链" class="headerlink" title="音乐外链"></a>音乐外链</h1><p>音乐网站1:<code>www.ytmp3.cn</code></p><p>音乐网站2:<code>www.170hi.com</code></p>]]></content>
+      
+      
       <categories>
-        <category>WEB学习</category>
+          
+          <category> WEB学习 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo倒腾</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[kali软件小技巧]]></title>
-    <url>%2Fkali%E5%BA%94%E7%94%A8%E6%80%BB%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[kali应用总结卸载软件删除配置 apt-get purge XXXX 安装截图软件下载安装python-xlib apt-get install python-xlib 下载安装截图软件包 wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb 安装软件包 dpkg -i deepin-scrot* 运气比较好，安装没有报错。据说如果报错啥的可能需要安装依赖，可以通过强制执行安装依赖命令解决问题 报错了参考下面的方法 强制安装依赖包 apt-get -f install 重新安装截图软件包 sudo dpkg -i deepin-scrot* 如果顺利的话 此时应该执行deepin-scrot就可截图了 设置快捷键在设置页面自定义快捷件，由于用QQ截图习惯了，我设置的Ctrl+Alt+A]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo倒腾 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo代码复制</title>
+      <link href="/hexo%E4%BB%A3%E7%A0%81%E5%A4%8D%E5%88%B6/"/>
+      <url>/hexo%E4%BB%A3%E7%A0%81%E5%A4%8D%E5%88%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hexo-next添加代码块复制功能"><a href="#hexo-next添加代码块复制功能" class="headerlink" title="hexo-next添加代码块复制功能"></a>hexo-next添加代码块复制功能</h1><h2 id="clipboard-js"><a href="#clipboard-js" class="headerlink" title="clipboard.js"></a>clipboard.js</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><a href="https://github.com/zenorocha/clipboard.js" target="_blank" rel="noopener">项目地址</a>详细内容可以前往查看，如是只需实现功能即可<a href="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.min.js" target="_blank" rel="noopener">右键下载</a>。<br>将clipboard.js保存到theme/next/source/js/src下</p><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>在theme/next/source/js/src下创建clipboard-use.js文件代码如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/*页面载入完成后，创建复制按钮*/</span><br><span class="line">!function (e, t, a) &#123; </span><br><span class="line">  /* code */</span><br><span class="line">  var initCopyCode = function()&#123;</span><br><span class="line">    var copyHtml = &apos;&apos;;</span><br><span class="line">    copyHtml += &apos;&lt;button class=&quot;btn-copy&quot; data-clipboard-snippet=&quot;&quot;&gt;&apos;;</span><br><span class="line">    copyHtml += &apos;&lt;span&gt;复制&lt;/span&gt;&apos;;</span><br><span class="line">    copyHtml += &apos;&lt;/button&gt;&apos;;</span><br><span class="line">    $(&quot;.highlight .code pre&quot;).before(copyHtml);</span><br><span class="line">    new ClipboardJS(&apos;.btn-copy&apos;, &#123;</span><br><span class="line">        target: function(trigger) &#123;</span><br><span class="line">            return trigger.nextElementSibling;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  initCopyCode();</span><br><span class="line">&#125;(window, document);</span><br></pre></td></tr></table></figure><p>在theme/next/source/css/_custom/custom.styl样式中添加如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">//代码块复制按钮</span><br><span class="line">.highlight&#123;</span><br><span class="line">  //方便copy代码按钮（btn-copy）的定位</span><br><span class="line">  position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.btn-copy &#123;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    cursor: pointer;</span><br><span class="line">    background-color: #eee;</span><br><span class="line">    background-image: linear-gradient(#fcfcfc,#eee);</span><br><span class="line">    border: 1px solid #d5d5d5;</span><br><span class="line">    border-radius: 3px;</span><br><span class="line">    -webkit-user-select: none;</span><br><span class="line">    -moz-user-select: none;</span><br><span class="line">    -ms-user-select: none;</span><br><span class="line">    user-select: none;</span><br><span class="line">    -webkit-appearance: none;</span><br><span class="line">    font-size: 13px;</span><br><span class="line">    font-weight: 700;</span><br><span class="line">    line-height: 20px;</span><br><span class="line">    color: #333;</span><br><span class="line">    -webkit-transition: opacity .3s ease-in-out;</span><br><span class="line">    -o-transition: opacity .3s ease-in-out;</span><br><span class="line">    transition: opacity .3s ease-in-out;</span><br><span class="line">    padding: 2px 6px;</span><br><span class="line">    position: absolute;</span><br><span class="line">    right: 5px;</span><br><span class="line">    top: 5px;</span><br><span class="line">    opacity: 0;</span><br><span class="line">&#125;</span><br><span class="line">.btn-copy span &#123;</span><br><span class="line">    margin-left: 5px;</span><br><span class="line">&#125;</span><br><span class="line">.highlight:hover .btn-copy&#123;</span><br><span class="line">  opacity: 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>在themes/next/layout/_layout.swig文件中引用（/body）之前添加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 代码块复制功能 --&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/clipboard.js&quot;&gt;&lt;/script&gt;  </span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/clipboard-use.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
       <categories>
-        <category>linux学习</category>
+          
+          <category> WEB学习 </category>
+          
       </categories>
-      <tags>
-        <tag>kali软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[hexo-admin插件]]></title>
-    <url>%2Fhexo-admin%E6%8F%92%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[hexo倒腾系列 原由近几天将hexo的next主题倒腾差不多了，开始尝试着写博客了，听说用hexo-admin插件编辑文章还是挺方便的 安装进入hexo源文件目录，执行命令： npm install –save hexo-admin 配置编辑根目录下：_config.yml文件，添加：1234admin: username: myfavoritename password_hash: be121740bf988b2225a313fa1f107ca1 secret: a secret something 其中：username为登录的用户名，password_hash为密码的bcrypt哈希值，secret用于使cookie安全,可以尽可能复杂。 生成password_hash方法 安装模块：sudo npm install bcrypt-nodejs 执行：123$ node&gt;const bcrypt = require(&apos;bcrypt-nodejs&apos;)&gt; bcrypt.hashSync(&apos;your_password&apos;) #your_password为登录密码。 参考博客]]></content>
+      
+      
+        <tags>
+            
+            <tag> hexo倒腾 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>kali软件小技巧</title>
+      <link href="/kali%E5%BA%94%E7%94%A8%E6%80%BB%E7%BB%93/"/>
+      <url>/kali%E5%BA%94%E7%94%A8%E6%80%BB%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<hr><h1 id="kali应用总结"><a href="#kali应用总结" class="headerlink" title="kali应用总结"></a>kali应用总结</h1><h2 id="卸载软件删除配置"><a href="#卸载软件删除配置" class="headerlink" title="卸载软件删除配置"></a>卸载软件删除配置</h2><blockquote><p>apt-get purge XXXX</p></blockquote><h2 id="安装截图软件"><a href="#安装截图软件" class="headerlink" title="安装截图软件"></a>安装截图软件</h2><h3 id="下载安装python-xlib"><a href="#下载安装python-xlib" class="headerlink" title="下载安装python-xlib"></a>下载安装python-xlib</h3><blockquote><p>apt-get install python-xlib</p></blockquote><h3 id="下载安装截图软件包"><a href="#下载安装截图软件包" class="headerlink" title="下载安装截图软件包"></a>下载安装截图软件包</h3><blockquote><p>wget <a href="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb</a></p></blockquote><h3 id="安装软件包"><a href="#安装软件包" class="headerlink" title="安装软件包"></a>安装软件包</h3><blockquote><p>dpkg -i deepin-scrot*</p></blockquote><p>运气比较好，安装没有报错。据说如果报错啥的可能需要安装依赖，可以通过强制执行安装依赖命令解决问题</p><p><strong><em>报错了参考下面的方法</em></strong></p><h3 id="强制安装依赖包"><a href="#强制安装依赖包" class="headerlink" title="强制安装依赖包"></a>强制安装依赖包</h3><blockquote><p>apt-get -f install</p></blockquote><h3 id="重新安装截图软件包"><a href="#重新安装截图软件包" class="headerlink" title="重新安装截图软件包"></a>重新安装截图软件包</h3><blockquote><p>sudo dpkg -i deepin-scrot*</p></blockquote><p>如果顺利的话 此时应该执行deepin-scrot就可截图了</p><h3 id="设置快捷键"><a href="#设置快捷键" class="headerlink" title="设置快捷键"></a>设置快捷键</h3><p>在设置页面自定义快捷件，由于用QQ截图习惯了，我设置的Ctrl+Alt+A</p><p><a href="https://imgchr.com/i/k1YJIJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/01/31/k1YJIJ.md.png" alt="k1YJIJ.md.png"></a></p>]]></content>
+      
+      
       <categories>
-        <category>WEB学习</category>
+          
+          <category> linux学习 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo倒腾</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Wi-Fi密码破解]]></title>
-    <url>%2FWi-Fi%E6%94%BB%E5%87%BB%E5%AE%9E%E6%88%98%2F</url>
-    <content type="text"><![CDATA[仅供学习参考 总结 wifi密码破解将WLAN0网卡开启混杂模式 airmon-ng start wlan0 ##提示要杀掉一些进程 airmon-ng check kill airmon-ng start wlan0 1、查看附近Wi-Fi airodump-ng wlan0mon 2、进行握手包监听与获取 airodump-ng -c 通道值 —bssid wifi的mac值 -w cap文件名 wlan0mon ##其中wlan0mon是启动混杂模式的网卡名 3、断网抓取握手包（另开一个窗口） aireplay-ng -0 20 -c 客户机mac值 -a wifi热点mac值 wlan0mon #-0 death模式 20为发送次数 4、跑包 aircrack-ng -w 字典 包名 关闭混杂模式 airmon-ng stop wlan0mon 启动网络 service network-manager start ——————————分割线——————————— 构造同名的虚假AP airbase-ng —essid wifi名 -c 6 -Z 4 wlan0mon -c 代表channel信道 -Z代表WPA2加密 -z代表WPA1加密 z后面的参数1～5分别表示WEP40、TKIP、WRAP、CCMP、WEP104]]></content>
+      
+      
+        <tags>
+            
+            <tag> kali软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo-admin插件</title>
+      <link href="/hexo-admin%E6%8F%92%E4%BB%B6/"/>
+      <url>/hexo-admin%E6%8F%92%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<p><strong>hexo倒腾系列</strong></p><h2 id="原由"><a href="#原由" class="headerlink" title="原由"></a>原由</h2><p>近几天将hexo的next主题倒腾差不多了，开始尝试着写博客了，听说用hexo-admin插件编辑文章还是挺方便的</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>进入hexo源文件目录，执行命令：</p><blockquote><p>npm install –save hexo-admin</p></blockquote><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>编辑根目录下：_config.yml文件，添加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">admin:</span><br><span class="line">  username: myfavoritename</span><br><span class="line">  password_hash: be121740bf988b2225a313fa1f107ca1</span><br><span class="line">  secret: a secret something</span><br></pre></td></tr></table></figure></p><p>其中：<br>username为登录的用户名，password_hash为密码的bcrypt哈希值，secret用于使cookie安全,可以尽可能复杂。</p><p>生成password_hash方法</p><ul><li><blockquote><p>安装模块：sudo npm install bcrypt-nodejs </p></blockquote></li></ul><p>执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ node</span><br><span class="line">&gt;const bcrypt = require(&apos;bcrypt-nodejs&apos;)</span><br><span class="line">&gt; bcrypt.hashSync(&apos;your_password&apos;)</span><br></pre></td></tr></table></figure></p><p>#your_password为登录密码。</p><p><a href="https://www.zhyong.cn/posts/9092/" target="_blank" rel="noopener">参考博客</a></p>]]></content>
+      
+      
       <categories>
-        <category>无线学习</category>
+          
+          <category> WEB学习 </category>
+          
       </categories>
-      <tags>
-        <tag>无线安全</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> hexo倒腾 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Wi-Fi密码破解</title>
+      <link href="/Wi-Fi%E6%94%BB%E5%87%BB%E5%AE%9E%E6%88%98/"/>
+      <url>/Wi-Fi%E6%94%BB%E5%87%BB%E5%AE%9E%E6%88%98/</url>
+      
+        <content type="html"><![CDATA[<p><strong>仅供学习参考</strong></p><p><del>总结</del></p><h1 id="wifi密码破解"><a href="#wifi密码破解" class="headerlink" title="wifi密码破解"></a>wifi密码破解</h1><p>将WLAN0网卡开启混杂模式</p><blockquote><p>airmon-ng start wlan0</p></blockquote><p>##提示要杀掉一些进程</p><blockquote><p>airmon-ng check kill</p></blockquote><blockquote><p>airmon-ng start wlan0</p></blockquote><h2 id="1、查看附近Wi-Fi"><a href="#1、查看附近Wi-Fi" class="headerlink" title="1、查看附近Wi-Fi"></a>1、查看附近Wi-Fi</h2><blockquote><p>airodump-ng wlan0mon</p></blockquote><h2 id="2、进行握手包监听与获取"><a href="#2、进行握手包监听与获取" class="headerlink" title="2、进行握手包监听与获取"></a>2、进行握手包监听与获取</h2><blockquote><p>airodump-ng -c 通道值 —bssid wifi的mac值 -w cap文件名 wlan0mon</p></blockquote><p>##其中wlan0mon是启动混杂模式的网卡名</p><h2 id="3、断网抓取握手包（另开一个窗口）"><a href="#3、断网抓取握手包（另开一个窗口）" class="headerlink" title="3、断网抓取握手包（另开一个窗口）"></a>3、断网抓取握手包（另开一个窗口）</h2><blockquote><p>aireplay-ng -0 20 -c 客户机mac值 -a wifi热点mac值 wlan0mon</p></blockquote><p>#-0 death模式 20为发送次数</p><h2 id="4、跑包"><a href="#4、跑包" class="headerlink" title="4、跑包"></a>4、跑包</h2><blockquote><p>aircrack-ng -w 字典 包名</p></blockquote><ul><li>关闭混杂模式</li></ul><blockquote><p>airmon-ng stop wlan0mon</p></blockquote><ul><li>启动网络</li></ul><blockquote><p>service network-manager start</p></blockquote><p>——————————分割线———————————</p><h1 id="构造同名的虚假AP"><a href="#构造同名的虚假AP" class="headerlink" title="构造同名的虚假AP"></a>构造同名的虚假AP</h1><blockquote><p>airbase-ng —essid wifi名 -c 6 -Z 4 wlan0mon</p></blockquote><ul><li><p>-c 代表channel信道</p></li><li><p>-Z代表WPA2加密</p></li><li><p>-z代表WPA1加密</p></li></ul><blockquote><p>z后面的参数1～5分别表示WEP40、TKIP、WRAP、CCMP、WEP104</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 无线学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 无线安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
