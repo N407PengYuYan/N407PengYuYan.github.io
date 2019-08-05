@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/panda32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/panda16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="ctf,">
+
+
+
+
+
+
+
+
+
+
+<meta name="keywords" content="ctf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CTF入坑">
+<meta property="og:url" content="https://7iny.jxustctf.top/CTF入坑/index.html">
+<meta property="og:site_name" content="7iny">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/20190805.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080501.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080502.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/20190080503.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080504.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080505.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080506.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080508.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080509.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080510.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080507.png">
+<meta property="og:updated_time" content="2019-08-05T12:32:29.014Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CTF入坑">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/20190805.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://7iny.jxustctf.top/CTF入坑/">
+
+
+
+<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
+<script>tpwidget("init", {
+    "flavor": "bubble",
+    "location": "WX4FBXXFKE4F",
+    "geolocation": "enabled",
+    "position": "top-left",
+    "margin": "10px 10px",
+    "language": "zh-chs",
+    "unit": "c",
+    "theme": "chameleon",
+    "uid": "U888B80105",
+    "hash": "3f2f5e4fc383bbbc8df2ab936a167264"
+});
+tpwidget("show");</script>
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "ace9b774"
+    });
+  daovoice('update');
+  </script>
+
+
+  <title>CTF入坑 | 7iny</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">7iny</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">没有比脚更长的路,没有比人更高的山</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/CTF入坑/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="7iny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pandatou.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="7iny">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CTF入坑</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-05T20:27:00+08:00">
+                2019-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/总结/" itemprop="url" rel="index">
+                    <span itemprop="name">总结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  14
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/20190805.jpg" alt=""></p>
+<a id="more"></a>
+<h1 id="CTF学习"><a href="#CTF学习" class="headerlink" title="CTF学习"></a>CTF学习</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本内容主要以解题模式为学习重点，由Stalker-16成员(Danie1,7iny)整理。</p>
+<h2 id="day01–7iny"><a href="#day01–7iny" class="headerlink" title="day01–7iny"></a>day01–7iny</h2><h3 id="解题模式CTF赛题目类别与能力对应"><a href="#解题模式CTF赛题目类别与能力对应" class="headerlink" title="解题模式CTF赛题目类别与能力对应"></a>解题模式CTF赛题目类别与能力对应</h3><p>· Web-Web应用的漏洞挖掘和利用<br>· PWN-逆向分析、漏洞挖掘、漏洞利用、安全编程<br>· Reverse Engineering-逆向分析、安全编程<br>· Crypto-密码、逆向分析、安全编程<br>· PPC（Professional Programming and Coding）-安全编程<br>· Forensic-网络流量分析、隐写分析、系统取证等<br>· Recon-社工、情报搜集分析</p>
+<h3 id="相应的赛题要求"><a href="#相应的赛题要求" class="headerlink" title="相应的赛题要求"></a>相应的赛题要求</h3><p>PWN、Reverse偏重对汇编、逆向的理解<br>Crypto偏重对数学、算法的深入学习<br>Web偏重对技巧沉淀、快速搜索能力的挑战<br>Misc则更为复杂，所有与计算机安全挑战有关的都算在其中</p>
+<h3 id="如何入门–如何学？"><a href="#如何入门–如何学？" class="headerlink" title="如何入门–如何学？"></a>如何入门–如何学？</h3><p>1、恶补基础知识（有基础的跳过此步）</p>
+<blockquote>
+<p>都需要学的内容：<br>Linux基础、计算机组成原理、操作系统原理、网络协议分析<br>PWN+Reverse+Crypto随机搭配：<br>IDA工具使用（f5插件）、逆向工程、密码学、缓冲区溢出等<br>Web+Misc组合：<br>网络安全、内网渗透、数据库安全等</p>
+</blockquote>
+<p>2、尝试从脑洞开始（hackgame）</p>
+<blockquote>
+<p>1.<a href="https://prompt.ml/0" target="_blank" rel="noopener">xss练习平台</a></p>
+<p>2.<a href="https://redtiger.labs.overthewire.org/" target="_blank" rel="noopener">sql注入挑战</a></p>
+</blockquote>
+<p>3、从基础题目出发</p>
+<blockquote>
+<p>刷题站点：</p>
+<p>1.<a href="https://www.ichunqiu.com" target="_blank" rel="noopener">i春秋</a> </p>
+<p>2.<a href="https://adworld.xctf.org.cn/" target="_blank" rel="noopener">xctf攻防世界</a></p>
+<p>3.<a href="http://www.wechall.net/challs" target="_blank" rel="noopener">国外CTF题库</a></p>
+<p>4.<a href="https://microcorruption.com/login" target="_blank" rel="noopener">国外PWN+Reverse方向</a></p>
+<p>5.<a href="https://smashthestack.org/" target="_blank" rel="noopener">ssh连接玩wargame</a></p>
+<p>6.<a href="https://overthewire.org/wargames/" target="_blank" rel="noopener">老牌wargame</a></p>
+<p>7.<a href="https://pwnable.kr/play.php" target="_blank" rel="noopener">pwn题库</a></p>
+</blockquote>
+<p>4、学习信息安全专业知识</p>
+<blockquote>
+<p>书籍</p>
+<p>PWN+Reverse+Crypto随机搭配：<br>RE for Beginners（逆向工程入门）<br>IDA Pro权威指南<br>揭秘家庭路由器0day漏洞挖掘技术<br>自己动手写操作系统<br>黑客攻防技术宝典：系统实战篇</p>
+<p>Web+Misc组合：<br>Web应用安全权威指南<br>Web前端黑客技术揭秘<br>黑客秘籍-渗透测试实用指南<br>黑客攻防技术宝典Web实战篇<br>代码审计：企业级Web代码安全架构</p>
+</blockquote>
+<p>5、锻炼体力而耐力</p>
+<h3 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h3><blockquote>
+<p>以下是由各大大佬整理的工具库，全部放在了github上</p>
+<p>1.<a href="https:/github.com/truongkma/ctf-tools" target="_blank" rel="noopener">工具库1</a> </p>
+<p>2.<a href="https://github.com/zardus/ctf-tools" target="_blank" rel="noopener">工具库2</a></p>
+<p>3.<a href="https:/github.com/TUCTF/Tools" target="_blank" rel="noopener">工具库3</a></p>
+</blockquote>
+<h3 id="MISC学习"><a href="#MISC学习" class="headerlink" title="MISC学习"></a>MISC学习</h3><p>学习MISC的好处：MISC可能是切入CTF竞赛领域、培养兴趣的最佳入口<br>1.基础知识/技能面、逆向思维<br>2.“解谜”能力、“脑洞”大开</p>
+<p>1.国外：Google Map、Earth、Street View<br>2.国内：Baidu地图、卫星视图、全景视图：map.baidu.com腾讯地图、卫星、街景：map.qq.com<br>· 从网络世界到物理世界<br>1.IP2Location IP地址（因特网上的虚拟地址）&gt;现实世界中的具体地理位置<br>2.IP2Location数据库：WHOIS数据库，GeolP，IP2Location，纯真数据库（QQIP查询使用）<br>· Google image search<br>1.搜索图片含义和外观类似图片</p>
+<p>2.Encoding Analysis 编码分析<br>· 二进制编码<br>· 十六进制编码<br>1.单字节：00-FF·ASClI字符编码<br>2.字母：A-Z：41-5A；a-Z：61-7A<br>· Base64编码<br>1.基于64个可打印字符来表示二进制数据的表示方法<br>2.字符集：大小写字母各26个，10个数字，加号“+”，斜杠“/”，一共64个字符，等号“=”用来作为后缀用途<br>· Huffman Code-无损压缩编码，01串显示<br>· 条形码：宽度不等的多个黑条和空白，按照一定的编码规则排列，用以表达一组信息的图形标识符<br>·国际标准</p>
+<ul>
+<li>EAN-13：商品条码标准，13位数字</li>
+<li>Code-39：39字符</li>
+<li>Code-128：128字符<br>·条形码</li>
+<li>在线条码生成器/识别器</li>
+<li>ZXing-多平台条形码生成、扫码库<br>条形码在线解码：<a href="https://online-barcode-reader.inliteresearch.com/" target="_blank" rel="noopener">网站</a><br>题目1：Barcode.jpeg<br>· 二维码：用某种特定几何图形按一定规律在平面（二维方向上）分布的黑白相间的图形记录数据符号信息<br>1.堆叠式/行排式二维条码：Code 16K、Code49、PDF417<br>2.矩阵式二维码：QR CODE<blockquote>
+<p>常见题目二维码、条形码的恢复<br>参考文章：<a href="https://www.freebuf.com/geek/204516.html" target="_blank" rel="noopener">freebuf</a><br>练习平台：<a href="http://daka.whaledu.com:9999/" target="_blank" rel="noopener">蓝鲸安全打卡练习场</a><br>参考writeup:<a href="https://www.jianshu.com/p/27b8be64811e" target="_blank" rel="noopener">简书</a></p>
+</blockquote>
+</li>
+</ul>
+<p>练习蓝鲸安全打卡练习场题目：<br>1.破碎的心–画图按住ctrl，按上下键不断还原<br>2.黑白打字机–画图ctrl+shift+i反色，图片隐写解密，86版五笔对照表</p>
+<blockquote>
+<p>图片隐写解密软件<a href="http://www.oyksoft.com/soft/19151.html" target="_blank" rel="noopener">下载地址</a></p>
+</blockquote>
+<p>3.Forensic Analysis 取证分析</p>
+<p>· 取证分析-取证对象<br>1.文件file<br>2.磁盘disk<br>3.网络数据包pcap<br>4.内存dump<br>5.系统镜像image<br>· 取证分析挑战目标<br>1.一般为发现在取证对象中隐藏的Flag（代表要取证的敏感信息）<br>2.取证分析通常和隐写分析联系在一起<br>· 文件格式分析常用命令和工具<br>1.基本命令file、identify、strings：用于文件类型探测<br>2.winhex、UE：用于直接察看文件16进制数据<br>3.binwalk：分析二进制文件，提取其中隐藏文件等<br>· 需要了解常见文件特征串<br>1.<a href="http://en.wikipedia.org/wiki/List" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/List</a> of file signatures<br>2.特别是JPEG、PNG、GIF、BMP等图片文件，ZIP、RAR、TAR、7z等压缩文件，mp3、wma、avi等音视频文件</p>
+<p>音频取证<br>· <a href="https://iboxgalileogiftedschoolor-my.sharepoint.com/personal/wangshusong_auooo_com/_layouts/15/guestaccess.aspx?docid=0f7d6900c9d0e49f6847482800cec4f0c&amp;authkey=AZdJzcQaggeMsOlvhXc-cZs&amp;e=zV8BNd" target="_blank" rel="noopener">Audacity</a>音频处理软件，查看声音波形</p>
+<p><a href="https://www.sqlsec.com/2018/01/ctfwav.html" target="_blank" rel="noopener">国光音频取证总结</a></p>
+<p>磁盘取证<br>· 磁盘分区格式<br>1.Windows:FAT12-&gt;FAT16-&gt;FAT32-&gt;NTFS<br>2.Linux:EXT2-&gt;EXT3-&gt;EXT4<br>3.FAT主磁盘结构</p>
+<p>| 主引导区 | 文件分配表#1 | 文件分配表#2 | 根目录 | 其他所有数据剩下磁盘空间 |</p>
+<p>删除文件<br>·目录表中文件名第一字节E5<br>·文件恢复和取证工具<br>EasyRecovery、MedAnalyze、FTK<br>网络数据包Pcap取证分析<br>· Wireshark工具<br>书籍《Wireshark抓包分析实战》<br>· 流量统计和会话列表<br>· 善用过滤规则，找出关注的网络流纪录<br>· 流重组：Follow TCP Stream<br>· 常见网络通信协议的理解<br>IP/TCP、UDP/HTTP、DNS、.….<br>·提取流中的文件数据</p>
+<p>内存与image镜像取证分析<br>· 内存取证<br>1.Volatility内存镜像分析工具<br>2.解析Windows/Linux/MacOSX内存结构<br>3.分析当前运行进程列表、进程内存数据等<br>4.根据题目提示寻找线索和思路，提取分析指定进程的特定内存数据<br>· Image镜像取证<br>1.Binwalk<br>2.根据题目提示提取镜像中需关注的文件<br>3.分析提取文件中的应用层数据</p>
+<p>4.Steganalysis 隐写分析</p>
+<p>隐写术<br>· 隐写载体<br>1.文本<br>2.图片<br>3.音频<br>4.视频<br>· 隐写方法和工具<br>1.RSD、LSB、DCT<br>2.<a href="https://en.wikipedia.org/wiki/Steganography_tools" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Steganography_tools</a></p>
+<p><a href="https://www.sqlsec.com/2018/01/ctfimg.html" target="_blank" rel="noopener">国光图片隐写总结</a></p>
+<p>· 识别隐写<br>1.统计分析<br>2.Noise floor consistency analysis 噪声一致性分析<br>· 隐写识别工具<br>1.Stegdetect<br>2.StegSecret<br>3.GFE Stealth<br>· 隐写分析<br>1.<a href="http://www.garykessler.net/library/fsc_stego.html" target="_blank" rel="noopener">http://www.garykessler.net/library/fsc_stego.html</a></p>
+<h2 id="day01–Danie1"><a href="#day01–Danie1" class="headerlink" title="day01–Danie1"></a>day01–Danie1</h2><hr>
+<p>MISC(Miscellaneous)类型，即安全杂项，题目或涉及流量分析、电子取证、人肉搜索、数据分析等等。</p>
+<p>例题<code>day01.zip</code>下载网盘<a href="https://pan.baidu.com/s/1P_dQTLxLwdA1anIGdgWqZw" target="_blank" rel="noopener">链接</a> 提取码: fjru</p>
+<h3 id="常见编码"><a href="#常见编码" class="headerlink" title="常见编码"></a>常见编码</h3><hr>
+<h4 id="摩斯密码"><a href="#摩斯密码" class="headerlink" title="摩斯密码"></a>摩斯密码</h4><ul>
+<li>例：  ..-. .-.. .- –. .—- ..— …– ….- ….. -…. </li>
+<li><a href="http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx" target="_blank" rel="noopener">http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx</a></li>
+</ul>
+<h4 id="凯撒密码"><a href="#凯撒密码" class="headerlink" title="凯撒密码"></a>凯撒密码</h4><ul>
+<li><p>它是一种替换加密的技术，<a href="https://baike.baidu.com/item/%E6%98%8E%E6%96%87" target="_blank" rel="noopener">明文</a>中的所有字母都在<a href="https://baike.baidu.com/item/%E5%AD%97%E6%AF%8D%E8%A1%A8" target="_blank" rel="noopener">字母表</a>上向后（或向前）按照一个固定数目进行偏移后被替换成<a href="https://baike.baidu.com/item/%E5%AF%86%E6%96%87" target="_blank" rel="noopener">密文</a>。</p>
+</li>
+<li><p>例： iodj{dvgi}</p>
+</li>
+<li><a href="https://www.qqxiuzi.cn/bianma/kaisamima.php" target="_blank" rel="noopener">https://www.qqxiuzi.cn/bianma/kaisamima.php</a></li>
+</ul>
+<h4 id="base编码"><a href="#base编码" class="headerlink" title="base编码"></a>base编码</h4><ul>
+<li><p>base16:</p>
+<p>Base16编码就是将ASCII字符集中可打印的字符(数字0~9和字母A~F)对应的二进制字节数据进行编码</p>
+</li>
+<li><p>编码的方式: 根据ASCII编码得到对应的二进制,将所有二进制串起来,然后按4个二进制位分割,转化成十进制数值,根据Base16编码表得到编码</p>
+</li>
+<li><p>例将”ILU”字符串加密</p>
+</li>
+<li><p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080501.png" alt=""></p>
+</li>
+<li><p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080502.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>base32:</p>
+<p>与Base16编码区别的是,Base32使用了ASCII编码中可打印的32个字符(大写字母A~Z和数字2~7)对任意字节数据进行编码.Base32将串起来的二进制数据按照5个二进制位分为一组,由于传输数据的单位是字节(即8个二进制位).所以分割之前的二进制位数是40的倍数(40是5和8的最小公倍数).如果不足40位,则在编码后数据补充”=”</p>
+</li>
+<li><p>编码方式：先根据ASCII编码得到对应字符编码值以及对应二进制,将所有二进制串起来,然后按照5个二进制位为一组分割 ,得到十进制值=&gt;找到Base32编码表找到对应的字符.案例总共分割成了5组(25位),还差三组(15位).在末尾补充3个”=”.</p>
+</li>
+<li>例将”ILU”字符串加密</li>
+<li><p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/20190080503.png" alt=""></p>
+</li>
+<li><p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080504.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>base64:</p>
+<p>Base64编码使用了ASCII编码中64个可打印的字符(大写字母A~Z,小写字母a~z,数字0~9以及”+”,”/“)将任意字节数据进行编码.Base64编码将串起来的二进制以6位进行分割.所以分切之前的二进制位数应该是24的倍数(即6,8的最小公倍数).如果不足24位,则在编码后数据后面添加”=”</p>
+</li>
+<li><p>编码方式：先根据ASCII编码得到对应字符编码值以及对应二进制，将串起来的二进制按6位分为一组.得到4组(24位).所以末尾不用补充”=”</p>
+</li>
+<li>例将”ILU”字符串加密</li>
+<li><p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080505.png" alt=""></p>
+</li>
+<li><p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080506.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>题目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MzQ0MTM1MzYzNDQ1MzQzNjM0NDYzNTMyMzMzMjM0MzQzNDQzMzQzOTM1NDEzNTM0MzQzNzM1MzQzNDQyMzQzNzM0NDMzNDQxMzQ0MzM1MzUzNTMzMzUzNzM1MzMzNTM1MzQ0MTM0MzIzNDM4MzQzNTM0MzUzNDQ1MzUzMzM1MzIzNDM4MzUzNTMzMzYzNTM0MzMzMjM1MzAzNDM5MzM0NA==</span><br><span class="line"></span><br><span class="line">flag格式：flag&#123;xxxx&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># -*-coding:utf-8-*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> base64</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bs</span><span class="params">(s)</span>:</span></span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>):</span><br><span class="line">        ok = <span class="number">0</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            s1 = base64.b64decode(s).decode(<span class="string">'ascii'</span>)</span><br><span class="line">            ok = <span class="number">1</span></span><br><span class="line">            s=s1</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            s2 = base64.b32decode(s).decode(<span class="string">'ascii'</span>)</span><br><span class="line">            ok = <span class="number">1</span></span><br><span class="line">            s=s2</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            s3 = base64.b16decode(s).decode(<span class="string">'ascii'</span>)</span><br><span class="line">            ok = <span class="number">1</span></span><br><span class="line">            s=s3</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> ok == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">return</span>  s</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    s = raw_input(<span class="string">"请输入字符串:"</span>)</span><br><span class="line">    res = bs(s)</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'---------------------------'</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'result:'</span>+ res</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="ascii编码"><a href="#ascii编码" class="headerlink" title="ascii编码"></a>ascii编码</h3><ul>
+<li><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080508.png" alt=""></li>
+</ul>
+<h3 id="unicode编码"><a href="#unicode编码" class="headerlink" title="unicode编码"></a>unicode编码</h3><p>  例：<code>&amp;#102;&amp;#108;&amp;#97;&amp;#103;</code></p>
+<ul>
+<li><a href="http://tool.chinaz.com/tools/unicode.aspx" target="_blank" rel="noopener">http://tool.chinaz.com/tools/unicode.aspx</a></li>
+</ul>
+<h4 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h4><ul>
+<li><p>MD5即Message-Digest Algorithm 5（信息-摘要算法5），用于确保信息传输完整一致。是计算机广泛使用的杂凑算法之一</p>
+</li>
+<li><p>加密</p>
+<p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080509.png" alt=""></p>
+</li>
+<li><p>解密：<a href="https://www.cmd5.com/" target="_blank" rel="noopener">https://www.cmd5.com/</a></p>
+<p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080510.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>题目1</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">md5(?)[:6] == &apos;233333&apos;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*-coding:utf-8-*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">100000000</span>):</span><br><span class="line">	m = hashlib.md5()</span><br><span class="line">	m.update(str(i).encode(<span class="string">'utf-8'</span>))</span><br><span class="line">	res = m.hexdigest()</span><br><span class="line">	<span class="keyword">if</span> res[:<span class="number">6</span>] == <span class="string">'233333'</span>:</span><br><span class="line">		<span class="keyword">print</span> i</span><br><span class="line">		<span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>题目2</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">已知一段由5个大写字母组成的明文字符串，经过md5加密后的密文前6位为73acd9,求加密前的明文</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># -*-coding:utf-8-*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line">letter = <span class="string">'ABCDEFGHIJKLMNOPQRSTUVWXYZ'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> letter:</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> letter:</span><br><span class="line">        <span class="keyword">for</span> k <span class="keyword">in</span> letter:</span><br><span class="line">            <span class="keyword">for</span> l <span class="keyword">in</span> letter:</span><br><span class="line">                <span class="keyword">for</span> n <span class="keyword">in</span> letter:</span><br><span class="line">                    cipher = i+j+k+l+n</span><br><span class="line">                    m = hashlib.md5()</span><br><span class="line">                    m.update(cipher)</span><br><span class="line">                    res = m.hexdigest()</span><br><span class="line">                    <span class="keyword">if</span> res[:<span class="number">6</span>] == <span class="string">'73acd9'</span>:</span><br><span class="line">                        <span class="keyword">print</span> res</span><br><span class="line">                        <span class="keyword">print</span> cipher</span><br><span class="line">                        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="异或"><a href="#异或" class="headerlink" title="异或"></a>异或</h4><ul>
+<li><p>相同为0，不同为1</p>
+</li>
+<li><p>题目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">密文 : FR8SFAgwJzUWASwLHAEsAA4=</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!usr/bin/python  </span></span><br><span class="line"><span class="comment">#-*- coding:utf-8 -*-  </span></span><br><span class="line"><span class="keyword">import</span> base64</span><br><span class="line"></span><br><span class="line">ming = <span class="string">'FR8SFAgwJzUWASwLHAEsAA4='</span></span><br><span class="line">mi=base64.b64decode(ming)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">127</span>):</span><br><span class="line"></span><br><span class="line">	flag=<span class="string">''</span>  </span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(len(mi)):</span><br><span class="line">		t=ord(mi[i])^j</span><br><span class="line">		flag+=chr(t)</span><br><span class="line">	<span class="keyword">if</span> <span class="string">'flag'</span> <span class="keyword">in</span> flag :</span><br><span class="line">		<span class="keyword">print</span> flag</span><br><span class="line">		<span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="图片隐写"><a href="#图片隐写" class="headerlink" title="图片隐写"></a>图片隐写</h3><hr>
+<p>图片隐写主要考察信息在图片中隐写的几种方法，文件头信息修改，stegsolve工具使用，LSB算法，binwalk工具使用等知识。</p>
+<h4 id="常用工具介绍（常用工具下载地址：https-www-ctftools-com-down-）"><a href="#常用工具介绍（常用工具下载地址：https-www-ctftools-com-down-）" class="headerlink" title="常用工具介绍（常用工具下载地址：https://www.ctftools.com/down/）"></a>常用工具介绍（常用工具下载地址：<a href="https://www.ctftools.com/down/）" target="_blank" rel="noopener">https://www.ctftools.com/down/）</a></h4><ul>
+<li><p>binwalk：是一个固件分析工具，多用于逆向工程、取证、隐写分析</p>
+</li>
+<li><p>winhex：是在Windows下执行的十六进制编辑软件，此软件功能强大，有完好的分区管理功能和文件管理功能，在CTF中一般用来查看文件头格式、修改16进制数据等。</p>
+</li>
+<li><p>Stegsolve：是一款图片分析工具，功能十分强大</p>
+</li>
+<li><p>Stegdetect：是一种数字图像隐写分析工具，主要实现JPEG图像的隐秘信息的嵌入的检测</p>
+</li>
+<li><p>foremost：和binwalk结合使用，提取隐藏信息。</p>
+</li>
+<li><p>MP3stego：音频隐写工具 （链接：<a href="https://pan.baidu.com/s/1fSSX-e-Q95GY0bftght3Pg" target="_blank" rel="noopener">https://pan.baidu.com/s/1fSSX-e-Q95GY0bftght3Pg</a><br>提取码：0r3r ）<br>复制这段内容后打开百度网盘手机App，操作更方便哦</p>
+<ul>
+<li><p>用法：隐藏信息  encode -E hidden_text.txt -P pass svega.wav stego.mp3</p>
+<p>提取信息 decode -X -P pass svega_stego.mp3</p>
+</li>
+</ul>
+</li>
+<li><p><a href="https://blog.csdn.net/xiangshangbashaonian/article/details/80156865" target="_blank" rel="noopener">常见文件文件头格式</a></p>
+</li>
+<li><p>题目</p>
+<ol>
+<li><p>查看属性 meinv.jpg  （易）</p>
+</li>
+<li><p>查看图片内容   hacker.jpg   （易）</p>
+</li>
+<li><p>binwalk + mp3stego   3.jpg  （中）</p>
+</li>
+<li><p>binwalk + 伪加密 carefully.jpg （中）  （ps：伪加密是在未加密的zip文件基础上修改了它的压缩源文件目录区里的全局方式位标记的比特值，使得压缩软件打开它的时候识别为加密文件，提示输入密码， 而在这个时候，不管你用什么软件对其进行密码破解，都无法打开它） </p>
+<p>伪加密（<a href="https://blog.csdn.net/qq_26187985/article/details/83654197）" target="_blank" rel="noopener">https://blog.csdn.net/qq_26187985/article/details/83654197）</a></p>
+<p>将如图位置的09改为00即可，或者使用工具ZipCenOp.jar (用法 java -jar ZipCenOp.jar r xxx.zip)</p>
+<p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080507.png" alt=""></p>
+</li>
+<li><p>gif帧   flag.png.gif    (易)</p>
+</li>
+<li><p>压缩包爆破   love.zip   （中）</p>
+</li>
+<li><p>LSB隐写 tanwanlanyue   （中）</p>
+</li>
+<li><p>其他  f1ag.png   (中)</p>
+</li>
+<li><p>png改高度    dabai.png   (中) </p>
+<p>ps:png文件格式简介：</p>
+<p>89 50 4E 47 是文件的格式</p>
+<p>00 00 00 0D说明IHDR头块长为13</p>
+<p>49 48 44 52 IHDR标识</p>
+<p>00 00 01 F4  图像的宽</p>
+<p>00 00 01 A4 图像的高</p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="lsb隐写"><a href="#lsb隐写" class="headerlink" title="lsb隐写"></a>lsb隐写</h3><hr>
+<p>首先来讲png图片，png图片是一种无损压缩的位图片形格式，也只有在无损压缩或者无压缩的图片（BMP）上实现lsb隐写。如果图像是jpg图片的话，就没法使用lsb隐写了，原因是jpg图片对像数进行了有损压缩，我们修改的信息就可能会在压缩的过程中被破坏。而png图片虽然也有压缩，但却是无损压缩，这样我们修改的信息也就能得到正确的表达，不至于丢失。BMP的图片也是一样的，是没有经过压缩的。BMP图片一般是特别的大的，因为BMP把所有的像数都按原样储存，没有进行压缩。<br>png图片中的图像像数一般是由RGB三原色（红绿蓝）组成，每一种颜色占用8位，取值范围为0x00~0xFF，即有256种颜色，一共包含了256的3次方的颜色，即16777216种颜色。而人类的眼睛可以区分约1000万种不同的颜色，这就意味着人类的眼睛无法区分余下的颜色大约有6777216种。<br>    LSB隐写就是修改RGB颜色分量的最低二进制位也就是最低有效位（LSB），而人类的眼睛不会注意到这前后的变化，每个像数可以携带3比特的信息。</p>
+
+      
+    </div>
+    
+    
+    
+    <div>
+
+    <div>
+      
+         <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div> 
+      
+</div>
+
+
+
+    </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ctf/" rel="tag"><i class="fa fa-tag"></i> ctf</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/一九年六月/" rel="next" title="一九年六月总结">
+                <i class="fa fa-chevron-left"></i> 一九年六月总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/pandatou.jpeg" alt="7iny">
+            
+              <p class="site-author-name" itemprop="name">7iny</p>
+              <p class="site-description motion-element" itemprop="description">信安在读,摄影小白</p>
+          </div>
+          
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+        
+          </nav>
+          
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank">Danie1</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://orangice.gitee.io" title="orangice" target="_blank">orangice</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank">k神</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank">yiyangqianxi</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank">Azure_atk</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://doubj.github.io" title="doubj" target="_blank">doubj</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CTF学习"><span class="nav-number">1.</span> <span class="nav-text">CTF学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#day01–7iny"><span class="nav-number">1.2.</span> <span class="nav-text">day01–7iny</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解题模式CTF赛题目类别与能力对应"><span class="nav-number">1.2.1.</span> <span class="nav-text">解题模式CTF赛题目类别与能力对应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相应的赛题要求"><span class="nav-number">1.2.2.</span> <span class="nav-text">相应的赛题要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何入门–如何学？"><span class="nav-number">1.2.3.</span> <span class="nav-text">如何入门–如何学？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工具下载"><span class="nav-number">1.2.4.</span> <span class="nav-text">工具下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MISC学习"><span class="nav-number">1.2.5.</span> <span class="nav-text">MISC学习</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#day01–Danie1"><span class="nav-number">1.3.</span> <span class="nav-text">day01–Danie1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常见编码"><span class="nav-number">1.3.1.</span> <span class="nav-text">常见编码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#摩斯密码"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">摩斯密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#凯撒密码"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">凯撒密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#base编码"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">base编码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ascii编码"><span class="nav-number">1.3.2.</span> <span class="nav-text">ascii编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#unicode编码"><span class="nav-number">1.3.3.</span> <span class="nav-text">unicode编码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#MD5"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">MD5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异或"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">异或</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片隐写"><span class="nav-number">1.3.4.</span> <span class="nav-text">图片隐写</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用工具介绍（常用工具下载地址：https-www-ctftools-com-down-）"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">常用工具介绍（常用工具下载地址：https://www.ctftools.com/down/）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lsb隐写"><span class="nav-number">1.3.5.</span> <span class="nav-text">lsb隐写</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">7iny</span>
+<!--注释Site words total count
+   
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">13.4k</span>
+  
+-->
+</div>
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/src/clipboard.js"></script>  
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+
+<!--音乐播放器-->
+<link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":75,"height":150},"mobile":{"show":false},"log":false,"tagMode":false});</script></body>
+</html>
+<!--富强民主点击特效-->
+<script type="text/javascript"> 
+/* 鼠标特效 */ 
+var a_idx = 0; 
+var b_idx = 0; 
+/*   文字和颜色数组 */
+var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善"); 
+var b = new Array("#FF0000","#FF7F00"," #FFFF00","#00FF00","#00FFFF","#0000FF","#8B00FF","#FF0000","#FF7F00"," #FFFF00","#00FF00","#00FFFF","#0000FF","#8B00FF");
+jQuery(document).ready(function($) { 
+    $("body").click(function(e) { 
+       
+        var $i = $("<span/>").text(a[a_idx]); 
+          a_idx=parseInt(12*Math.random()); //文字随机数
+          b_idx=parseInt(14*Math.random()); //颜色随机数
+        var x = e.pageX, 
+        y = e.pageY; 
+        $i.css({ 
+            "z-index": 999, 
+            "font-size":"1.3em",            //字体大小
+            "top": y - 20, 
+            "left": x, 
+            "position": "absolute", 
+            "font-weight": "bold", 
+            "color": b[b_idx] 
+        }); 
+        $("body").append($i); 
+        $i.animate({ 
+            "top": y - 180, 
+            "opacity": 0 
+        }, 
+        1500, 
+        function() { 
+            $i.remove(); 
+        }); 
+    }); 
+}); 
+</script>
+<!--富强民主点击特效-->
+
