@@ -10,6 +10,6 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 
-Sitemap: https://n407pengyuyan.github.io/search.xml
-Sitemap: https://n407pengyuyan.github.io/sitemap.xml
-Sitemap: https://n407pengyuyan.github.io/baidusitemap.xml
+Sitemap: https://7iny.jxustctf.top/search.xml
+Sitemap: https://7iny.jxustctf.top/sitemap.xml
+Sitemap: https://7iny.jxustctf.top/baidusitemap.xml
