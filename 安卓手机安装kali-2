@@ -490,7 +490,7 @@ tpwidget("show");</script>
 
       
         <h1 id="使用VNC"><a href="#使用VNC" class="headerlink" title="使用VNC"></a><strong><em>使用VNC</em></strong></h1><p>前面已经安装好了kali，接下来是看看图形化界面了。</p>
-<h1 id="安卓手机"><a href="#安卓手机" class="headerlink" title="安卓手机"></a>安卓手机</h1><p>由于我的安卓版本比较低，使用不了网上博文中提供VNC viewer,安卓4.4+使用的<a href="https://www.realvnc.com/en/connect/download/viewer/android/" target="_blank" rel="noopener">VNC viewer</a>,该地址还提供其他系统的版本<br>我的垃圾手机是没有这个福利了，只好找其他替代软件了，经过几番查找找到了一个<a href="https://android-vnc-viewer.en.softonic.com/android/download" target="_blank" rel="noopener">140多k的软件</a></p>
+<h1 id="安卓手机"><a href="#安卓手机" class="headerlink" title="安卓手机"></a>安卓手机</h1><p>由于我的安卓版本比较低，使用不了网上博文中提供VNC viewer,安卓4.4+使用的<a href="https://www.realvnc.com/en/connect/download/viewer/android/" rel="external nofollow" target="_blank">VNC viewer</a>,该地址还提供其他系统的版本<br>我的垃圾手机是没有这个福利了，只好找其他替代软件了，经过几番查找找到了一个<a href="https://android-vnc-viewer.en.softonic.com/android/download" rel="external nofollow" target="_blank">140多k的软件</a></p>
 <h1 id="kali电脑"><a href="#kali电脑" class="headerlink" title="kali电脑"></a>kali电脑</h1><p>下载VNC viewer</p>
 <blockquote>
 <p>apt-get install tigervnc-viewer </p>
@@ -512,7 +512,7 @@ tpwidget("show");</script>
 </blockquote>
 <p>返回结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">New &apos;X&apos; desktop is localhost:1</span><br><span class="line">Starting applications specified in /home/android/.vnc/xstartup</span><br><span class="line">Log file is /home/android/.vnc/localhost:1.log</span><br></pre></td></tr></table></figure></p>
 <p>证明vncserver已启动成功<br>因为刚刚终端返回的信息:<strong><em>New ‘X’ desktop is localhost:1</em></strong>指定了此次桌面会话号为<strong>1</strong>，所以端口就为<strong>5900+1=5901</strong>。如果我们开启了多个虚拟桌面，它们的会话号为2,3,4…，那么各自的端口即为5902,5903,5904…依次类推。</p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>停止Linux系统再启动Linux系统后，再次执行vncserver命令会出现报错<br><a href="https://imgchr.com/i/kB3jHJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/02/14/kB3jHJ.png" alt="kB3jHJ.png"></a><br>解决办法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm -rf /tmp/.X[1-9]-lock</span><br><span class="line">rm -rf /tmp/.X11-unix/X[1-9]</span><br></pre></td></tr></table></figure></p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>停止Linux系统再启动Linux系统后，再次执行vncserver命令会出现报错<br><a href="https://imgchr.com/i/kB3jHJ" rel="external nofollow" target="_blank"><img src="https://s2.ax1x.com/2019/02/14/kB3jHJ.png" alt="kB3jHJ.png"></a><br>解决办法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm -rf /tmp/.X[1-9]-lock</span><br><span class="line">rm -rf /tmp/.X11-unix/X[1-9]</span><br></pre></td></tr></table></figure></p>
 <h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><p>vncserver默认的分辨率是1024×768<br>手机屏幕的分辨率都是720P(1280×720)，1080P(1920×1080)，甚至2K(2560×1440)<br>启动vncserver时，执行：</p>
 <blockquote>
 <p> vncserver -geometry 1280x720</p>
@@ -524,7 +524,7 @@ tpwidget("show");</script>
 <blockquote>
 <p>vim ~/.bashrc #编辑~/.bashrc<br>alias vncserver=’vncserver -geometry 1280x720’ </p>
 </blockquote>
-<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://mlapp.cn/337.html" target="_blank" rel="noopener">美丽应用</a><br><a href="www.360doc.com/content/18/1123/02/40461272_796637204.shtml">安装vncserver</a></p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://mlapp.cn/337.html" rel="external nofollow" target="_blank">美丽应用</a><br><a href="www.360doc.com/content/18/1123/02/40461272_796637204.shtml">安装vncserver</a></p>
 
       
     </div>
@@ -703,27 +703,27 @@ tpwidget("show");</script>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank">Danie1</a>
+                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank" rel="external nofollow">Danie1</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://orangice.gitee.io" title="orangice" target="_blank">orangice</a>
+                    <a href="https://orangice.gitee.io" title="orangice" target="_blank" rel="external nofollow">orangice</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank">k神</a>
+                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank" rel="external nofollow">k神</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank">yiyangqianxi</a>
+                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank" rel="external nofollow">yiyangqianxi</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank">Azure_atk</a>
+                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank" rel="external nofollow">Azure_atk</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://doubj.github.io" title="doubj" target="_blank">doubj</a>
+                    <a href="https://doubj.github.io" title="doubj" target="_blank" rel="external nofollow">doubj</a>
                   </li>
                 
               </ul>

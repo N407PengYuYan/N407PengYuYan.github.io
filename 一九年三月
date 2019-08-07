@@ -494,16 +494,16 @@ tpwidget("show");</script>
 <p>intext：请于用于非法用途，后果作者概不负责！</p>
 </blockquote>
 <p>2.学习文章，多见识已有思想。</p>
-<p>secwiki:<a href="https://www.sec-wiki.com" target="_blank" rel="noopener">SecWiki官网</a></p>
-<p>先知社区:<a href="https://xz.aliyun.com/" target="_blank" rel="noopener">链接</a></p>
+<p>secwiki:<a href="https://www.sec-wiki.com" rel="external nofollow" target="_blank">SecWiki官网</a></p>
+<p>先知社区:<a href="https://xz.aliyun.com/" rel="external nofollow" target="_blank">链接</a></p>
 <p>3.常用弱口令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">administrator:password</span><br><span class="line">admin:12345</span><br><span class="line">root:secret</span><br><span class="line">guest:guest</span><br><span class="line">root:toor</span><br></pre></td></tr></table></figure>
-<h2 id="常看文章"><a href="#常看文章" class="headerlink" title="常看文章"></a>常看文章</h2><p>25端口渗透：<a href="https://www.sqlsec.com/2017/08/smtp.html" target="_blank" rel="noopener">国光</a>可伪造邮件进行钓鱼等</p>
-<p>iis短文件名泄露:<a href="https://github.com/lijiejie/IIS_shortname_Scanner" target="_blank" rel="noopener">github的代码</a>感觉危害不大，没利用过</p>
-<p>thinkphp 5.0漏洞:<a href="https://www.jianshu.com/p/46ceb2c338bc?appinstall=0&amp;from=groupmessage" target="_blank" rel="noopener">命令执行漏洞</a>好好利用可getshell</p>
-<h2 id="推荐阅读博客"><a href="#推荐阅读博客" class="headerlink" title="推荐阅读博客"></a>推荐阅读博客</h2><p><a href="https://www.cnblogs.com/someone9/" target="_blank" rel="noopener">hof的博客</a></p>
-<p><a href="https://lfforu.com" target="_blank" rel="noopener">Allesa学姐的博客</a></p>
-<p><a href="https://www.cnblogs.com/yakoazz" target="_blank" rel="noopener">老潘的博客</a></p>
+<h2 id="常看文章"><a href="#常看文章" class="headerlink" title="常看文章"></a>常看文章</h2><p>25端口渗透：<a href="https://www.sqlsec.com/2017/08/smtp.html" rel="external nofollow" target="_blank">国光</a>可伪造邮件进行钓鱼等</p>
+<p>iis短文件名泄露:<a href="https://github.com/lijiejie/IIS_shortname_Scanner" rel="external nofollow" target="_blank">github的代码</a>感觉危害不大，没利用过</p>
+<p>thinkphp 5.0漏洞:<a href="https://www.jianshu.com/p/46ceb2c338bc?appinstall=0&amp;from=groupmessage" rel="external nofollow" target="_blank">命令执行漏洞</a>好好利用可getshell</p>
+<h2 id="推荐阅读博客"><a href="#推荐阅读博客" class="headerlink" title="推荐阅读博客"></a>推荐阅读博客</h2><p><a href="https://www.cnblogs.com/someone9/" rel="external nofollow" target="_blank">hof的博客</a></p>
+<p><a href="https://lfforu.com" rel="external nofollow" target="_blank">Allesa学姐的博客</a></p>
+<p><a href="https://www.cnblogs.com/yakoazz" rel="external nofollow" target="_blank">老潘的博客</a></p>
 
       
     </div>
@@ -682,27 +682,27 @@ tpwidget("show");</script>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank">Danie1</a>
+                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank" rel="external nofollow">Danie1</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://orangice.gitee.io" title="orangice" target="_blank">orangice</a>
+                    <a href="https://orangice.gitee.io" title="orangice" target="_blank" rel="external nofollow">orangice</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank">k神</a>
+                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank" rel="external nofollow">k神</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank">yiyangqianxi</a>
+                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank" rel="external nofollow">yiyangqianxi</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank">Azure_atk</a>
+                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank" rel="external nofollow">Azure_atk</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://doubj.github.io" title="doubj" target="_blank">doubj</a>
+                    <a href="https://doubj.github.io" title="doubj" target="_blank" rel="external nofollow">doubj</a>
                   </li>
                 
               </ul>

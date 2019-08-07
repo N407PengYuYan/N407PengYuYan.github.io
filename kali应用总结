@@ -497,7 +497,7 @@ tpwidget("show");</script>
 <p>apt-get install python-xlib</p>
 </blockquote>
 <h3 id="下载安装截图软件包"><a href="#下载安装截图软件包" class="headerlink" title="下载安装截图软件包"></a>下载安装截图软件包</h3><blockquote>
-<p>wget <a href="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb</a></p>
+<p>wget <a href="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb" rel="external nofollow" target="_blank">http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb</a></p>
 </blockquote>
 <h3 id="安装软件包"><a href="#安装软件包" class="headerlink" title="安装软件包"></a>安装软件包</h3><blockquote>
 <p>dpkg -i deepin-scrot*</p>
@@ -512,7 +512,7 @@ tpwidget("show");</script>
 </blockquote>
 <p>如果顺利的话 此时应该执行deepin-scrot就可截图了</p>
 <h3 id="设置快捷键"><a href="#设置快捷键" class="headerlink" title="设置快捷键"></a>设置快捷键</h3><p>在设置页面自定义快捷件，由于用QQ截图习惯了，我设置的Ctrl+Alt+A</p>
-<p><a href="https://imgchr.com/i/k1YJIJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/01/31/k1YJIJ.md.png" alt="k1YJIJ.md.png"></a></p>
+<p><a href="https://imgchr.com/i/k1YJIJ" rel="external nofollow" target="_blank"><img src="https://s2.ax1x.com/2019/01/31/k1YJIJ.md.png" alt="k1YJIJ.md.png"></a></p>
 
       
     </div>
@@ -691,27 +691,27 @@ tpwidget("show");</script>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank">Danie1</a>
+                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank" rel="external nofollow">Danie1</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://orangice.gitee.io" title="orangice" target="_blank">orangice</a>
+                    <a href="https://orangice.gitee.io" title="orangice" target="_blank" rel="external nofollow">orangice</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank">k神</a>
+                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank" rel="external nofollow">k神</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank">yiyangqianxi</a>
+                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank" rel="external nofollow">yiyangqianxi</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank">Azure_atk</a>
+                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank" rel="external nofollow">Azure_atk</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://doubj.github.io" title="doubj" target="_blank">doubj</a>
+                    <a href="https://doubj.github.io" title="doubj" target="_blank" rel="external nofollow">doubj</a>
                   </li>
                 
               </ul>

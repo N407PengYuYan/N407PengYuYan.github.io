@@ -506,7 +506,7 @@ tpwidget("show");</script>
 <p>2.在最下方，默认是sock4 xxxx xxx改为sock5 127.0.0.1 xxxx （xxxx是自己刚才设定的端口号，也就是上边配置ss时输入的local_port:xxxx）</p>
 <p>根据上面的设置此处就应该该为sock5 127.0.0.1:1080</p>
 <h4 id="测试代理是否正常"><a href="#测试代理是否正常" class="headerlink" title="测试代理是否正常"></a>测试代理是否正常</h4><blockquote>
-<p>proxyresolv <a href="http://www.target.com" target="_blank" rel="noopener">www.target.com</a></p>
+<p>proxyresolv <a href="http://www.target.com" rel="external nofollow" target="_blank">www.target.com</a></p>
 </blockquote>
 <p>如果出现命令未找到，终端执行</p>
 <blockquote>
@@ -707,27 +707,27 @@ tpwidget("show");</script>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank">Danie1</a>
+                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank" rel="external nofollow">Danie1</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://orangice.gitee.io" title="orangice" target="_blank">orangice</a>
+                    <a href="https://orangice.gitee.io" title="orangice" target="_blank" rel="external nofollow">orangice</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank">k神</a>
+                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank" rel="external nofollow">k神</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank">yiyangqianxi</a>
+                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank" rel="external nofollow">yiyangqianxi</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank">Azure_atk</a>
+                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank" rel="external nofollow">Azure_atk</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://doubj.github.io" title="doubj" target="_blank">doubj</a>
+                    <a href="https://doubj.github.io" title="doubj" target="_blank" rel="external nofollow">doubj</a>
                   </li>
                 
               </ul>

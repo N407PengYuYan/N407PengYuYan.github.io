@@ -494,9 +494,9 @@ tpwidget("show");</script>
 <p>将手机ROOT，ROOT工具一键ROOT <a href="root.360.cn/#firstPage">ROOT工具下载</a></p>
 </blockquote>
 <p>一台电脑</p>
-<h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><p>Linux系统支撑软件:<a href="https://github.com/meefik/linuxdeploy/releases" target="_blank" rel="noopener">Linux deploy</a></p>
-<p>Linux deploy支撑软件:<a href="https://github.com/meefik/busybox/releases" target="_blank" rel="noopener">Busy Box</a></p>
-<p>手机端SSH连接软件:<a href="https://github.com/connectbot/connectbot/releases" target="_blank" rel="noopener">ConnectBox</a></p>
+<h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><p>Linux系统支撑软件:<a href="https://github.com/meefik/linuxdeploy/releases" rel="external nofollow" target="_blank">Linux deploy</a></p>
+<p>Linux deploy支撑软件:<a href="https://github.com/meefik/busybox/releases" rel="external nofollow" target="_blank">Busy Box</a></p>
+<p>手机端SSH连接软件:<a href="https://github.com/connectbot/connectbot/releases" rel="external nofollow" target="_blank">ConnectBox</a></p>
 <blockquote>
 <p>我参考了一篇17年的安卓4.1文章，为保险起见我安装的是17年的Linux deploy</p>
 </blockquote>
@@ -539,7 +539,7 @@ tpwidget("show");</script>
 </ul>
 <h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p><strong><em>ss连接上后</em></strong><img src="https://s2.ax1x.com/2019/02/13/k0hRl6.png" alt="k0hRl6.png"></p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>整个安装过程不太顺利，需要多次调试。强烈推荐中科大的源安装速度快好用得很</p>
-<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://blog.csdn.net/weixin_38235758/article/details/79219050" target="_blank" rel="noopener">首先参考文章</a><br><a href="https://www.linuxidc.com/Linux/2017-05/144274.htm" target="_blank" rel="noopener">图形化界面操作文章</a><br><a href="mirrors.ustc.edu.cn">中科大源</a></p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://blog.csdn.net/weixin_38235758/article/details/79219050" rel="external nofollow" target="_blank">首先参考文章</a><br><a href="https://www.linuxidc.com/Linux/2017-05/144274.htm" rel="external nofollow" target="_blank">图形化界面操作文章</a><br><a href="mirrors.ustc.edu.cn">中科大源</a></p>
 
       
     </div>
@@ -718,27 +718,27 @@ tpwidget("show");</script>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank">Danie1</a>
+                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank" rel="external nofollow">Danie1</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://orangice.gitee.io" title="orangice" target="_blank">orangice</a>
+                    <a href="https://orangice.gitee.io" title="orangice" target="_blank" rel="external nofollow">orangice</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank">k神</a>
+                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank" rel="external nofollow">k神</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank">yiyangqianxi</a>
+                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank" rel="external nofollow">yiyangqianxi</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank">Azure_atk</a>
+                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank" rel="external nofollow">Azure_atk</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://doubj.github.io" title="doubj" target="_blank">doubj</a>
+                    <a href="https://doubj.github.io" title="doubj" target="_blank" rel="external nofollow">doubj</a>
                   </li>
                 
               </ul>

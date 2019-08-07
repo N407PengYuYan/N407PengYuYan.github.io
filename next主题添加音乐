@@ -488,9 +488,9 @@ tpwidget("show");</script>
 
       
         <h1 id="添加APlayer播放器"><a href="#添加APlayer播放器" class="headerlink" title="添加APlayer播放器"></a>添加APlayer播放器</h1><h2 id="原由"><a href="#原由" class="headerlink" title="原由"></a>原由</h2><p>之前把播放器嵌在站点概览里，在手机端显示不了导致不能停止音乐</p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener">项目地址</a>下载解压后将<strong><em>dist</em></strong>文件夹复制到themes\next\source文件夹下</p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://github.com/MoePlayer/APlayer" rel="external nofollow" target="_blank">项目地址</a>下载解压后将<strong><em>dist</em></strong>文件夹复制到themes\next\source文件夹下</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在<code>themes\next\source\dist</code>文件夹下创建music.js文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">const ap = new APlayer(&#123;</span><br><span class="line">    container: document.getElementById(&apos;aplayer&apos;),</span><br><span class="line">    fixed: true,   //吸底模式</span><br><span class="line">    autoplay: true, //自动播放</span><br><span class="line">    theme: &apos;#FADFA3&apos;, //主题色</span><br><span class="line">    loop: &apos;all&apos;, //音频循环播放, 可选值: &apos;all&apos;全部循环, &apos;one&apos;单曲循环, &apos;none&apos;不循环</span><br><span class="line">    order: &apos;random&apos;, //音频循环顺序, 可选值: &apos;list&apos;列表循环, &apos;random&apos;随机循环</span><br><span class="line">    preload: &apos;auto&apos;, //预加载，可选值: &apos;none&apos;, &apos;metadata&apos;, &apos;auto&apos;</span><br><span class="line">    volume: 0.7, //默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</span><br><span class="line">    mutex: true, //互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</span><br><span class="line">    listFolded: false, //列表默认折叠</span><br><span class="line">    listMaxHeight: 90, //列表最大高度</span><br><span class="line">    lrcType: 0, //歌词传递方式</span><br><span class="line">    audio: [</span><br><span class="line">	&#123;</span><br><span class="line">        name: &quot;思念是一种病&quot;,</span><br><span class="line">        artist: &apos;张震岳 / 蔡健雅&apos;,</span><br><span class="line">        url: &apos;http://www.ytmp3.cn/down/50020.mp3&apos;,</span><br><span class="line">        cover: &apos;http://p2.music.126.net/N61oLy0iLfEkZTHD2j87iA==/18693896697392706.jpg?param=130y130&apos;,</span><br><span class="line">      &#125;,</span><br><span class="line">	  &#123;</span><br><span class="line">        name: &quot;这就是爱情&quot;,</span><br><span class="line">        artist: &apos;李代沫&apos;,</span><br><span class="line">        url: &apos;http://www.ytmp3.cn/down/54477.mp3&apos;,</span><br><span class="line">        cover: &apos;http://p1.music.126.net/RQBF9kqZb7PtLCaOxi9ngQ==/109951163053984533.jpg?param=130y130&apos;,</span><br><span class="line">      &#125;,</span><br><span class="line">    ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<p>源码中的参数可以参考<a href="https://aplayer.js.org/#/zh-Hans/" target="_blank" rel="noopener">官方文档</a></p>
+<p>源码中的参数可以参考<a href="https://aplayer.js.org/#/zh-Hans/" rel="external nofollow" target="_blank">官方文档</a></p>
 <ul>
 <li>audio对应的便是音频文件，在里面添加音乐</li>
 </ul>
@@ -677,27 +677,27 @@ tpwidget("show");</script>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank">Danie1</a>
+                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank" rel="external nofollow">Danie1</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://orangice.gitee.io" title="orangice" target="_blank">orangice</a>
+                    <a href="https://orangice.gitee.io" title="orangice" target="_blank" rel="external nofollow">orangice</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank">k神</a>
+                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank" rel="external nofollow">k神</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank">yiyangqianxi</a>
+                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank" rel="external nofollow">yiyangqianxi</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank">Azure_atk</a>
+                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank" rel="external nofollow">Azure_atk</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://doubj.github.io" title="doubj" target="_blank">doubj</a>
+                    <a href="https://doubj.github.io" title="doubj" target="_blank" rel="external nofollow">doubj</a>
                   </li>
                 
               </ul>

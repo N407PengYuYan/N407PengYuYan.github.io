@@ -491,19 +491,19 @@ tpwidget("show");</script>
       
         <h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p>之前的博客是在<code>kali</code>上搭建的,开学了旧电脑懒得带自能搬家博客了。</p>
 <p>系统：<code>win10</code></p>
-<p>博客安装环境：<code>nodejs、hexo</code> 之前参看本专业大神的博客试着搭建过，后来没成功，但是环境没卸载。当时的<a href="https://orangice.gitee.io/2017/03/18/hexo00/" target="_blank" rel="noopener">参考文章</a></p>
+<p>博客安装环境：<code>nodejs、hexo</code> 之前参看本专业大神的博客试着搭建过，后来没成功，但是环境没卸载。当时的<a href="https://orangice.gitee.io/2017/03/18/hexo00/" rel="external nofollow" target="_blank">参考文章</a></p>
 <h1 id="搬迁"><a href="#搬迁" class="headerlink" title="搬迁"></a>搬迁</h1><p>网上有通过github的方式进行搬迁，我嫌太麻烦了，就直接从kali上把博客的文件夹拷贝了。<br>1.<code>d盘</code>创建myBlog文件夹<br>2.将文件解压到文件夹下</p>
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>暂时就gulp不能正常使用<br>解决办法：<code>npm install -g gulp</code></p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>先凑合着用，以后发现有什么需要改进的地方再解决</p>
 <hr>
 <p>更新： 2019/2/25</p>
 <h1 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h1><h2 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h2><p>Typora是一个markdown编辑器，之前一直是用admin插件在写文章，听说这款软件不错，于是想试试。</p>
-<p>下载地址:<a href="https://www.typora.io/" target="_blank" rel="noopener">官网</a></p>
+<p>下载地址:<a href="https://www.typora.io/" rel="external nofollow" target="_blank">官网</a></p>
 <h2 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a>PicGo</h2><p>PicGo是一个快捷的图片部署工具</p>
-<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">项目地址</a><a href="https://picgo.github.io/PicGo-Doc/zh/" target="_blank" rel="noopener">帮助文档</a></p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>PicGo支持Github图床，我是参考这篇<a href="https://www.jianshu.com/p/87ea6603a824" target="_blank" rel="noopener">文章</a>来进行的配置</p>
+<h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://github.com/Molunerfinn/PicGo" rel="external nofollow" target="_blank">项目地址</a><a href="https://picgo.github.io/PicGo-Doc/zh/" rel="external nofollow" target="_blank">帮助文档</a></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>PicGo支持Github图床，我是参考这篇<a href="https://www.jianshu.com/p/87ea6603a824" rel="external nofollow" target="_blank">文章</a>来进行的配置</p>
 <h4 id="登陆GitHub"><a href="#登陆GitHub" class="headerlink" title="登陆GitHub"></a>登陆GitHub</h4><h4 id="新建repo-命名为img"><a href="#新建repo-命名为img" class="headerlink" title="新建repo, 命名为img"></a>新建repo, 命名为img</h4><h4 id="设置好token"><a href="#设置好token" class="headerlink" title="设置好token"></a>设置好token</h4><ul>
-<li>访问：<a href="https://github.com/settings/tokens" target="_blank" rel="noopener">https://github.com/settings/tokens</a></li>
+<li>访问：<a href="https://github.com/settings/tokens" rel="external nofollow" target="_blank">https://github.com/settings/tokens</a></li>
 <li><p>选择<code>generate new token</code></p>
 </li>
 <li><p>打勾<code>repo</code></p>
@@ -512,7 +512,7 @@ tpwidget("show");</script>
 </li>
 </ul>
 <p><strong>注意</strong>：这个token生成后只会显示一次！</p>
-<h4 id="在PicGo页面根据提示进行填写"><a href="#在PicGo页面根据提示进行填写" class="headerlink" title="在PicGo页面根据提示进行填写"></a>在PicGo页面根据提示进行填写</h4><h3 id="imagine"><a href="#imagine" class="headerlink" title="imagine"></a>imagine</h3><p>图片压缩工具，下载：<a href="https://github.com/meowtec/Imagine/releases" target="_blank" rel="noopener">项目地址</a></p>
+<h4 id="在PicGo页面根据提示进行填写"><a href="#在PicGo页面根据提示进行填写" class="headerlink" title="在PicGo页面根据提示进行填写"></a>在PicGo页面根据提示进行填写</h4><h3 id="imagine"><a href="#imagine" class="headerlink" title="imagine"></a>imagine</h3><p>图片压缩工具，下载：<a href="https://github.com/meowtec/Imagine/releases" rel="external nofollow" target="_blank">项目地址</a></p>
 <h3 id="软件样式"><a href="#软件样式" class="headerlink" title="软件样式"></a>软件样式</h3><p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/0.png" alt=""></p>
 
       
@@ -692,27 +692,27 @@ tpwidget("show");</script>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank">Danie1</a>
+                    <a href="https://blog.csdn.net/D_pokemon" title="Danie1" target="_blank" rel="external nofollow">Danie1</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://orangice.gitee.io" title="orangice" target="_blank">orangice</a>
+                    <a href="https://orangice.gitee.io" title="orangice" target="_blank" rel="external nofollow">orangice</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank">k神</a>
+                    <a href="https://www.jianshu.com/u/e1802e3b29cc" title="k神" target="_blank" rel="external nofollow">k神</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank">yiyangqianxi</a>
+                    <a href="https://yiyangqianxixxxx.github.io" title="yiyangqianxi" target="_blank" rel="external nofollow">yiyangqianxi</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank">Azure_atk</a>
+                    <a href="https://blog.csdn.net/qq_39379812" title="Azure_atk" target="_blank" rel="external nofollow">Azure_atk</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://doubj.github.io" title="doubj" target="_blank">doubj</a>
+                    <a href="https://doubj.github.io" title="doubj" target="_blank" rel="external nofollow">doubj</a>
                   </li>
                 
               </ul>
