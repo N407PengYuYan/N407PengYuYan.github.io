@@ -152,7 +152,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080609.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080610.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019080611.png">
-<meta property="og:updated_time" content="2019-08-06T11:44:56.584Z">
+<meta property="og:updated_time" content="2019-08-07T03:00:58.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CTF入坑">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/20190805.jpg">
@@ -250,7 +250,7 @@ tpwidget("show");</script>
       </a>
     </div>
       
-        <p class="site-subtitle">没有比脚更长的路,没有比人更高的山</p>
+        <h1 class="site-subtitle" itemprop="description">没有比脚更长的路,没有比人更高的山</h1>
       
   </div>
 
@@ -401,7 +401,7 @@ tpwidget("show");</script>
 
         
         
-          <h1 class="post-title" itemprop="name headline">CTF入坑</h1>
+          <h2 class="post-title" itemprop="name headline">CTF入坑</h2>
         
 
         <div class="post-meta">
@@ -877,7 +877,6 @@ tpwidget("show");</script>
 <p>  先进行url解码，再进行base64解码，得到</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">php</span><br><span class="line">  </span><br><span class="line">@ini_set(“display_errors”,”0″);</span><br><span class="line">  </span><br><span class="line">@set_time_limit(0);</span><br><span class="line">  </span><br><span class="line">@set_magic_quotes_runtime(0);</span><br><span class="line">  </span><br><span class="line">echo(“-&gt;|”);;</span><br><span class="line">  </span><br><span class="line">$D=dirname($_SERVER[&quot;SCRIPT_FILENAME&quot;]);</span><br><span class="line">  </span><br><span class="line">if($D==”&quot;)</span><br><span class="line">  </span><br><span class="line">    $D=dirname($_SERVER[&quot;PATH_TRANSLATED&quot;]);</span><br><span class="line">  </span><br><span class="line">$R=”&#123;$D&#125;\t”;</span><br><span class="line">  </span><br><span class="line">if(substr($D,0,1)!=”/”)</span><br><span class="line">  </span><br><span class="line">&#123;</span><br><span class="line">  </span><br><span class="line">    foreach(range(“A”,”Z”) as $L)</span><br><span class="line">  </span><br><span class="line">        if(is_dir(“&#123;$L&#125;:”))</span><br><span class="line">  </span><br><span class="line">            $R.=”&#123;$L&#125;:”;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line">  </span><br><span class="line">$R.=”\t”;</span><br><span class="line">  </span><br><span class="line">$u=(function_exists(‘posix_getegid’))?@posix_getpwuid(@posix_geteuid()):”;</span><br><span class="line">  </span><br><span class="line">$usr=($u)?$u[&apos;name&apos;]:@get_current_user();</span><br><span class="line">  </span><br><span class="line">$R.=php_uname();</span><br><span class="line">  </span><br><span class="line">$R.=”(&#123;$usr&#125;)”;</span><br><span class="line">  </span><br><span class="line">print $R;;</span><br><span class="line">  </span><br><span class="line">echo(“|&lt;-”);</span><br><span class="line">  </span><br><span class="line">die();</span><br></pre></td></tr></table></figure>
 <p>  在tcp stream 5发现一个压缩包，下载</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
 <p>  在tcp stream 6发现png文件头89504E47</p>
 <p>  保存为一张png图片</p>
 <ul>
@@ -1110,7 +1109,7 @@ tpwidget("show");</script>
               <img class="site-author-image" itemprop="image" src="/images/pandatou.jpeg" alt="7iny">
             
               <p class="site-author-name" itemprop="name">7iny</p>
-              <p class="site-description motion-element" itemprop="description">信安在读,摄影小白</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
           
           <nav class="site-state motion-element">
@@ -1734,6 +1733,21 @@ tpwidget("show");</script>
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   
