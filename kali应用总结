@@ -116,7 +116,7 @@
 
 
 
-  <meta name="keywords" content="玩手机,">
+  <meta name="keywords" content="kali软件,">
 
 
 
@@ -127,20 +127,20 @@
 
 
 
-<meta name="description" content="使用VNC前面已经安装好了kali，接下来是看看图形化界面了。 安卓手机由于我的安卓版本比较低，使用不了网上博文中提供VNC viewer,安卓4.4+使用的VNC viewer,该地址还提供其他系统的版本我的垃圾手机是没有这个福利了，只好找其他替代软件了，经过几番查找找到了一个140多k的软件 kali电脑下载VNC viewer  apt-get install tigervnc-viewer">
-<meta name="keywords" content="玩手机">
+<meta name="description" content="kali应用总结卸载软件删除配置 apt-get purge XXXX  安装截图软件下载安装python-xlib apt-get install python-xlib  下载安装截图软件包 wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb">
+<meta name="keywords" content="kali软件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="安卓手机安装kali(2)">
-<meta property="og:url" content="https://7iny.jxustctf.top/安卓手机安装kali-2/index.html">
+<meta property="og:title" content="kali软件小技巧">
+<meta property="og:url" content="https://7iny.jxustctf.top/kali应用总结">
 <meta property="og:site_name" content="7iny">
-<meta property="og:description" content="使用VNC前面已经安装好了kali，接下来是看看图形化界面了。 安卓手机由于我的安卓版本比较低，使用不了网上博文中提供VNC viewer,安卓4.4+使用的VNC viewer,该地址还提供其他系统的版本我的垃圾手机是没有这个福利了，只好找其他替代软件了，经过几番查找找到了一个140多k的软件 kali电脑下载VNC viewer  apt-get install tigervnc-viewer">
+<meta property="og:description" content="kali应用总结卸载软件删除配置 apt-get purge XXXX  安装截图软件下载安装python-xlib apt-get install python-xlib  下载安装截图软件包 wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://s2.ax1x.com/2019/02/14/kB3jHJ.png">
-<meta property="og:updated_time" content="2019-02-26T00:47:19.177Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/01/31/k1YJIJ.md.png">
+<meta property="og:updated_time" content="2019-01-31T04:35:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="安卓手机安装kali(2)">
-<meta name="twitter:description" content="使用VNC前面已经安装好了kali，接下来是看看图形化界面了。 安卓手机由于我的安卓版本比较低，使用不了网上博文中提供VNC viewer,安卓4.4+使用的VNC viewer,该地址还提供其他系统的版本我的垃圾手机是没有这个福利了，只好找其他替代软件了，经过几番查找找到了一个140多k的软件 kali电脑下载VNC viewer  apt-get install tigervnc-viewer">
-<meta name="twitter:image" content="https://s2.ax1x.com/2019/02/14/kB3jHJ.png">
+<meta name="twitter:title" content="kali软件小技巧">
+<meta name="twitter:description" content="kali应用总结卸载软件删除配置 apt-get purge XXXX  安装截图软件下载安装python-xlib apt-get install python-xlib  下载安装截图软件包 wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/01/31/k1YJIJ.md.png">
 
 
 
@@ -170,7 +170,7 @@
 
 
 
-  <link rel="canonical" href="https://7iny.jxustctf.top/安卓手机安装kali-2/">
+  <link rel="canonical" href="https://7iny.jxustctf.top/kali应用总结">
 
 
 
@@ -200,7 +200,7 @@ tpwidget("show");</script>
   </script>
 
 
-  <title>安卓手机安装kali(2) | 7iny</title>
+  <title>kali软件小技巧 | 7iny</title>
   
 
 
@@ -266,7 +266,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
@@ -276,7 +276,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
@@ -286,7 +286,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-studylink">
-          <a href="/studylink/" rel="section">
+          <a href="/studylink" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-battery"></i> <br>
             
@@ -296,7 +296,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
@@ -369,7 +369,7 @@ tpwidget("show");</script>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/安卓手机安装kali-2/">
+    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/kali应用总结">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="7iny">
@@ -386,7 +386,7 @@ tpwidget("show");</script>
 
         
         
-          <h2 class="post-title" itemprop="name headline">安卓手机安装kali(2)</h2>
+          <h2 class="post-title" itemprop="name headline">kali软件小技巧</h2>
         
 
         <div class="post-meta">
@@ -398,8 +398,8 @@ tpwidget("show");</script>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-14T11:05:00+08:00">
-                2019-02-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-31T11:30:00+08:00">
+                2019-01-31
               </time>
             
 
@@ -452,7 +452,7 @@ tpwidget("show");</script>
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  404
+                  199
                 </span>
               
 
@@ -489,42 +489,30 @@ tpwidget("show");</script>
       
 
       
-        <h1 id="使用VNC"><a href="#使用VNC" class="headerlink" title="使用VNC"></a><strong><em>使用VNC</em></strong></h1><p>前面已经安装好了kali，接下来是看看图形化界面了。</p>
-<h1 id="安卓手机"><a href="#安卓手机" class="headerlink" title="安卓手机"></a>安卓手机</h1><p>由于我的安卓版本比较低，使用不了网上博文中提供VNC viewer,安卓4.4+使用的<a href="https://www.realvnc.com/en/connect/download/viewer/android/" target="_blank" rel="noopener">VNC viewer</a>,该地址还提供其他系统的版本<br>我的垃圾手机是没有这个福利了，只好找其他替代软件了，经过几番查找找到了一个<a href="https://android-vnc-viewer.en.softonic.com/android/download" target="_blank" rel="noopener">140多k的软件</a></p>
-<h1 id="kali电脑"><a href="#kali电脑" class="headerlink" title="kali电脑"></a>kali电脑</h1><p>下载VNC viewer</p>
-<blockquote>
-<p>apt-get install tigervnc-viewer </p>
+        <hr>
+<h1 id="kali应用总结"><a href="#kali应用总结" class="headerlink" title="kali应用总结"></a>kali应用总结</h1><h2 id="卸载软件删除配置"><a href="#卸载软件删除配置" class="headerlink" title="卸载软件删除配置"></a>卸载软件删除配置</h2><blockquote>
+<p>apt-get purge XXXX</p>
 </blockquote>
-<p>运行</p>
-<blockquote>
-<p>viewer</p>
+<h2 id="安装截图软件"><a href="#安装截图软件" class="headerlink" title="安装截图软件"></a>安装截图软件</h2><h3 id="下载安装python-xlib"><a href="#下载安装python-xlib" class="headerlink" title="下载安装python-xlib"></a>下载安装python-xlib</h3><blockquote>
+<p>apt-get install python-xlib</p>
 </blockquote>
-<h1 id="安装中文库"><a href="#安装中文库" class="headerlink" title="安装中文库"></a>安装中文库</h1><p>使用ssh连接手机后root执行下面的命令</p>
-<blockquote>
-<p>apt-get install xfonts-intl-chinese</p>
+<h3 id="下载安装截图软件包"><a href="#下载安装截图软件包" class="headerlink" title="下载安装截图软件包"></a>下载安装截图软件包</h3><blockquote>
+<p>wget <a href="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb" target="_blank" rel="noopener">http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.0-0deepin_all.deb</a></p>
 </blockquote>
-<blockquote>
-<p>apt-get install ttf-wqy-microhei</p>
+<h3 id="安装软件包"><a href="#安装软件包" class="headerlink" title="安装软件包"></a>安装软件包</h3><blockquote>
+<p>dpkg -i deepin-scrot*</p>
 </blockquote>
-<h1 id="启动VNC服务端"><a href="#启动VNC服务端" class="headerlink" title="启动VNC服务端"></a>启动VNC服务端</h1><p>执行命令</p>
-<blockquote>
-<p>vncserver</p>
+<p>运气比较好，安装没有报错。据说如果报错啥的可能需要安装依赖，可以通过强制执行安装依赖命令解决问题</p>
+<p><strong><em>报错了参考下面的方法</em></strong></p>
+<h3 id="强制安装依赖包"><a href="#强制安装依赖包" class="headerlink" title="强制安装依赖包"></a>强制安装依赖包</h3><blockquote>
+<p>apt-get -f install</p>
 </blockquote>
-<p>返回结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">New &apos;X&apos; desktop is localhost:1</span><br><span class="line">Starting applications specified in /home/android/.vnc/xstartup</span><br><span class="line">Log file is /home/android/.vnc/localhost:1.log</span><br></pre></td></tr></table></figure></p>
-<p>证明vncserver已启动成功<br>因为刚刚终端返回的信息:<strong><em>New ‘X’ desktop is localhost:1</em></strong>指定了此次桌面会话号为<strong>1</strong>，所以端口就为<strong>5900+1=5901</strong>。如果我们开启了多个虚拟桌面，它们的会话号为2,3,4…，那么各自的端口即为5902,5903,5904…依次类推。</p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>停止Linux系统再启动Linux系统后，再次执行vncserver命令会出现报错<br><a href="https://imgchr.com/i/kB3jHJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/02/14/kB3jHJ.png" alt="kB3jHJ.png"></a><br>解决办法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm -rf /tmp/.X[1-9]-lock</span><br><span class="line">rm -rf /tmp/.X11-unix/X[1-9]</span><br></pre></td></tr></table></figure></p>
-<h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><p>vncserver默认的分辨率是1024×768<br>手机屏幕的分辨率都是720P(1280×720)，1080P(1920×1080)，甚至2K(2560×1440)<br>启动vncserver时，执行：</p>
-<blockquote>
-<p> vncserver -geometry 1280x720</p>
+<h3 id="重新安装截图软件包"><a href="#重新安装截图软件包" class="headerlink" title="重新安装截图软件包"></a>重新安装截图软件包</h3><blockquote>
+<p>sudo dpkg -i deepin-scrot*</p>
 </blockquote>
-<ul>
-<li>命令中的1280x720里的x是小写字母x</li>
-</ul>
-<p>自动更改分辨率</p>
-<blockquote>
-<p>vim ~/.bashrc #编辑~/.bashrc<br>alias vncserver=’vncserver -geometry 1280x720’ </p>
-</blockquote>
-<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://mlapp.cn/337.html" target="_blank" rel="noopener">美丽应用</a><br><a href="www.360doc.com/content/18/1123/02/40461272_796637204.shtml">安装vncserver</a></p>
+<p>如果顺利的话 此时应该执行deepin-scrot就可截图了</p>
+<h3 id="设置快捷键"><a href="#设置快捷键" class="headerlink" title="设置快捷键"></a>设置快捷键</h3><p>在设置页面自定义快捷件，由于用QQ截图习惯了，我设置的Ctrl+Alt+A</p>
+<p><a href="https://imgchr.com/i/k1YJIJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2019/01/31/k1YJIJ.md.png" alt="k1YJIJ.md.png"></a></p>
 
       
     </div>
@@ -552,7 +540,7 @@ tpwidget("show");</script>
       
         <div class="post-tags">
           
-            <a href="/tags/玩手机/" rel="tag"><i class="fa fa-tag"></i> 玩手机</a>
+            <a href="/tags/kali软件/" rel="tag"><i class="fa fa-tag"></i> kali软件</a>
           
         </div>
       
@@ -565,8 +553,8 @@ tpwidget("show");</script>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/安卓手机安装kali/" rel="next" title="安卓手机安装kali">
-                <i class="fa fa-chevron-left"></i> 安卓手机安装kali
+              <a href="/hexo-admin插件" rel="next" title="hexo-admin插件">
+                <i class="fa fa-chevron-left"></i> hexo-admin插件
               </a>
             
           </div>
@@ -575,8 +563,8 @@ tpwidget("show");</script>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/WiFi破解小结/" rel="prev" title="WiFi小结">
-                WiFi小结 <i class="fa fa-chevron-right"></i>
+              <a href="/hexo代码复制" rel="prev" title="hexo代码复制">
+                hexo代码复制 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -656,7 +644,7 @@ tpwidget("show");</script>
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
@@ -745,7 +733,7 @@ tpwidget("show");</script>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#使用VNC"><span class="nav-number">1.</span> <span class="nav-text">使用VNC</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安卓手机"><span class="nav-number">2.</span> <span class="nav-text">安卓手机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#kali电脑"><span class="nav-number">3.</span> <span class="nav-text">kali电脑</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装中文库"><span class="nav-number">4.</span> <span class="nav-text">安装中文库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动VNC服务端"><span class="nav-number">5.</span> <span class="nav-text">启动VNC服务端</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">5.1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分辨率"><span class="nav-number">5.2.</span> <span class="nav-text">分辨率</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">6.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#kali应用总结"><span class="nav-number">1.</span> <span class="nav-text">kali应用总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#卸载软件删除配置"><span class="nav-number">1.1.</span> <span class="nav-text">卸载软件删除配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装截图软件"><span class="nav-number">1.2.</span> <span class="nav-text">安装截图软件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装python-xlib"><span class="nav-number">1.2.1.</span> <span class="nav-text">下载安装python-xlib</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装截图软件包"><span class="nav-number">1.2.2.</span> <span class="nav-text">下载安装截图软件包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装软件包"><span class="nav-number">1.2.3.</span> <span class="nav-text">安装软件包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#强制安装依赖包"><span class="nav-number">1.2.4.</span> <span class="nav-text">强制安装依赖包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重新安装截图软件包"><span class="nav-number">1.2.5.</span> <span class="nav-text">重新安装截图软件包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置快捷键"><span class="nav-number">1.2.6.</span> <span class="nav-text">设置快捷键</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

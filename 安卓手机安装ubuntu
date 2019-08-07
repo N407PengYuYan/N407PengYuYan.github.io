@@ -116,7 +116,7 @@
 
 
 
-  <meta name="keywords" content="科学上网,">
+  <meta name="keywords" content="玩手机,">
 
 
 
@@ -127,18 +127,20 @@
 
 
 
-<meta name="description" content="kali 科学上网32位的kali貌似没有图形化操作界面的科学上网软件，于是只好使用命令行操作了。 安装终端输入：  sudo apt install shadowsocks  编辑帐号密码终端输入：  vi /etc/shadowsocks.json  在配置文件中按照下面的格式填写配置信息，也就帐号密码之类的 1234567891011&amp;#123;   &amp;quot;server&amp;quot;:">
-<meta name="keywords" content="科学上网">
+<meta name="description" content="工具一台安卓4.2的手机  将手机ROOT，ROOT工具一键ROOT ROOT工具下载  一台电脑 软件Linux系统支撑软件:Linux deploy Linux deploy支撑软件:Busy Box 手机端SSH连接软件:ConnectBox  我参考了一篇17年的安卓4.1文章，为保险起见我安装的是17年的Linux deploy  安装首先安装的是Busy Box Busy Box默认界">
+<meta name="keywords" content="玩手机">
 <meta property="og:type" content="article">
-<meta property="og:title" content="kali 科学上网">
-<meta property="og:url" content="https://7iny.jxustctf.top/科学上网/index.html">
+<meta property="og:title" content="安卓手机安装ubuntu">
+<meta property="og:url" content="https://7iny.jxustctf.top/安卓手机安装ubuntu">
 <meta property="og:site_name" content="7iny">
-<meta property="og:description" content="kali 科学上网32位的kali貌似没有图形化操作界面的科学上网软件，于是只好使用命令行操作了。 安装终端输入：  sudo apt install shadowsocks  编辑帐号密码终端输入：  vi /etc/shadowsocks.json  在配置文件中按照下面的格式填写配置信息，也就帐号密码之类的 1234567891011&amp;#123;   &amp;quot;server&amp;quot;:">
+<meta property="og:description" content="工具一台安卓4.2的手机  将手机ROOT，ROOT工具一键ROOT ROOT工具下载  一台电脑 软件Linux系统支撑软件:Linux deploy Linux deploy支撑软件:Busy Box 手机端SSH连接软件:ConnectBox  我参考了一篇17年的安卓4.1文章，为保险起见我安装的是17年的Linux deploy  安装首先安装的是Busy Box Busy Box默认界">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-25T09:24:41.151Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/02/13/k0hRl6.png">
+<meta property="og:updated_time" content="2019-02-13T11:15:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="kali 科学上网">
-<meta name="twitter:description" content="kali 科学上网32位的kali貌似没有图形化操作界面的科学上网软件，于是只好使用命令行操作了。 安装终端输入：  sudo apt install shadowsocks  编辑帐号密码终端输入：  vi /etc/shadowsocks.json  在配置文件中按照下面的格式填写配置信息，也就帐号密码之类的 1234567891011&amp;#123;   &amp;quot;server&amp;quot;:">
+<meta name="twitter:title" content="安卓手机安装ubuntu">
+<meta name="twitter:description" content="工具一台安卓4.2的手机  将手机ROOT，ROOT工具一键ROOT ROOT工具下载  一台电脑 软件Linux系统支撑软件:Linux deploy Linux deploy支撑软件:Busy Box 手机端SSH连接软件:ConnectBox  我参考了一篇17年的安卓4.1文章，为保险起见我安装的是17年的Linux deploy  安装首先安装的是Busy Box Busy Box默认界">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/02/13/k0hRl6.png">
 
 
 
@@ -168,7 +170,7 @@
 
 
 
-  <link rel="canonical" href="https://7iny.jxustctf.top/科学上网/">
+  <link rel="canonical" href="https://7iny.jxustctf.top/安卓手机安装ubuntu">
 
 
 
@@ -198,7 +200,7 @@ tpwidget("show");</script>
   </script>
 
 
-  <title>kali 科学上网 | 7iny</title>
+  <title>安卓手机安装ubuntu | 7iny</title>
   
 
 
@@ -264,7 +266,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
@@ -274,7 +276,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
@@ -284,7 +286,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-studylink">
-          <a href="/studylink/" rel="section">
+          <a href="/studylink" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-battery"></i> <br>
             
@@ -294,7 +296,7 @@ tpwidget("show");</script>
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
@@ -367,7 +369,7 @@ tpwidget("show");</script>
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/科学上网/">
+    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/安卓手机安装ubuntu">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="7iny">
@@ -384,7 +386,7 @@ tpwidget("show");</script>
 
         
         
-          <h2 class="post-title" itemprop="name headline">kali 科学上网</h2>
+          <h2 class="post-title" itemprop="name headline">安卓手机安装ubuntu</h2>
         
 
         <div class="post-meta">
@@ -396,8 +398,8 @@ tpwidget("show");</script>
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T18:15:00+08:00">
-                2019-02-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-13T18:07:00+08:00">
+                2019-02-13
               </time>
             
 
@@ -450,7 +452,7 @@ tpwidget("show");</script>
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  370
+                  643
                 </span>
               
 
@@ -466,7 +468,7 @@ tpwidget("show");</script>
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -487,48 +489,57 @@ tpwidget("show");</script>
       
 
       
-        <hr>
-<h1 id="kali-科学上网"><a href="#kali-科学上网" class="headerlink" title="kali 科学上网"></a>kali 科学上网</h1><p>32位的kali貌似没有图形化操作界面的科学上网软件，于是只好使用命令行操作了。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>终端输入：</p>
+        <h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p>一台安卓4.2的手机</p>
 <blockquote>
-<p>sudo apt install shadowsocks</p>
+<p>将手机ROOT，ROOT工具一键ROOT <a href="root.360.cn/#firstPage">ROOT工具下载</a></p>
 </blockquote>
-<h3 id="编辑帐号密码"><a href="#编辑帐号密码" class="headerlink" title="编辑帐号密码"></a>编辑帐号密码</h3><p>终端输入：</p>
+<p>一台电脑</p>
+<h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><p>Linux系统支撑软件:<a href="https://github.com/meefik/linuxdeploy/releases" target="_blank" rel="noopener">Linux deploy</a></p>
+<p>Linux deploy支撑软件:<a href="https://github.com/meefik/busybox/releases" target="_blank" rel="noopener">Busy Box</a></p>
+<p>手机端SSH连接软件:<a href="https://github.com/connectbot/connectbot/releases" target="_blank" rel="noopener">ConnectBox</a></p>
 <blockquote>
-<p>vi /etc/shadowsocks.json</p>
+<p>我参考了一篇17年的安卓4.1文章，为保险起见我安装的是17年的Linux deploy</p>
 </blockquote>
-<p>在配置文件中按照下面的格式填写配置信息，也就帐号密码之类的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123; </span><br><span class="line">  &quot;server&quot;:&quot;服务器地址&quot;, </span><br><span class="line">  &quot;server_port&quot;:服务器端口号, </span><br><span class="line">  &quot;local_address&quot;: &quot;127.0.0.1&quot;, </span><br><span class="line">  &quot;local_port&quot;:1080, </span><br><span class="line">  &quot;password&quot;:&quot;密码&quot;, </span><br><span class="line">  &quot;timeout&quot;:300, </span><br><span class="line">  &quot;method&quot;:&quot;加密方式&quot;, </span><br><span class="line">  &quot;fast_open&quot;: true, </span><br><span class="line">  &quot;workers&quot;: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="设置proxychains"><a href="#设置proxychains" class="headerlink" title="设置proxychains"></a>设置proxychains</h3><h4 id="打开配置文件"><a href="#打开配置文件" class="headerlink" title="打开配置文件"></a>打开配置文件</h4><blockquote>
-<p>vi /etc/proxychains.conf</p>
-</blockquote>
-<p>1.去掉dynamic_chain前面的注释符</p>
-<p>2.在最下方，默认是sock4 xxxx xxx改为sock5 127.0.0.1 xxxx （xxxx是自己刚才设定的端口号，也就是上边配置ss时输入的local_port:xxxx）</p>
-<p>根据上面的设置此处就应该该为sock5 127.0.0.1:1080</p>
-<h4 id="测试代理是否正常"><a href="#测试代理是否正常" class="headerlink" title="测试代理是否正常"></a>测试代理是否正常</h4><blockquote>
-<p>proxyresolv <a href="http://www.target.com" target="_blank" rel="noopener">www.target.com</a></p>
-</blockquote>
-<p>如果出现命令未找到，终端执行</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="首先安装的是Busy-Box"><a href="#首先安装的是Busy-Box" class="headerlink" title="首先安装的是Busy Box"></a>首先安装的是Busy Box</h2><ul>
+<li><p>Busy Box默认界面语言是英文，可以改成中文，点击右上角部分，在弹出的菜单中选择Settings，接着进入设置界面，找到Language项，点击后选择简体中文</p>
+</li>
+<li><p>点击安装，等待程序自行运行，在界面中输出## END后退出程序</p>
+</li>
+</ul>
+<h2 id="安装运行Linux-deploy"><a href="#安装运行Linux-deploy" class="headerlink" title="安装运行Linux deploy"></a>安装运行Linux deploy</h2><ul>
+<li>点击<strong><em>左上角</em></strong>选择设置找到PATH变量，赋予其值 /system/xbin 这里的路径是Busy Box的安装路径</li>
+<li>先移除环境再更新环境</li>
+<li>选择锁定WIFI 防止下载掉线</li>
+<li>退回主界面，点击<strong><em>右下角</em></strong>部分,文中没有的为默认的，配置如下：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">属性:linux</span><br><span class="line">Containerization method (chroot)</span><br><span class="line">发行版（Ubuntu）</span><br><span class="line">架构（armhf）</span><br><span class="line">发行版版本（xenial）</span><br><span class="line">源地址 （http://mirrors.ustc.edu.cn/ubuntu-ports）</span><br><span class="line">安装类型（文件）</span><br><span class="line">安装路径（$&#123;ENV_DIR&#125;/linux.img）</span><br><span class="line">本地化（zh_CN.UTF-8）</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装路径是Linux系统的安装路径，如要安装在手机自带的存储空间中，则在路径开头加上${ENV_DIR}，这代表的是存储空间根目录。如要安装在sdcard中，则加上${EXTERNAL_STORAGE}。</li>
+<li>用户名和密码自定义，本地、远程连接该系统用。</li>
+</ul>
 <blockquote>
-<p>cp /usr/lib/proxychains3/proxyresolv /usr/bin/</p>
+<p>INIT 选择Enable</p>
 </blockquote>
-<p>正常情况是没有开代理返回<strong><em>timeout</em></strong></p>
-<h2 id="开启代理"><a href="#开启代理" class="headerlink" title="开启代理"></a>开启代理</h2><p>开启代理</p>
 <blockquote>
-<p>sslocal -c /etc/shadowsocks.json -d start</p>
+<p>MOUNTS 选择Enable (挂载功能可让Linux系统访问手机上的文件<br>挂载列表中添加访问手机内容的目录，/sdcard:sdcard为手机自带存储空间根目录，/storage/sdcard1为sd卡根目录。)</p>
 </blockquote>
-<p>转发启动软件</p>
 <blockquote>
-<p>火狐：proxychains firefox</p>
+<p>SSH 选择Enable</p>
 </blockquote>
-<p>不用了就关闭代理</p>
 <blockquote>
-<p>sslocal -c /etc/shadowsocks.json -d stop</p>
+<p>图形界面 选择Enable (桌面环境选择Xfce)</p>
 </blockquote>
 <ul>
-<li>整个安装使用过程比较顺利，这可能和之前使用了ss的一些依赖环境有关</li>
-<li>需要关闭火狐再使用转发启动软件</li>
+<li>退出系统设置界面，点击主界面右上角，选择安装。&lt;&lt;&lt;deploy则安装完毕。没有报错则安装成功。注意：安装完毕后要<strong><em>先点击停止按钮，再按启动按钮</em></strong></li>
 </ul>
+<h2 id="安装ConnectBot"><a href="#安装ConnectBot" class="headerlink" title="安装ConnectBot"></a>安装ConnectBot</h2><ul>
+<li>点击右上角 +号创建 </li>
+<li>输入用户名，主机输入localhost</li>
+<li>点击右上角 +号保存信息，主界面会多出来添加的选项，点击进行SSH连接 </li>
+</ul>
+<h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p><strong><em>ss连接上后</em></strong><img src="https://s2.ax1x.com/2019/02/13/k0hRl6.png" alt="k0hRl6.png"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>整个安装过程不太顺利，需要多次调试。强烈推荐中科大的源安装速度快好用得很</p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://blog.csdn.net/weixin_38235758/article/details/79219050" target="_blank" rel="noopener">首先参考文章</a><br><a href="https://www.linuxidc.com/Linux/2017-05/144274.htm" target="_blank" rel="noopener">图形化界面操作文章</a><br><a href="mirrors.ustc.edu.cn">中科大源</a></p>
 
       
     </div>
@@ -556,7 +567,7 @@ tpwidget("show");</script>
       
         <div class="post-tags">
           
-            <a href="/tags/科学上网/" rel="tag"><i class="fa fa-tag"></i> 科学上网</a>
+            <a href="/tags/玩手机/" rel="tag"><i class="fa fa-tag"></i> 玩手机</a>
           
         </div>
       
@@ -569,8 +580,8 @@ tpwidget("show");</script>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/WiFi破解小结/" rel="next" title="WiFi小结">
-                <i class="fa fa-chevron-left"></i> WiFi小结
+              <a href="/添加页面标题欺骗" rel="next" title="添加页面标题欺骗">
+                <i class="fa fa-chevron-left"></i> 添加页面标题欺骗
               </a>
             
           </div>
@@ -579,8 +590,8 @@ tpwidget("show");</script>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/hexo搬迁/" rel="prev" title="hexo搬迁">
-                hexo搬迁 <i class="fa fa-chevron-right"></i>
+              <a href="/安卓手机安装kali" rel="prev" title="安卓手机安装kali">
+                安卓手机安装kali <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -660,7 +671,7 @@ tpwidget("show");</script>
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
@@ -749,7 +760,7 @@ tpwidget("show");</script>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#kali-科学上网"><span class="nav-number">1.</span> <span class="nav-text">kali 科学上网</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑帐号密码"><span class="nav-number">1.0.2.</span> <span class="nav-text">编辑帐号密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置proxychains"><span class="nav-number">1.0.3.</span> <span class="nav-text">设置proxychains</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#打开配置文件"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">打开配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试代理是否正常"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">测试代理是否正常</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启代理"><span class="nav-number">1.1.</span> <span class="nav-text">开启代理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#工具"><span class="nav-number">1.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#软件"><span class="nav-number">2.</span> <span class="nav-text">软件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#首先安装的是Busy-Box"><span class="nav-number">3.1.</span> <span class="nav-text">首先安装的是Busy Box</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装运行Linux-deploy"><span class="nav-number">3.2.</span> <span class="nav-text">安装运行Linux deploy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装ConnectBot"><span class="nav-number">3.3.</span> <span class="nav-text">安装ConnectBot</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#效果"><span class="nav-number">4.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">6.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
             
 
           </div>
