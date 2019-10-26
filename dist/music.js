@@ -15,20 +15,20 @@ const ap = new APlayer({
 	{
         name: "思念是一种病",
         artist: '张震岳 / 蔡健雅',
-        url: 'http://www.ytmp3.cn/down/50020.mp3',
+        url: 'http://nf01.sycdn.kuwo.cn/resource/n3/62/66/33075992.mp3',
         cover: 'https://p2.music.126.net/N61oLy0iLfEkZTHD2j87iA==/18693896697392706.jpg?param=130y130',
       },
 	  {
-        name: "这就是爱情",
-        artist: '李代沫',
-        url: 'http://www.ytmp3.cn/down/54477.mp3',
-        cover: 'https://p1.music.126.net/RQBF9kqZb7PtLCaOxi9ngQ==/109951163053984533.jpg?param=130y130',
+        name: "I Will Follow Him",
+        artist: 'Peggy March',
+        url: 'http://ss.sycdn.kuwo.cn/ed5943ecc29e49bd4d8a7ea55a511ab7/5db3ac51/resource/n3/45/42/2435572560.mp3',
+        cover: 'http://p1.music.126.net/1YwFY25XuvHBT5I2UE5p3g==/1654764999815139.jpg?param=130y130',
       },
           {
-        name: "推开世界的门",
-        artist: '杨乃文',
-        url: 'http://other.web.rl01.sycdn.kuwo.cn/resource/n3/9/57/91236734.mp3',
-        cover: 'https://p2.music.126.net/4ESdAPfVH-tAMl-pRYNE3A==/3399689972238493.jpg?param=130y130',
+        name: "追梦人",
+        artist: '王若琳',
+        url: 'http://other.web.re01.sycdn.kuwo.cn/2a0f74ebf6329983d9c579257497219d/5db3ab54/resource/n1/29/29/563284322.mp3',
+        cover: 'http://p1.music.126.net/kovMyM89JQZsaaXumLdphg==/17868163463382852.jpg?param=130y130',
       },
     ]
 });
