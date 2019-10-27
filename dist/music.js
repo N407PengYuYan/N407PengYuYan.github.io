@@ -15,19 +15,19 @@ const ap = new APlayer({
 	{
         name: "思念是一种病",
         artist: '张震岳 / 蔡健雅',
-        url: 'https://music.163.com/song/media/outer/url?id=185700',
+        url: 'https://music.163.com/song/media/outer/url?id=185700.mp3',
         cover: 'https://p2.music.126.net/N61oLy0iLfEkZTHD2j87iA==/18693896697392706.jpg?param=130y130',
       },
 	  {
         name: "I Will Follow Him",
         artist: 'Peggy March',
-        url: 'https://music.163.com/song/media/outer/url?id=5189690',
+        url: 'https://music.163.com/song/media/outer/url?id=5189690.mp3',
         cover: 'http://p1.music.126.net/1YwFY25XuvHBT5I2UE5p3g==/1654764999815139.jpg?param=130y130',
       },
           {
         name: "追梦人",
         artist: '王若琳',
-        url: 'https://music.163.com/song/media/outer/url?id=28310713',
+        url: 'https://music.163.com/song/media/outer/url?id=28310713.mp3',
         cover: 'http://p1.music.126.net/kovMyM89JQZsaaXumLdphg==/17868163463382852.jpg?param=130y130',
       },
     ]
