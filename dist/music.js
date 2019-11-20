@@ -13,22 +13,22 @@ const ap = new APlayer({
     lrcType: 0, //歌词传递方式
     audio: [
 	{
-        name: "思念是一种病",
-        artist: '张震岳 / 蔡健雅',
-        url: 'https://music.163.com/song/media/outer/url?id=185700.mp3',
-        cover: 'https://p2.music.126.net/N61oLy0iLfEkZTHD2j87iA==/18693896697392706.jpg?param=130y130',
+        name: "summertime",
+        artist: 'cinnamons / evening cinema',
+        url: 'https://music.163.com/song/media/outer/url?id=531786301.mp3',
+        cover: 'http://p1.music.126.net/YOh14VmZHW6riDYUeIkjeA==/109951163115353027.jpg?param=130y130',
       },
 	  {
-        name: "I Will Follow Him",
-        artist: 'Peggy March',
-        url: 'https://music.163.com/song/media/outer/url?id=5189690.mp3',
-        cover: 'http://p1.music.126.net/1YwFY25XuvHBT5I2UE5p3g==/1654764999815139.jpg?param=130y130',
+        name: "花鳥風月",
+        artist: 'End of the World',
+        url: 'https://music.163.com/song/media/outer/url?id=22814470.mp3',
+        cover: 'http://p2.music.126.net/Q9pW0u7eq2irciRdxUEUrA==/912594651077794.jpg?param=130y130',
       },
           {
-        name: "追梦人",
-        artist: '王若琳',
-        url: 'https://music.163.com/song/media/outer/url?id=28310713.mp3',
-        cover: 'http://p1.music.126.net/kovMyM89JQZsaaXumLdphg==/17868163463382852.jpg?param=130y130',
+        name: "世界中の谁よりきっと",
+        artist: 'WANDS',
+        url: 'https://music.163.com/song/media/outer/url?id=22763956.mp3',
+        cover: 'http://p1.music.126.net/Hh0iJSWFvdAmEBGvhDGh-g==/915893185961087.jpg?param=130y130',
       },
     ]
 });
