@@ -1838,7 +1838,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff98;
+  background: #44f6db;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3232,6 +3232,71 @@ div.post-block.tag .collection-title h2 {
     padding: 10px 0;
     background-image: linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%) !important;
   }
+}
+.posts-expand .post-body h1,
+.posts-expand .post-body h2,
+.posts-expand .post-body h3,
+.posts-expand .post-body h4,
+.posts-expand .post-body h5,
+.posts-expand .post-body h6 {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.posts-expand .post-body h1:before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "⛅";
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 16px;
+}
+.posts-expand .post-body h2:before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "🌞";
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 16px;
+}
+.posts-expand .post-body h3:before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "📖";
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 16px;
+}
+.posts-expand .post-body h4:before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "🔖";
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 16px;
+}
+.posts-expand .post-body h5:before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "☑";
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 16px;
+}
+.posts-expand .post-body h5:before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "🐅";
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 16px;
 }
 @-moz-keyframes sliding {
   to {
