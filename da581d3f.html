@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="QE52Rh63pUbENtc2T9VTpxeFXAc5pCVzwaz12vRSvZk">
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="6YSqWvFIsY">
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/panda32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/panda32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/panda16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/panda.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="恶意代码,期末复习,">
+
+
+
+
+
+
+
+
+
+
+<meta name="keywords" content="恶意代码,期末复习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="恶意代码复习">
+<meta property="og:url" content="https://7iny.jxustctf.top/da581d3f.html">
+<meta property="og:site_name" content="7iny">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019112501.jpg">
+<meta property="og:updated_time" content="2019-11-25T13:23:54.940Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="恶意代码复习">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019112501.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://7iny.jxustctf.top/da581d3f.html">
+
+
+
+<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
+<script>tpwidget("init", {
+    "flavor": "bubble",
+    "location": "WX4FBXXFKE4F",
+    "geolocation": "enabled",
+    "position": "top-left",
+    "margin": "10px 10px",
+    "language": "zh-chs",
+    "unit": "c",
+    "theme": "chameleon",
+    "uid": "U888B80105",
+    "hash": "3f2f5e4fc383bbbc8df2ab936a167264"
+});
+tpwidget("show");</script>
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "ace9b774"
+    });
+  daovoice('update');
+  </script>
+
+
+  <title>恶意代码复习 | 7iny</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">7iny</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Study well and make progress every day.</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-studylink">
+          <a href="/studylink" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-battery"></i> <br>
+            
+            充电
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-link"></i> <br>
+            
+            友链
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  <script src="/js/src/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/da581d3f.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="7iny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pandatou.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="7iny">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">恶意代码复习</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-25T21:17:00+08:00">
+                2019-11-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/信息安全课程/" itemprop="url" rel="index">
+                    <span itemprop="name">信息安全课程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4.4k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  15
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/2019112501.jpg" alt=""></p>
+<a id="more"></a>
+<h1 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h1><p>内容源自互联网,仅供学习练习</p>
+<h1 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h1><h2 id="蠕虫病毒是常见的病毒，有其特定的传染机理，请问它的传染机理是什么（d）"><a href="#蠕虫病毒是常见的病毒，有其特定的传染机理，请问它的传染机理是什么（d）" class="headerlink" title="蠕虫病毒是常见的病毒，有其特定的传染机理，请问它的传染机理是什么（d）"></a>蠕虫病毒是常见的病毒，有其特定的传染机理，请问它的传染机理是什么（d）</h2><p>A.利用网络进行信息窃取<br>B.利用网络进行后门监视<br>C.利用网络进行攻击<br>D.利用网络进行复制和传播</p>
+<h2 id="木马的隐藏技术可以利用操作系统的哪些方面实现（abcd"><a href="#木马的隐藏技术可以利用操作系统的哪些方面实现（abcd" class="headerlink" title="木马的隐藏技术可以利用操作系统的哪些方面实现（abcd)"></a>木马的隐藏技术可以利用操作系统的哪些方面实现（abcd)</h2><p>A.任务管理器<br>B.端口<br>C.任务栏<br>D.系统文件加载</p>
+<h2 id="不属于杀毒软件的是（d"><a href="#不属于杀毒软件的是（d" class="headerlink" title="不属于杀毒软件的是（d)"></a>不属于杀毒软件的是（d)</h2><p>A.<code>Nortion Antivirus</code><br>B.<code>KV2005</code><br>C.卡巴斯基<br>D.<code>IDS</code></p>
+<h2 id="世界上第一台计算机ENIAC是-d-模型"><a href="#世界上第一台计算机ENIAC是-d-模型" class="headerlink" title="世界上第一台计算机ENIAC是(d)模型"></a>世界上第一台计算机ENIAC是(d)模型</h2><p>A.带后台存储带的随机访问存储程序计算机 B.随机访问存储程序计算机 C.图灵机 D.随机访问计算机</p>
+<h2 id="关于企业防毒体系建构的说法，错误的是（BC）"><a href="#关于企业防毒体系建构的说法，错误的是（BC）" class="headerlink" title="关于企业防毒体系建构的说法，错误的是（BC）"></a>关于企业防毒体系建构的说法，错误的是（BC）</h2><p>A.病毒防护体系是一项复杂的系统工程，是技术、流程、人员的有机结合<br>B.病毒防护只要能做好桌面安全防护就可以了，这个方案最经济<br>C.在病毒防护解决方案中，防病毒产品是最重要的因素，防毒产品能检测到病毒数量越多说明方案越优越<br>D.病毒防护解决方案应该重视事前防御而不是“亡羊补牢”</p>
+<h2 id="关于引导扇区病毒特征和特征的描述错误的是（c）"><a href="#关于引导扇区病毒特征和特征的描述错误的是（c）" class="headerlink" title="关于引导扇区病毒特征和特征的描述错误的是（c）"></a>关于引导扇区病毒特征和特征的描述错误的是（c）</h2><p>A.引导扇区病毒的设计缺陷可能会导致在读取软件时会产生偶尔的写保护错误<br>B.引导扇区病毒不在像以前那样造成巨大威胁<br>C.引导扇区病毒在特定的时间对磁盘进行格式化操作<br>D.会将原始的引导扇区以及部分病毒代码复制到磁盘的另外一个地方</p>
+<h2 id="宏病毒具有哪些特征（abc）。"><a href="#宏病毒具有哪些特征（abc）。" class="headerlink" title="宏病毒具有哪些特征（abc）。"></a>宏病毒具有哪些特征（abc）。</h2><p>A.在以前不含有宏的文件中出现了宏<br>B该应用程序将所有文件保存为模版<br>C该应用程序经常会提醒用户保存那些只是被查看但没有被修改的文档<br>D使用Word2007打开Word2003文档时，提示用户保存没有做任何修改的文档</p>
+<h2 id="实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（C）"><a href="#实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（C）" class="headerlink" title="实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（C）"></a>实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（C）</h2><p>A.破坏模块<br>B.控制模块<br>C.通信模块<br>D.隐藏模块</p>
+<h2 id="以下哪一项是dos攻击的一个实例（c）"><a href="#以下哪一项是dos攻击的一个实例（c）" class="headerlink" title="以下哪一项是dos攻击的一个实例（c）"></a>以下哪一项是dos攻击的一个实例（c）</h2><p>A.<code>IP Spoof</code><br>B.字典破解<br>C.<code>Smurf</code>攻击<br>D.<code>SQL</code>注入</p>
+<h2 id="垃圾邮件对于企业或个人的危害性体现在哪些方面（bc）"><a href="#垃圾邮件对于企业或个人的危害性体现在哪些方面（bc）" class="headerlink" title="垃圾邮件对于企业或个人的危害性体现在哪些方面（bc）."></a>垃圾邮件对于企业或个人的危害性体现在哪些方面（bc）.</h2><p>A.对计算机系统造成破坏<br>B.造成邮件服务器负载过重<br>C.消耗带宽和网络存储空间<br>D.不会影响个人的正常工作</p>
+<h2 id="一封垃圾邮件的发送人和接收人都在邮件服务器的本地域，那么垃圾邮件是如何进行发送的（a）"><a href="#一封垃圾邮件的发送人和接收人都在邮件服务器的本地域，那么垃圾邮件是如何进行发送的（a）" class="headerlink" title="一封垃圾邮件的发送人和接收人都在邮件服务器的本地域，那么垃圾邮件是如何进行发送的（a）"></a>一封垃圾邮件的发送人和接收人都在邮件服务器的本地域，那么垃圾邮件是如何进行发送的（a）</h2><p>A.在本地邮件服务器上进行发送<br>B.使用特殊的物理设备进行发送<br>C.这种邮件不可能是垃圾邮件<br>D.使用第三方邮件服务器进行发送</p>
+<h2 id="特洛伊本马与远程控制软件的区别在于木马使用了什么技术（c）"><a href="#特洛伊本马与远程控制软件的区别在于木马使用了什么技术（c）" class="headerlink" title="特洛伊本马与远程控制软件的区别在于木马使用了什么技术（c）"></a>特洛伊本马与远程控制软件的区别在于木马使用了什么技术（c）</h2><p>A.远程登录技术<br>B.远程控制技术<br>C.隐藏技术<br>D.监视技术</p>
+<h2 id="感染引导区病毒，对系统的影响有哪些（abC"><a href="#感染引导区病毒，对系统的影响有哪些（abC" class="headerlink" title="感染引导区病毒，对系统的影响有哪些（abC)"></a>感染引导区病毒，对系统的影响有哪些（abC)</h2><p>A.病毒感染其它磁盘<br>B.病毒感染该磁盘上文件<br>C.病毒清除CMOS存储<br>D.病毒不做任何操作</p>
+<h2 id="计算机感染病毒的可能途径是（b）"><a href="#计算机感染病毒的可能途径是（b）" class="headerlink" title="计算机感染病毒的可能途径是（b）"></a>计算机感染病毒的可能途径是（b）</h2><p>A.从键盘上输入数据<br>B.运行未经审查的程序<br>C.软盘表面不洁<br>D.电源不稳</p>
+<h2 id="哪种病毒能够占据内存，然后感染引导扇区和系统中的所有可执行文件（a）"><a href="#哪种病毒能够占据内存，然后感染引导扇区和系统中的所有可执行文件（a）" class="headerlink" title="哪种病毒能够占据内存，然后感染引导扇区和系统中的所有可执行文件（a）"></a>哪种病毒能够占据内存，然后感染引导扇区和系统中的所有可执行文件（a）</h2><p>A.复合型病毒<br>B.引导扇区病毒<br>C.<code>Windows</code>病毒<br>D.宏病毒</p>
+<h2 id="黑客进行攻击的最后一个步骤是：（a）"><a href="#黑客进行攻击的最后一个步骤是：（a）" class="headerlink" title="黑客进行攻击的最后一个步骤是：（a）"></a>黑客进行攻击的最后一个步骤是：（a）</h2><p>A打扫战场、清理证据<br>B.侦查与信息收集<br>C获取系统权限<br>D.漏洞分析与目标选定</p>
+<h2 id="将自身连接于被传染程序的开头或结尾处的微机病毒是（c）"><a href="#将自身连接于被传染程序的开头或结尾处的微机病毒是（c）" class="headerlink" title="将自身连接于被传染程序的开头或结尾处的微机病毒是（c）"></a>将自身连接于被传染程序的开头或结尾处的微机病毒是（c）</h2><p>A.操作系统型病毒<br>B.源程序型病毒<br>C.外壳型病毒<br>D.入侵型病毒</p>
+<h2 id="根据计算机病毒的感染特性看，宏病毒不会感染以下哪种类型的文件（d）"><a href="#根据计算机病毒的感染特性看，宏病毒不会感染以下哪种类型的文件（d）" class="headerlink" title="根据计算机病毒的感染特性看，宏病毒不会感染以下哪种类型的文件（d）"></a>根据计算机病毒的感染特性看，宏病毒不会感染以下哪种类型的文件（d）</h2><p>A.<code>visual Basic</code><br>B.<code>Microsoft Word</code><br>C.<code>wicrosoft Excel</code><br>D.<code>Microsoft Basic</code></p>
+<h2 id="感染引导区病毒，对系统的影响有哪些（abc"><a href="#感染引导区病毒，对系统的影响有哪些（abc" class="headerlink" title="感染引导区病毒，对系统的影响有哪些（abc)"></a>感染引导区病毒，对系统的影响有哪些（abc)</h2><p>A.病毒感染其它磁盘<br>B.病毒感染该磁盘上文件<br>C.病毒清除CMOS存储<br>D.病毒不做任何操作</p>
+<h2 id="我们将正在互联网上传播并正在日常的运行中感染着用户的病毒被称什么病毒（c）"><a href="#我们将正在互联网上传播并正在日常的运行中感染着用户的病毒被称什么病毒（c）" class="headerlink" title="我们将正在互联网上传播并正在日常的运行中感染着用户的病毒被称什么病毒（c）"></a>我们将正在互联网上传播并正在日常的运行中感染着用户的病毒被称什么病毒（c）</h2><p>A.多形态病毒<br>B.内存病毒<br>C在野病毒<br>D.隐密型病毒</p>
+<h2 id="对于提供网络服务的内部网络，通常选择下列哪种防火墙对服务效率影响最大（d"><a href="#对于提供网络服务的内部网络，通常选择下列哪种防火墙对服务效率影响最大（d" class="headerlink" title="对于提供网络服务的内部网络，通常选择下列哪种防火墙对服务效率影响最大（d)"></a>对于提供网络服务的内部网络，通常选择下列哪种防火墙对服务效率影响最大（d)</h2><p>A.屏蔽子网防火墙<br>B.包过滤防火墙<br>C.屏蔽主机防火墙<br>D.双宿主机防火墙</p>
+<h2 id="下列关于防火墙部署说法错误的是（b）"><a href="#下列关于防火墙部署说法错误的是（b）" class="headerlink" title="下列关于防火墙部署说法错误的是（b）"></a>下列关于防火墙部署说法错误的是（b）</h2><p>A.及时更新防火墙版本<br>B.尽量选用性能最好的防火墙<br>C.做好安全审计<br>D.谨慎配置防火墙规则集</p>
+<h2 id="实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（c）"><a href="#实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（c）" class="headerlink" title="实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（c）"></a>实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（c）</h2><p>A.控制模块<br>B.隐藏模块<br>C.通信模块<br>D.破坏模块</p>
+<h2 id="以下说法正确的是（d）"><a href="#以下说法正确的是（d）" class="headerlink" title="以下说法正确的是（d）"></a>以下说法正确的是（d）</h2><p>A.防火墙能防止来自内部网的攻击<br>B.防火墙能防范新的网络安全问题<br>C.防火墙能完全阻止病毒的传播<br>D.防火墙不能防范不通过防火墙的连接攻击</p>
+<h2 id="spyware-通过哪些手段窃取用户的信息（abcd）"><a href="#spyware-通过哪些手段窃取用户的信息（abcd）" class="headerlink" title="spyware 通过哪些手段窃取用户的信息（abcd）"></a>spyware 通过哪些手段窃取用户的信息（abcd）</h2><p>A.记录上网浏览的cookies<br>B.安装屏幕捕捉程序<br>C.安装事件记录程序<br>D.对于键盘击键进行记录</p>
+<h2 id="以计算机病毒是（c）"><a href="#以计算机病毒是（c）" class="headerlink" title="以计算机病毒是（c）"></a>以计算机病毒是（c）</h2><p>A.芯片霉变<br>B.被损坏的程序<br>C.一段特制的程序<br>D.硬件故障</p>
+<h2 id="每种网络威胁都有其目的性，那么网络钓鱼发布者想要实现什么目的（a）"><a href="#每种网络威胁都有其目的性，那么网络钓鱼发布者想要实现什么目的（a）" class="headerlink" title="每种网络威胁都有其目的性，那么网络钓鱼发布者想要实现什么目的（a）"></a>每种网络威胁都有其目的性，那么网络钓鱼发布者想要实现什么目的（a）</h2><p>A.窃取个人隐私信息<br>B.破坏计算机系统<br>C.体现黑客的技术<br>D.单纯的对某网页进行挂马</p>
+<h2 id="关于“云安全”技术，哪些描述是正确的（abd）。"><a href="#关于“云安全”技术，哪些描述是正确的（abd）。" class="headerlink" title="关于“云安全”技术，哪些描述是正确的（abd）。"></a>关于“云安全”技术，哪些描述是正确的（abd）。</h2><p>A.“云安全”技术是应对病毒流行和发展趋势的有效和必然选择<br>B.“云安全”技术是“云计算”在安全领域的应用<br>C.“云安全”将安全防护转移到了“云”，所以不需要用户的参与<br>D.Web信誉服务是“云安全”技术应用的一种形式</p>
+<h2 id="防火墙一般用来隔离内部网络与外部网络，确保内部网络安全，它必须保证实现（c）。"><a href="#防火墙一般用来隔离内部网络与外部网络，确保内部网络安全，它必须保证实现（c）。" class="headerlink" title="防火墙一般用来隔离内部网络与外部网络，确保内部网络安全，它必须保证实现（c）。"></a>防火墙一般用来隔离内部网络与外部网络，确保内部网络安全，它必须保证实现（c）。</h2><p>A.加密功能<br>B.代理服务器功能<br>C.所有内外网间的信息都经过防火墙<br>D.VPN功能</p>
+<h2 id="假设发现某微机的硬盘感染了病毒，现有1张含有杀病毒软件的系统盘-软盘，在下面列出的不同操作方法中，较为有效的清除病毒的方法是（c）。"><a href="#假设发现某微机的硬盘感染了病毒，现有1张含有杀病毒软件的系统盘-软盘，在下面列出的不同操作方法中，较为有效的清除病毒的方法是（c）。" class="headerlink" title="假设发现某微机的硬盘感染了病毒，现有1张含有杀病毒软件的系统盘-软盘，在下面列出的不同操作方法中，较为有效的清除病毒的方法是（c）。"></a>假设发现某微机的硬盘感染了病毒，现有1张含有杀病毒软件的系统盘-软盘，在下面列出的不同操作方法中，较为有效的清除病毒的方法是（c）。</h2><p>A.不关机直接运行软盘中的杀病毒软件<br>B.用硬盘重新自举后运行软盘中的杀病毒软件<br>C.用含有杀病毒软件的系统盘重新自举后，再运行软盘中的杀病毒软件<br>D.以上三者均可</p>
+<h2 id="目前网络面临的最严重安全威胁是什么（a）"><a href="#目前网络面临的最严重安全威胁是什么（a）" class="headerlink" title="目前网络面临的最严重安全威胁是什么（a）"></a>目前网络面临的最严重安全威胁是什么（a）</h2><p>A.网页挂马<br>B.捆绑欺骗<br>C.漏洞攻击<br>D.钓鱼欺骗</p>
+<h2 id="以下哪个不属于完整的病毒防护安全体系的组成部分（a）"><a href="#以下哪个不属于完整的病毒防护安全体系的组成部分（a）" class="headerlink" title="以下哪个不属于完整的病毒防护安全体系的组成部分（a）"></a>以下哪个不属于完整的病毒防护安全体系的组成部分（a）</h2><p>A.设备<br>B.人员<br>C.流程<br>D.技术</p>
+<h2 id="以下对于手机病毒描述正确的是（c"><a href="#以下对于手机病毒描述正确的是（c" class="headerlink" title="以下对于手机病毒描述正确的是（c)"></a>以下对于手机病毒描述正确的是（c)</h2><p>A.手机病毒只会造成软件使用问题，不会造成SlM卡、芯片等损坏<br>B.手机病毒不是计算机程序<br>C手机病毒可利用发送短信、短信，电子邮件，浏览网站，下载铃声等方式进行传播<br>D.手机病毒不具有攻击性和传染性</p>
+<h2 id="什么是网页挂马-b"><a href="#什么是网页挂马-b" class="headerlink" title="什么是网页挂马(b)"></a>什么是网页挂马(b)</h2><p>A.与从互联网上下载的免费游戏软件进行捆绑。被激活后，它就会将自己复制到Windows的系统文件夹中，并向注册表添加键值，保证它在启动时被执行<br>B.攻击者通过在正常的页面中（通常是网站的主页）插入一段代码。浏览者在打开该页面的时候，这段代码被执行，然后下载并运行某木马的服务器端程序，进而控制浏览者的主机<br>C.把木马服务端和某个游戏/软件捆绑成一个文件通过QQ/MSN或邮件发给别人，或者通过制作BT木马种子进行快速扩散<br>D.黑客们利用人们的猎奇、贪心等心理伪装构造一个链接或者一个网页，利用社会工程学欺骗方法，引诱点击，当用户打开一个看似正常的页面时，网页代码随之运行，隐蔽性极高</p>
+<h2 id="计算机病毒的危害主要会造成（a）"><a href="#计算机病毒的危害主要会造成（a）" class="headerlink" title="计算机病毒的危害主要会造成（a）"></a>计算机病毒的危害主要会造成（a）</h2><p>A.程序和数据的破坏<br>B.磁盘损坏<br>C.CPU的损坏<br>D.计算机用户的伤害</p>
+<h2 id="计算机病毒主要造成（a）"><a href="#计算机病毒主要造成（a）" class="headerlink" title="计算机病毒主要造成（a）"></a>计算机病毒主要造成（a）</h2><p>A.程序和数据的破坏<br>B.磁盘损坏<br>C.CPU的损坏<br>D.计算机用户的伤害</p>
+<h2 id="哪些文件会被Windows病毒感染（b）"><a href="#哪些文件会被Windows病毒感染（b）" class="headerlink" title="哪些文件会被Windows病毒感染（b）"></a>哪些文件会被Windows病毒感染（b）</h2><p>A.系统文件<br>B.可执行文件<br>C.文本文件<br>D.图形文件</p>
+<h2 id="计算机病毒有哪几个生命周期（b）。"><a href="#计算机病毒有哪几个生命周期（b）。" class="headerlink" title="计算机病毒有哪几个生命周期（b）。"></a>计算机病毒有哪几个生命周期（b）。</h2><p>A.开发期，传染期，潜伏期，发作期消化期，消亡期<br>B.开发期，传染期，潜伏期，发作期，发现期，消化期，消亡期<br>C.开发期，传染期，爆发期，发作期，发现期，消化期<br>D.制作期，发布期，潜伏期，破坏期，发现期，消化期，消亡期</p>
+<h2 id="计算机病毒往往通过隐藏技术来增加用户查杀的难度，那么它最常的隐藏技术有哪些（ab）"><a href="#计算机病毒往往通过隐藏技术来增加用户查杀的难度，那么它最常的隐藏技术有哪些（ab）" class="headerlink" title="计算机病毒往往通过隐藏技术来增加用户查杀的难度，那么它最常的隐藏技术有哪些（ab）"></a>计算机病毒往往通过隐藏技术来增加用户查杀的难度，那么它最常的隐藏技术有哪些（ab）</h2><p>A.文件隐藏<br>B.进程隐藏<br>C.内核隐藏<br>D.关键字隐藏</p>
+<h2 id="计算机病毒为了隐蔽起见，首先依靠它的（d）实现自身与合法的系统程序连接在一起。"><a href="#计算机病毒为了隐蔽起见，首先依靠它的（d）实现自身与合法的系统程序连接在一起。" class="headerlink" title="计算机病毒为了隐蔽起见，首先依靠它的（d）实现自身与合法的系统程序连接在一起。"></a>计算机病毒为了隐蔽起见，首先依靠它的（d）实现自身与合法的系统程序连接在一起。</h2><p>A.传染部分<br>B.系统调用部分<br>C.破坏部分<br>D.启动部分</p>
+<h2 id="下面哪一项不是安全编程的原则（b）。"><a href="#下面哪一项不是安全编程的原则（b）。" class="headerlink" title="下面哪一项不是安全编程的原则（b）。"></a>下面哪一项不是安全编程的原则（b）。</h2><p>A.尽可能考虑到意外的情况，并设计妥善的处理方法<br>B.尽可能使用高级语言进行编程<br>C.不要信任用户输入的数据<br>D.尽可能让程序只实现需要的功能</p>
+<h2 id="一个完整的木马程序有两部分组成，请问是哪两部分（ab）"><a href="#一个完整的木马程序有两部分组成，请问是哪两部分（ab）" class="headerlink" title="一个完整的木马程序有两部分组成，请问是哪两部分（ab）"></a>一个完整的木马程序有两部分组成，请问是哪两部分（ab）</h2><p>A.服务器端<br>B.控制器端<br>C.客户端<br>D.发送木马端</p>
+<h1 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h1><h2 id="恶意代码加密技术"><a href="#恶意代码加密技术" class="headerlink" title="恶意代码加密技术"></a>恶意代码加密技术</h2><p>加密技术是恶意代码自我保护的一种手段，加密技术和反跟踪技术的配合使用，使得分析者无法正常调试和阅读恶意代码，不知道恶意代码的工作原理，也无法抽取特征串。从加密的内容上划分，加密手段分为信息加密、数据加密和程序代码加密三种。 </p>
+<h2 id="恶意代码有哪些生存技术"><a href="#恶意代码有哪些生存技术" class="headerlink" title="恶意代码有哪些生存技术"></a>恶意代码有哪些生存技术</h2><p>生存技术主要包括4方面：<br>反跟踪技术<br>加密技术<br>模糊变换技术<br>自动生产技术。<br>反跟踪技术可以减少被发现的可能性，加密技术是恶意代码自身保护的重要机制。 </p>
+<h2 id="恶意代码的隐蔽技术"><a href="#恶意代码的隐蔽技术" class="headerlink" title="恶意代码的隐蔽技术"></a>恶意代码的隐蔽技术</h2><p>隐藏通常包括本地隐藏和通信隐藏，其中本地隐藏主要有文件隐藏、进程隐藏、网络连接隐藏、内核模块隐藏、编译器隐藏等。网络隐藏主要包括通信内容隐藏和传输通道隐藏。 </p>
+<h2 id="恶意代码的攻击机制和步骤"><a href="#恶意代码的攻击机制和步骤" class="headerlink" title="恶意代码的攻击机制和步骤"></a>恶意代码的攻击机制和步骤</h2><p>恶意代码的行为表现各异，破坏程度千差万别，但基本作用机制大体相同，其整个作用过程分为6个部分：<br>①侵入系统。侵入系统是恶意代码实现其恶意目的的必要条件。恶意代码入侵的途径很多，如：从互联网下载的程序本身就可能含有恶意代码；接收已经感染恶意代码的电子邮件；从光盘或软盘往系统上安装软件；黑客或者攻击者故意将恶意代码植入系统等。<br>②维持或提升现有特权。恶意代码的传播与破坏必须盗用用户或者进程的合法权限才能完成。<br>③隐蔽策略。为了不让系统发现恶意代码已经侵入系统，恶意代码可能会改名、删除源文件或者修改系统的安全策略来隐藏自己。<br>④潜伏。恶意代码侵入系统后，等待一定的条件，并具有足够的权限时，就发作并进行破坏活动。<br>⑤破坏。恶意代码的本质具有破坏性，其目的是造成信息丢失、泄密，破坏系统完整性等。<br>⑥重复①至⑤对新的目标实施攻击过程。 </p>
+<h2 id="计算机病毒会被什么条件所触发"><a href="#计算机病毒会被什么条件所触发" class="headerlink" title="计算机病毒会被什么条件所触发"></a>计算机病毒会被什么条件所触发</h2><p>病毒的触发条件包括病毒感染的触发条件和病毒发作的触发条件。病毒感染的触发条件是指当这部分条件满足时,病毒即开始传播,感染其他程序;病毒发作的触发条件是指当发作部分的条件满足时,染毒程序即开始进行计算机的破坏行为。通常病毒感染的触发条件较寬松。过于苛刻的触发条件，可能使病毒有好的潜伏性,但不易传播，只具有低杀伤力。过于寬松的触发条件将导致频繁感染与破坏，容易暴露,导致用户做反病毒处理,也不能有大的杀伤力。常见的病毒触发条件有日期触发、时间触发、键盘触发、感染触发、启动触发、访问磁盘次数触发、调用中断功能触发.CPU型号触发、打开邮件触发、随机触发、利用系统或工具软件的漏洞触发等等。</p>
+<h2 id="基于特征码的静态查杀技术是什么类型，为什么？"><a href="#基于特征码的静态查杀技术是什么类型，为什么？" class="headerlink" title="基于特征码的静态查杀技术是什么类型，为什么？"></a>基于特征码的静态查杀技术是什么类型，为什么？</h2><p>基于特征类型<br>会采用以静态分析文件的结构为主并结合动态的分析的方法，通过反汇编来寻找病毒的内容代码段、入口点代码段、机械码段等等信息。一般提取2个以上的代码段，有时会直接采用入口点的代码段来制作特征码。</p>
+<h2 id="文件型感染病毒有哪些感染方式"><a href="#文件型感染病毒有哪些感染方式" class="headerlink" title="文件型感染病毒有哪些感染方式"></a>文件型感染病毒有哪些感染方式</h2><p>文件型病毒是指能够感染文件、并能通过被感染的文件进行传染扩散的计算机病毒。这种病毒主要感染文件为可执行性文件(扩展名为<code>c0M</code>、<code>ExE</code>等)和文本文件(扩展名为<code>DOC</code>、<code>XLS</code>等)。前者通过实施传染，后者则通过<code>word</code>或<code>Excel</code>等软件在调用文档中的“宏”病毒指令实施感染和破坏。已感染病毒文件执行速度会减慢，甚至完全无法执行。有些文件被感染后，一旦执行就会遭到删除。感染病毒的文件被执行后，病毒通常会趁机对下一个文件进行感染。 </p>
+<h2 id="反病毒软件的设计思路"><a href="#反病毒软件的设计思路" class="headerlink" title="反病毒软件的设计思路"></a>反病毒软件的设计思路</h2><p>目前的反病毒安全软件，常见有三种，一种基于特征，一种基于行为，一种基于云查杀 </p>
+<h2 id="计算机病毒有哪些分类方法"><a href="#计算机病毒有哪些分类方法" class="headerlink" title="计算机病毒有哪些分类方法"></a>计算机病毒有哪些分类方法</h2><h3 id="按计算机病毒攻击的机型分类"><a href="#按计算机病毒攻击的机型分类" class="headerlink" title="按计算机病毒攻击的机型分类"></a>按计算机病毒攻击的机型分类</h3><p>（1）攻击微型机的病毒；<br>（2）攻击小型计算机的病毒；<br>（3）攻击工作站的病毒</p>
+<h3 id="按计算机病毒攻击的操作系统分类"><a href="#按计算机病毒攻击的操作系统分类" class="headerlink" title="按计算机病毒攻击的操作系统分类"></a>按计算机病毒攻击的操作系统分类</h3><p>（1）攻击DOS系统的病毒;<br>（2）攻击Windows系统的病毒；<br>（3）攻击攻击UNIX或OS/2系统的病毒</p>
+<h3 id="按传播媒介分类"><a href="#按传播媒介分类" class="headerlink" title="按传播媒介分类"></a>按传播媒介分类</h3><p>（1）单机病毒；<br>（2）网络病毒；</p>
+<h3 id="按计算机病毒的寄生方式分类"><a href="#按计算机病毒的寄生方式分类" class="headerlink" title="按计算机病毒的寄生方式分类"></a>按计算机病毒的寄生方式分类</h3><p>（1）源码型病毒；<br>（2）入侵型病毒；<br>（3）外壳型病毒；<br>（4）操作系统型病毒</p>
+<h3 id="按病毒的表现（破坏）情况分类"><a href="#按病毒的表现（破坏）情况分类" class="headerlink" title="按病毒的表现（破坏）情况分类"></a>按病毒的表现（破坏）情况分类</h3><p>（1）良性病毒；<br>（2）恶性病毒</p>
+<h3 id="按计算机病毒寄生方式和感染途径分类"><a href="#按计算机病毒寄生方式和感染途径分类" class="headerlink" title="按计算机病毒寄生方式和感染途径分类"></a>按计算机病毒寄生方式和感染途径分类</h3><p>按寄生方式：引导型病毒，文件型病毒。<br>按感染途径：驻留内存型和不驻留内存型。<br>混合型病毒集引导型和文件型病毒特性于一体。</p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p>1.<a href="http://staff.ustc.edu.cn/~sycheng/sst/lectures/ch06a_Virus.pdf" rel="external nofollow" target="_blank">病毒分类</a></p>
+<p>2.<a href="https://blog.csdn.net/lishirong/article/details/41674071" rel="external nofollow" target="_blank">恶意代码分析与防治</a></p>
+<p>3.<a href="https://books.google.com.ph/books?id=NVJ14-nmDywC&amp;pg=PA109&amp;lpg=PA109&amp;dq=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%97%85%E6%AF%92+%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6&amp;source=bl&amp;ots=-hOvrzxl3S&amp;sig=ACfU3U1wyRjh6eyibm7nfTJ-qEc1rlpa7Q&amp;hl=zh-CN&amp;sa=X&amp;ved=2ahUKEwiyhs_erIXmAhVRy4sBHT7WDogQ6AEwCXoECAoQAQ#v=onepage&amp;q=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%97%85%E6%AF%92%20%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6&amp;f=false" rel="external nofollow" target="_blank">计算机病毒触发条件</a></p>
+<p>4.<a href="https://zh.wikipedia.org/wiki/%E7%89%B9%E5%BE%81%E7%A0%81" rel="external nofollow" target="_blank">特征码</a></p>
+
+      
+    </div>
+    
+    
+    
+    <div>
+
+    <div>
+      
+         <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div> 
+      
+</div>
+
+
+
+    </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/恶意代码/" rel="tag"><i class="fa fa-tag"></i> 恶意代码</a>
+          
+            <a href="/tags/期末复习/" rel="tag"><i class="fa fa-tag"></i> 期末复习</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/ea3aa7d2.html" rel="next" title="CVE-2019-0708复现">
+                <i class="fa fa-chevron-left"></i> CVE-2019-0708复现
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/pandatou.jpeg" alt="7iny">
+            
+              <p class="site-author-name" itemprop="name">7iny</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+          
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+			
+          </nav>
+		  
+          
+          
+
+          
+          
+          
+		  
+          
+		  
+		  
+		  <div align="center"><br><script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5smd0paxslb&amp;s=220&amp;m=0&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script><br></div>
+          
+
+        </div>
+		<div style="">
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#声明"><span class="nav-number">1.</span> <span class="nav-text">声明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#选择题"><span class="nav-number">2.</span> <span class="nav-text">选择题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#蠕虫病毒是常见的病毒，有其特定的传染机理，请问它的传染机理是什么（d）"><span class="nav-number">2.1.</span> <span class="nav-text">蠕虫病毒是常见的病毒，有其特定的传染机理，请问它的传染机理是什么（d）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#木马的隐藏技术可以利用操作系统的哪些方面实现（abcd"><span class="nav-number">2.2.</span> <span class="nav-text">木马的隐藏技术可以利用操作系统的哪些方面实现（abcd)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不属于杀毒软件的是（d"><span class="nav-number">2.3.</span> <span class="nav-text">不属于杀毒软件的是（d)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#世界上第一台计算机ENIAC是-d-模型"><span class="nav-number">2.4.</span> <span class="nav-text">世界上第一台计算机ENIAC是(d)模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于企业防毒体系建构的说法，错误的是（BC）"><span class="nav-number">2.5.</span> <span class="nav-text">关于企业防毒体系建构的说法，错误的是（BC）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于引导扇区病毒特征和特征的描述错误的是（c）"><span class="nav-number">2.6.</span> <span class="nav-text">关于引导扇区病毒特征和特征的描述错误的是（c）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宏病毒具有哪些特征（abc）。"><span class="nav-number">2.7.</span> <span class="nav-text">宏病毒具有哪些特征（abc）。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（C）"><span class="nav-number">2.8.</span> <span class="nav-text">实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（C）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以下哪一项是dos攻击的一个实例（c）"><span class="nav-number">2.9.</span> <span class="nav-text">以下哪一项是dos攻击的一个实例（c）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾邮件对于企业或个人的危害性体现在哪些方面（bc）"><span class="nav-number">2.10.</span> <span class="nav-text">垃圾邮件对于企业或个人的危害性体现在哪些方面（bc）.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一封垃圾邮件的发送人和接收人都在邮件服务器的本地域，那么垃圾邮件是如何进行发送的（a）"><span class="nav-number">2.11.</span> <span class="nav-text">一封垃圾邮件的发送人和接收人都在邮件服务器的本地域，那么垃圾邮件是如何进行发送的（a）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特洛伊本马与远程控制软件的区别在于木马使用了什么技术（c）"><span class="nav-number">2.12.</span> <span class="nav-text">特洛伊本马与远程控制软件的区别在于木马使用了什么技术（c）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#感染引导区病毒，对系统的影响有哪些（abC"><span class="nav-number">2.13.</span> <span class="nav-text">感染引导区病毒，对系统的影响有哪些（abC)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机感染病毒的可能途径是（b）"><span class="nav-number">2.14.</span> <span class="nav-text">计算机感染病毒的可能途径是（b）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#哪种病毒能够占据内存，然后感染引导扇区和系统中的所有可执行文件（a）"><span class="nav-number">2.15.</span> <span class="nav-text">哪种病毒能够占据内存，然后感染引导扇区和系统中的所有可执行文件（a）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#黑客进行攻击的最后一个步骤是：（a）"><span class="nav-number">2.16.</span> <span class="nav-text">黑客进行攻击的最后一个步骤是：（a）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将自身连接于被传染程序的开头或结尾处的微机病毒是（c）"><span class="nav-number">2.17.</span> <span class="nav-text">将自身连接于被传染程序的开头或结尾处的微机病毒是（c）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据计算机病毒的感染特性看，宏病毒不会感染以下哪种类型的文件（d）"><span class="nav-number">2.18.</span> <span class="nav-text">根据计算机病毒的感染特性看，宏病毒不会感染以下哪种类型的文件（d）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#感染引导区病毒，对系统的影响有哪些（abc"><span class="nav-number">2.19.</span> <span class="nav-text">感染引导区病毒，对系统的影响有哪些（abc)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#我们将正在互联网上传播并正在日常的运行中感染着用户的病毒被称什么病毒（c）"><span class="nav-number">2.20.</span> <span class="nav-text">我们将正在互联网上传播并正在日常的运行中感染着用户的病毒被称什么病毒（c）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对于提供网络服务的内部网络，通常选择下列哪种防火墙对服务效率影响最大（d"><span class="nav-number">2.21.</span> <span class="nav-text">对于提供网络服务的内部网络，通常选择下列哪种防火墙对服务效率影响最大（d)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下列关于防火墙部署说法错误的是（b）"><span class="nav-number">2.22.</span> <span class="nav-text">下列关于防火墙部署说法错误的是（b）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（c）"><span class="nav-number">2.23.</span> <span class="nav-text">实现蠕虫之间、蠕虫同黑客之间进行交流功能的是哪种蠕虫程序扩展功能模块（c）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以下说法正确的是（d）"><span class="nav-number">2.24.</span> <span class="nav-text">以下说法正确的是（d）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#spyware-通过哪些手段窃取用户的信息（abcd）"><span class="nav-number">2.25.</span> <span class="nav-text">spyware 通过哪些手段窃取用户的信息（abcd）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以计算机病毒是（c）"><span class="nav-number">2.26.</span> <span class="nav-text">以计算机病毒是（c）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#每种网络威胁都有其目的性，那么网络钓鱼发布者想要实现什么目的（a）"><span class="nav-number">2.27.</span> <span class="nav-text">每种网络威胁都有其目的性，那么网络钓鱼发布者想要实现什么目的（a）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于“云安全”技术，哪些描述是正确的（abd）。"><span class="nav-number">2.28.</span> <span class="nav-text">关于“云安全”技术，哪些描述是正确的（abd）。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#防火墙一般用来隔离内部网络与外部网络，确保内部网络安全，它必须保证实现（c）。"><span class="nav-number">2.29.</span> <span class="nav-text">防火墙一般用来隔离内部网络与外部网络，确保内部网络安全，它必须保证实现（c）。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#假设发现某微机的硬盘感染了病毒，现有1张含有杀病毒软件的系统盘-软盘，在下面列出的不同操作方法中，较为有效的清除病毒的方法是（c）。"><span class="nav-number">2.30.</span> <span class="nav-text">假设发现某微机的硬盘感染了病毒，现有1张含有杀病毒软件的系统盘-软盘，在下面列出的不同操作方法中，较为有效的清除病毒的方法是（c）。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目前网络面临的最严重安全威胁是什么（a）"><span class="nav-number">2.31.</span> <span class="nav-text">目前网络面临的最严重安全威胁是什么（a）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以下哪个不属于完整的病毒防护安全体系的组成部分（a）"><span class="nav-number">2.32.</span> <span class="nav-text">以下哪个不属于完整的病毒防护安全体系的组成部分（a）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以下对于手机病毒描述正确的是（c"><span class="nav-number">2.33.</span> <span class="nav-text">以下对于手机病毒描述正确的是（c)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是网页挂马-b"><span class="nav-number">2.34.</span> <span class="nav-text">什么是网页挂马(b)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机病毒的危害主要会造成（a）"><span class="nav-number">2.35.</span> <span class="nav-text">计算机病毒的危害主要会造成（a）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机病毒主要造成（a）"><span class="nav-number">2.36.</span> <span class="nav-text">计算机病毒主要造成（a）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#哪些文件会被Windows病毒感染（b）"><span class="nav-number">2.37.</span> <span class="nav-text">哪些文件会被Windows病毒感染（b）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机病毒有哪几个生命周期（b）。"><span class="nav-number">2.38.</span> <span class="nav-text">计算机病毒有哪几个生命周期（b）。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机病毒往往通过隐藏技术来增加用户查杀的难度，那么它最常的隐藏技术有哪些（ab）"><span class="nav-number">2.39.</span> <span class="nav-text">计算机病毒往往通过隐藏技术来增加用户查杀的难度，那么它最常的隐藏技术有哪些（ab）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机病毒为了隐蔽起见，首先依靠它的（d）实现自身与合法的系统程序连接在一起。"><span class="nav-number">2.40.</span> <span class="nav-text">计算机病毒为了隐蔽起见，首先依靠它的（d）实现自身与合法的系统程序连接在一起。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下面哪一项不是安全编程的原则（b）。"><span class="nav-number">2.41.</span> <span class="nav-text">下面哪一项不是安全编程的原则（b）。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一个完整的木马程序有两部分组成，请问是哪两部分（ab）"><span class="nav-number">2.42.</span> <span class="nav-text">一个完整的木马程序有两部分组成，请问是哪两部分（ab）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#简答题"><span class="nav-number">3.</span> <span class="nav-text">简答题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#恶意代码加密技术"><span class="nav-number">3.1.</span> <span class="nav-text">恶意代码加密技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#恶意代码有哪些生存技术"><span class="nav-number">3.2.</span> <span class="nav-text">恶意代码有哪些生存技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#恶意代码的隐蔽技术"><span class="nav-number">3.3.</span> <span class="nav-text">恶意代码的隐蔽技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#恶意代码的攻击机制和步骤"><span class="nav-number">3.4.</span> <span class="nav-text">恶意代码的攻击机制和步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机病毒会被什么条件所触发"><span class="nav-number">3.5.</span> <span class="nav-text">计算机病毒会被什么条件所触发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基于特征码的静态查杀技术是什么类型，为什么？"><span class="nav-number">3.6.</span> <span class="nav-text">基于特征码的静态查杀技术是什么类型，为什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件型感染病毒有哪些感染方式"><span class="nav-number">3.7.</span> <span class="nav-text">文件型感染病毒有哪些感染方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反病毒软件的设计思路"><span class="nav-number">3.8.</span> <span class="nav-text">反病毒软件的设计思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机病毒有哪些分类方法"><span class="nav-number">3.9.</span> <span class="nav-text">计算机病毒有哪些分类方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#按计算机病毒攻击的机型分类"><span class="nav-number">3.9.1.</span> <span class="nav-text">按计算机病毒攻击的机型分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按计算机病毒攻击的操作系统分类"><span class="nav-number">3.9.2.</span> <span class="nav-text">按计算机病毒攻击的操作系统分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按传播媒介分类"><span class="nav-number">3.9.3.</span> <span class="nav-text">按传播媒介分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按计算机病毒的寄生方式分类"><span class="nav-number">3.9.4.</span> <span class="nav-text">按计算机病毒的寄生方式分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按病毒的表现（破坏）情况分类"><span class="nav-number">3.9.5.</span> <span class="nav-text">按病毒的表现（破坏）情况分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按计算机病毒寄生方式和感染途径分类"><span class="nav-number">3.9.6.</span> <span class="nav-text">按计算机病毒寄生方式和感染途径分类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">4.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+    
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">7iny</span>
+		  
+<!--注释Site words total count
+   
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">42.8k</span>
+  
+-->
+</div>
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/src/clipboard.js"></script>  
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+
+<!--音乐播放器-->
+<link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":55,"height":150},"mobile":{"show":false},"log":false,"tagMode":false});</script></body>
+</html>
+<!--富强民主点击特效-->
+<script type="text/javascript"> 
+/* 鼠标特效 */ 
+var a_idx = 0; 
+var b_idx = 0; 
+/*   文字和颜色数组 */
+var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善"); 
+var b = new Array("#FF0000","#FF7F00"," #FFFF00","#00FF00","#00FFFF","#0000FF","#8B00FF","#FF0000","#FF7F00"," #FFFF00","#00FF00","#00FFFF","#0000FF","#8B00FF");
+jQuery(document).ready(function($) { 
+    $("body").click(function(e) { 
+       
+        var $i = $("<span/>").text(a[a_idx]); 
+          a_idx=parseInt(12*Math.random()); //文字随机数
+          b_idx=parseInt(14*Math.random()); //颜色随机数
+        var x = e.pageX, 
+        y = e.pageY; 
+        $i.css({ 
+            "z-index": 999, 
+            "font-size":"1.3em",            //字体大小
+            "top": y - 20, 
+            "left": x, 
+            "position": "absolute", 
+            "font-weight": "bold", 
+            "color": b[b_idx] 
+        }); 
+        $("body").append($i); 
+        $i.animate({ 
+            "top": y - 180, 
+            "opacity": 0 
+        }, 
+        1500, 
+        function() { 
+            $i.remove(); 
+        }); 
+    }); 
+}); 
+</script>
+<!--富强民主点击特效-->
+
+<!-- 花飘落特效 -->
+<script type="text/javascript">
+  var windowWidth = $(window).width();
+  if (windowWidth > 480) {
+    document.write('<script type="text/javascript" src="/js/src/sakura.js"><\/script>');
+  }
+</script>
