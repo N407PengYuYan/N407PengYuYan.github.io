@@ -25,10 +25,10 @@ const ap = new APlayer({
         cover: 'http://p2.music.126.net/Q9pW0u7eq2irciRdxUEUrA==/912594651077794.jpg?param=130y130',
       },
           {
-        name: "世界中の谁よりきっと",
-        artist: 'WANDS',
-        url: 'https://music.163.com/song/media/outer/url?id=22763956.mp3',
-        cover: 'http://p1.music.126.net/Hh0iJSWFvdAmEBGvhDGh-g==/915893185961087.jpg?param=130y130',
+        name: "手纸~拝啓 十五の君へ~",
+        artist: 'アンジェラ・アキ',
+        url: 'https://music.163.com/song/media/outer/url?id=550619.mp3',
+        cover: 'http://p2.music.126.net/qnGwlSPyWikEtdKdJm63Kg==/2323268069509295.jpg?param=130y130',
       },
     ]
 });
