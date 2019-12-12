@@ -389,30 +389,27 @@ tpwidget("show");</script>
       <div class="post-body">
         
         
-			
-  
-  
-  
+			<!-- 所在目录：~/themes/next/layout/ -->
 
+
+  
+  
+  
+  
     <div id="links">
         <style>
-
-            #links{
-               margin-top: 5rem;
-            }
-
             .links-content{
                 margin-top:1rem;
             }
-
+            
             .link-navigation::after {
                 content: " ";
                 display: block;
                 clear: both;
             }
-
+            
             .card {
-                width: 250px;
+                width: 240px;
                 font-size: 1rem;
                 padding: 10px 20px;
                 border-radius: 4px;
@@ -420,6 +417,15 @@ tpwidget("show");</script>
                 margin-bottom: 1rem;
                 display:flex;
             }
+            @media (max-width: 767px) {
+				.card:nth-child(odd) {
+                    float: left;
+                }
+                .card:nth-child(even) {
+                    float: left !important;
+                }
+			}
+			
             .card:nth-child(odd) {
                 float: left;
             }
@@ -431,7 +437,7 @@ tpwidget("show");</script>
                 box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
             }
             .card a {
-                border:none;
+                border:none; 
             }
             .card .ava {
                 width: 3rem!important;
@@ -439,12 +445,12 @@ tpwidget("show");</script>
                 margin:0!important;
                 margin-right: 1em!important;
                 border-radius:4px;
-
+                
             }
             .card .card-header {
                 font-style: italic;
                 overflow: hidden;
-                width: 236px;
+                width: 100%;
             }
             .card .card-header a {
                 font-style: normal;
@@ -453,7 +459,7 @@ tpwidget("show");</script>
                 text-decoration: none;
             }
             .card .card-header a:hover {
-                color: #d480aa;
+                color: #a166ab;
                 text-decoration: none;
             }
             .card .card-header .info {
@@ -461,71 +467,111 @@ tpwidget("show");</script>
                 color:#a3a3a3;
                 font-size:14px;
                 min-width: 0;
-                text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
+            }
+
+            span.focus-links {
+                font-style: normal;
+                margin-left: 10px;
+                position: unset;
+                left: 0;
+                padding: 0 7px 0 5px;
+                font-size: 11px;
+                border-color: #42c02e;
+                border-radius: 40px;
+                line-height: 24px;
+                height: 22px;
+                color: #fff !important;
+                background-color: #42c02e;
+                display: inline-block;
+            }
+            span.focus-links:hover{
+                background-color: #318024;
+            }
+
+            .friends-btn{
+                text-align: center;
+                color: #555!important;
+                background-color: #fff;
+                border-radius: 3px;
+                font-size: 15px;
+                box-shadow: inset 0 0 10px 0 rgba(0,0,0,.35);
+                border: none!important;
+                transition-property: unset;
+                padding: 0 15px;
+                margin: inherit;
+            }
+
+            .friends-btn:hover{
+                color: rgb(255, 255, 255) !important;
+                border-radius: 3px;
+                font-size: 15px;
+                box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+                background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
+                margin: inherit;
             }
         </style>
         <div class="links-content">
             <div class="link-navigation">
 
                 
-
+                
                     <div class="card">
                         <img class="ava" src="https://lab.jxustctf.top/img/N407.jpg">
                         <div class="card-header">
-                        <div><a href="https://lab.jxustctf.top/stalker.html" target="_blank" rel="external nofollow"> Stalker战队</a></div>
+                        <div><a href="https://lab.jxustctf.top/stalker.html" target="_blank" rel="external nofollow"> Stalker战队</a> <a href="https://lab.jxustctf.top/stalker.html" rel="external nofollow" target="_blank"><span class="focus-links">关注</span></a></div>
                         <div class="info">Stalker战队成员墙</div>
                         </div>
                     </div>
-
                 
-
+                
+                
                     <div class="card">
                         <img class="ava" src="https://danie1.jxustctf.top/img/2.png">
                         <div class="card-header">
-                        <div><a href="https://danie1.jxustctf.top" target="_blank" rel="external nofollow"> Danie1</a></div>
-                        <div class="info">Stalker战队知名带头大哥</div>
+                        <div><a href="https://danie1.jxustctf.top" target="_blank" rel="external nofollow"> Danie1</a> <a href="https://danie1.jxustctf.top" rel="external nofollow" target="_blank"><span class="focus-links">关注</span></a></div>
+                        <div class="info">Stalker带头大哥</div>
                         </div>
                     </div>
-
                 
-
+                
+                
                     <div class="card">
                         <img class="ava" src="https://lab.jxustctf.top/img/yiyangqianxi.jpg">
                         <div class="card-header">
-                        <div><a href="https://yiyangqianxi.jxustctf.top/" target="_blank" rel="external nofollow"> yiyangqianxi</a></div>
-                        <div class="info">Stalker战队Web手</div>
+                        <div><a href="https://yiyangqianxi.jxustctf.top/" target="_blank" rel="external nofollow"> yiyangqianxi</a> <a href="https://yiyangqianxi.jxustctf.top/" rel="external nofollow" target="_blank"><span class="focus-links">关注</span></a></div>
+                        <div class="info">CTF·Web选手,代码审计</div>
                         </div>
                     </div>
-
                 
-
+                
+                
                     <div class="card">
                         <img class="ava" src="https://newblog-1300278090.cos.ap-chengdu.myqcloud.com/avator/shanyi.png">
                         <div class="card-header">
-                        <div><a href="https://doubj.github.io/" target="_blank" rel="external nofollow"> doubj</a></div>
-                        <div class="info">Java大神</div>
+                        <div><a href="https://doubj.github.io/" target="_blank" rel="external nofollow"> doubj</a> <a href="https://doubj.github.io/" rel="external nofollow" target="_blank"><span class="focus-links">关注</span></a></div>
+                        <div class="info">Java开发</div>
                         </div>
                     </div>
-
                 
-
+                
+                
                     <div class="card">
-                        <img class="ava" src="https://newblog-1300278090.cos.ap-chengdu.myqcloud.com/avator/shanyi.png">
+                        <img class="ava" src="http://blog.talei.me/images/avatar.jpg">
                         <div class="card-header">
-                        <div><a href="https://orangice.gitee.io/" target="_blank" rel="external nofollow"> orangice</a></div>
-                        <div class="info">orangice巨佬</div>
+                        <div><a href="https://orangice.gitee.io/" target="_blank" rel="external nofollow"> orangice</a> <a href="https://orangice.gitee.io/" rel="external nofollow" target="_blank"><span class="focus-links">关注</span></a></div>
+                        <div class="info">病毒分析,二进制</div>
                         </div>
                     </div>
-
+                
                 
 
             </div>
             
             </div>
         </div>
-
+  
   
   
   
@@ -938,7 +984,7 @@ if(canvas.getContext){
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">47.1k</span>
+    <span title="Site words total count">48.1k</span>
   
 -->
 </div>
