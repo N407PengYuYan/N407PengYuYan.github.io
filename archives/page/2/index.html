@@ -127,17 +127,17 @@
 
 
 
-<meta name="description" content="7iny">
-<meta name="keywords" content="7iny,信息安全,网络空间安全,Stalker,ctf">
+<meta name="description" content="时间会给出一切答案">
+<meta name="keywords" content="7iny,信息安全,网络空间安全">
 <meta property="og:type" content="website">
 <meta property="og:title" content="7iny">
 <meta property="og:url" content="https://7iny.jxustctf.top/archives/page/2/index.html">
 <meta property="og:site_name" content="7iny">
-<meta property="og:description" content="7iny">
+<meta property="og:description" content="时间会给出一切答案">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="7iny">
-<meta name="twitter:description" content="7iny">
+<meta name="twitter:description" content="时间会给出一切答案">
 
 
 
@@ -806,7 +806,7 @@ tpwidget("show");</script>
               <img class="site-author-image" itemprop="image" src="/images/pandatou.jpeg" alt="7iny">
             
               <p class="site-author-name" itemprop="name">7iny</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">时间会给出一切答案</p>
           </div>
           
           <nav class="site-state motion-element">
@@ -856,8 +856,11 @@ tpwidget("show");</script>
           
 		  
 		  
-		  <div align="center"><br><script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5smd0paxslb&amp;s=220&amp;m=0&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script><br></div>
+			<div align="center">
+				<script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5smd0paxslb&amp;s=220&amp;m=0&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script>
+			</div>
           
+
 
         </div>
 		<div style="">
@@ -1124,6 +1127,30 @@ if(canvas.getContext){
 
 })();
 </script>
+		
+		
+			<span id="span_dt_dt">
+				<script type="text/javascript">
+					function show_date_time() {
+						window.setTimeout("show_date_time()", 1e3),
+						BirthDay = new Date("1/30/2019 00:00:00"),
+						today = new Date,
+						timeold = today.getTime() - BirthDay.getTime(),
+						sectimeold = timeold / 1e3,
+						secondsold = Math.floor(sectimeold),
+						msPerDay = 864e5,
+						e_daysold = timeold / msPerDay,
+						daysold = Math.floor(e_daysold),
+						e_hrsold = 24 * (e_daysold - daysold),
+						hrsold = Math.floor(e_hrsold),
+						e_minsold = 60 * (e_hrsold - hrsold),
+						minsold = Math.floor(60 * (e_hrsold - hrsold)),
+						seconds = Math.floor(60 * (e_minsold - minsold)),
+						span_dt_dt.innerHTML = "7inyの博客已运行" + daysold + "天"
+					}
+					show_date_time()
+				</script>
+			</span>
       </section>
 
       
@@ -1163,7 +1190,7 @@ if(canvas.getContext){
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">48.1k</span>
+    <span title="Site words total count">48.2k</span>
   
 -->
 </div>
