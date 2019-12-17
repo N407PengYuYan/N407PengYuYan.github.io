@@ -13,22 +13,22 @@ const ap = new APlayer({
     lrcType: 0, //歌词传递方式
     audio: [
 	{
+        name: "風になる",
+        artist: 'つじあやの',
+        url: 'https://music.163.com/song/media/outer/url?id=482172.mp3',
+        cover: 'http://p1.music.126.net/82XmKUX6AAkjSIqVq84jZw==/109951163346032923.jpg?param=130y130',
+      },
+	  {
+        name: "혜화동",
+        artist: '动物园',
+        url: 'https://music.163.com/song/media/outer/url?id=424474255.mp3',
+        cover: 'http://p1.music.126.net/FEeBHaoHB72ydF-gRWABGw==/3444769937959625.jpg?param=130y130',
+      },
+          {
         name: "summertime",
         artist: 'cinnamons / evening cinema',
         url: 'https://music.163.com/song/media/outer/url?id=531786301.mp3',
         cover: 'http://p1.music.126.net/YOh14VmZHW6riDYUeIkjeA==/109951163115353027.jpg?param=130y130',
-      },
-	  {
-        name: "花鳥風月",
-        artist: 'End of the World',
-        url: 'https://music.163.com/song/media/outer/url?id=22814470.mp3',
-        cover: 'http://p2.music.126.net/Q9pW0u7eq2irciRdxUEUrA==/912594651077794.jpg?param=130y130',
-      },
-          {
-        name: "手纸~拝啓 十五の君へ~",
-        artist: 'アンジェラ・アキ',
-        url: 'https://music.163.com/song/media/outer/url?id=550619.mp3',
-        cover: 'http://p2.music.126.net/qnGwlSPyWikEtdKdJm63Kg==/2323268069509295.jpg?param=130y130',
       },
     ]
 });
