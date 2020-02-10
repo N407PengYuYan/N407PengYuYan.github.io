@@ -25,9 +25,9 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/FEeBHaoHB72ydF-gRWABGw==/3444769937959625.jpg?param=130y130',
       },
           {
-        name: "summertime",
-        artist: 'cinnamons / evening cinema',
-        url: 'https://music.163.com/song/media/outer/url?id=531786301.mp3',
+        name: "Legend of Everfree",
+        artist: 'Daniel Ingram',
+        url: 'https://music.163.com/#/song?id=430297476.mp3',
         cover: 'http://p1.music.126.net/YOh14VmZHW6riDYUeIkjeA==/109951163115353027.jpg?param=130y130',
       },
     ]
