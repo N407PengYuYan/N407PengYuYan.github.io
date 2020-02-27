@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="QE52Rh63pUbENtc2T9VTpxeFXAc5pCVzwaz12vRSvZk">
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="6YSqWvFIsY">
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/panda32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/panda32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/panda16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/panda.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="安全岗找工作,渗透测试工程师,WEB安全工程师,">
+
+
+
+
+
+
+
+
+
+
+<meta name="keywords" content="安全岗找工作,渗透测试工程师,WEB安全工程师">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安全岗面试资料">
+<meta property="og:url" content="https://7iny.jxustctf.top/93956cc7.html">
+<meta property="og:site_name" content="7iny">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/20200227162506.jpg">
+<meta property="og:updated_time" content="2020-02-27T09:16:33.754Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="安全岗面试资料">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/20200227162506.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://7iny.jxustctf.top/93956cc7.html">
+
+
+
+<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
+<script>tpwidget("init", {
+    "flavor": "bubble",
+    "location": "WX4FBXXFKE4F",
+    "geolocation": "enabled",
+    "position": "top-left",
+    "margin": "10px 10px",
+    "language": "zh-chs",
+    "unit": "c",
+    "theme": "chameleon",
+    "uid": "U888B80105",
+    "hash": "3f2f5e4fc383bbbc8df2ab936a167264"
+});
+tpwidget("show");</script>
+
+
+
+  <title>安全岗面试资料 | 7iny</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">7iny</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Study well and make progress every day.</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-studylink">
+          <a href="/studylink" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-battery"></i> <br>
+            
+            充电
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-link"></i> <br>
+            
+            友链
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  <script src="/js/src/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://7iny.jxustctf.top/93956cc7.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="7iny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pandatou.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="7iny">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">安全岗面试资料</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-27T17:16:14+08:00">
+                2020-02-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/找工作/" itemprop="url" rel="index">
+                    <span itemprop="name">找工作</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.5k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://raw.githubusercontent.com/N407PengYuYan/img/master/img/20200227162506.jpg" alt=""></p>
+<a id="more"></a>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>非原创，收集自用</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p>00x01.<a href="https://github.com/mai-lang-chai/Penetration-Testing" rel="external nofollow" target="_blank">渗透测试工程师笔试题/面试题</a></p>
+<p>00x02.<a href="https://www.nowcoder.com/discuss/139226?type=2&amp;order=0&amp;pos=9&amp;page=1" rel="external nofollow" target="_blank">安全岗菜鸡的坎坷秋招路（面经+笔试题分享）</a></p>
+<p>00x03.<a href="https://github.com/SecYouth/sec-jobs" rel="external nofollow" target="_blank">信息安全实习和校招的面经、真题和资料</a></p>
+<p>00x04.<a href="https://blog.csdn.net/tan6600/category_9276566.html" rel="external nofollow" target="_blank">信息安全笔试题集</a></p>
+<p>00x05.<a href="https://blog.csdn.net/sun8890446/article/details/80817071" rel="external nofollow" target="_blank">渗透测试技术题（面试、笔试）</a></p>
+<p>00x06.<a href="https://github.com/Mr-xn/BurpSuite-collections/blob/master/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%982019%E7%89%88.md#head22" rel="external nofollow" target="_blank">渗透测试面试问题2019版</a></p>
+<p>00x07.<a href="https://dawnnnnnn.com/2019/09/2019%E7%A7%8B%E6%8B%9B-%E5%AE%9E%E4%B9%A0%E5%AE%89%E5%85%A8%E9%9D%A2%E7%BB%8F%E5%8F%8A%E6%80%BB%E7%BB%93/" rel="external nofollow" target="_blank">2019秋招/实习安全面经及总结</a></p>
+<p>00x08.<a href="https://lengjibo.github.io/%E5%AE%89%E5%85%A8%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/" rel="external nofollow" target="_blank">安全面试题整理</a></p>
+<p>00x09.<a href="https://www.zhihu.com/question/265250370" rel="external nofollow" target="_blank">面试 Web 安全工程师时会提问什么问题？</a></p>
+<h1 id="面试流程详细版"><a href="#面试流程详细版" class="headerlink" title="面试流程详细版"></a>面试流程详细版</h1><h2 id="00x01-现场面试准备"><a href="#00x01-现场面试准备" class="headerlink" title="00x01 现场面试准备"></a>00x01 现场面试准备</h2><ol>
+<li>简历（打印3份以上，彩色），身份证，毕业证等资料；</li>
+<li>电脑（无线鼠标，电源线等）；</li>
+<li>本子和笔，着装整洁，守时（提前20分钟到）；</li>
+<li>面试公司的认识（地点，公司发展时间戳，部门，面试官等）。</li>
+</ol>
+<h2 id="00x02-对于电话面试"><a href="#00x02-对于电话面试" class="headerlink" title="00x02 对于电话面试"></a>00x02 对于电话面试</h2><ol>
+<li><p>约好时间并提前15分钟找个安静，信号好，没人打扰的地方，注意手机电量；</p>
+</li>
+<li><p>站着进行电话面试，保持微笑，通话可录音；</p>
+</li>
+<li><p>一份简历，本子和笔，耳机等（看着简历来）；</p>
+</li>
+<li><p>先想好，面试官会问的问题及答案，记要点（渗透测试的思路等）。</p>
+</li>
+</ol>
+<h2 id="00x03-面试官问的问题"><a href="#00x03-面试官问的问题" class="headerlink" title="00x03 面试官问的问题"></a>00x03 面试官问的问题</h2><h3 id="Q1-自我介绍"><a href="#Q1-自我介绍" class="headerlink" title="Q1 自我介绍"></a>Q1 自我介绍</h3><p>1）可参照简历<br>2）有条理（三分钟左右）</p>
+<h3 id="Q2-一个授权网站的渗透测试思路，流程（给你一个授权网站，怎么做？）"><a href="#Q2-一个授权网站的渗透测试思路，流程（给你一个授权网站，怎么做？）" class="headerlink" title="Q2 一个授权网站的渗透测试思路，流程（给你一个授权网站，怎么做？）"></a>Q2 一个授权网站的渗透测试思路，流程（给你一个授权网站，怎么做？）</h3><h4 id="1）信息收集"><a href="#1）信息收集" class="headerlink" title="1）信息收集"></a>1）信息收集</h4><p>a. 服务器的相关信息（真实ip，系统类型，版本，开放端口，WAF等）<br>b. 网站指纹识别（包括，cms，cdn，证书等），dns记录<br>c. whois信息，姓名，备案，邮箱，电话反查（邮箱丢社工库，社工准备等）<br>d. 子域名收集，旁站查询(有授权可渗透)，C段等<br>e. google hacking针对化搜索，pdf文件，中间件版本，弱口令扫描等<br>f. 扫描网站目录结构，爆后台，网站banner，测试文件，备份等敏感文件泄漏等<br> i. 传输协议，通用漏洞，exp，github源码等</p>
+<h4 id="2）漏洞挖掘"><a href="#2）漏洞挖掘" class="headerlink" title="2）漏洞挖掘"></a>2）漏洞挖掘</h4><p>1&gt; 浏览网站，看看网站规模，功能，特点等<br>2&gt; 端口，弱口令，目录等扫描<br>3&gt; XSS，SQL注入，命令注入，CSRF，cookie安全检测，敏感信息，通信数据传输，暴力破解，任意文件上传，越权访问，未授权访问，目录遍历，文件 包含，短信轰炸，服务器漏洞检测，最后使用漏扫工具等</p>
+<h4 id="3）漏洞利用-权限提升"><a href="#3）漏洞利用-权限提升" class="headerlink" title="3）漏洞利用 | 权限提升"></a>3）漏洞利用 | 权限提升</h4><p>a) mysql提权，serv-u提权，linux内核版本提权等</p>
+<h4 id="4）清除测试数据-输出报告"><a href="#4）清除测试数据-输出报告" class="headerlink" title="4）清除测试数据 | 输出报告"></a>4）清除测试数据 | 输出报告</h4><p>i 日志、测试数据的清理<br> ii 总结，输出渗透测试报告，附修复方案</p>
+<h4 id="5-复测"><a href="#5-复测" class="headerlink" title="5) 复测"></a>5) 复测</h4><p>验证并发现是否有新漏洞，输出报告，归档</p>
+<h3 id="Q3-一个APP的逆向分析思路（给你一个APP，怎么做？）"><a href="#Q3-一个APP的逆向分析思路（给你一个APP，怎么做？）" class="headerlink" title="Q3 一个APP的逆向分析思路（给你一个APP，怎么做？）"></a>Q3 一个APP的逆向分析思路（给你一个APP，怎么做？）</h3><p>这里简单列一下app测试的大纲，详细不便放出（可参照OWASP的mstg）：<a href="https://github.com/OWASP/owasp-mstg/" rel="external nofollow" target="_blank">https://github.com/OWASP/owasp-mstg/</a><br>1.代码保护检测；<br>2.数据存储安全；<br>3.加密算法；<br>4.四大组件安全；<br>5.应用规范等</p>
+<h3 id="Q4-简述某一漏洞的原理和渗透手法（SQL注入，XSS，CSRF等）"><a href="#Q4-简述某一漏洞的原理和渗透手法（SQL注入，XSS，CSRF等）" class="headerlink" title="Q4 简述某一漏洞的原理和渗透手法（SQL注入，XSS，CSRF等）"></a>Q4 简述某一漏洞的原理和渗透手法（SQL注入，XSS，CSRF等）</h3><ol>
+<li>SQL注入原理：<a href="https://www.ichunqiu.com/course/54377" rel="external nofollow" target="_blank">https://www.ichunqiu.com/course/54377</a></li>
+<li>XSS原理：<a href="https://www.ichunqiu.com/course/59281" rel="external nofollow" target="_blank">https://www.ichunqiu.com/course/59281</a></li>
+</ol>
+<h3 id="Q5-编程语言"><a href="#Q5-编程语言" class="headerlink" title="Q5 编程语言"></a>Q5 编程语言</h3><p>1.python，JAVA，算法，二进制等编程能力（笔者暂未学，不深入探讨）<br>2.ARM汇编（基本的汇编指令，寄存器等）</p>
+<h3 id="Q6-WAF-bypass"><a href="#Q6-WAF-bypass" class="headerlink" title="Q6 WAF bypass"></a>Q6 WAF bypass</h3><p>1.关键字可以用%（只限IIS系列）。比如select，可以  sel%e%ct<br>2.通杀的，内联注释，如  /<em>!select</em>/<br>3.编码，可两次编码<br>4.multipart请求绕过，在POST请求中添加一个上传文件，绕过了绝大多数WAF<br>5.参数绕过，复制参数，id=1&amp;id=1<br>6.内联注释</p>
+<h3 id="Q7-Kali的使用（Linux系统）"><a href="#Q7-Kali的使用（Linux系统）" class="headerlink" title="Q7 Kali的使用（Linux系统）"></a>Q7 Kali的使用（Linux系统）</h3><p>whatweb   指纹识别<br>dirb  目录扫描<br>whois  whois查询<br>字典生成套件<br>爆破工具<br>kali系统中的工具清单 - 官方介绍</p>
+<h3 id="Q8-OWASP-Top10-2017"><a href="#Q8-OWASP-Top10-2017" class="headerlink" title="Q8 OWASP-Top10-2017"></a>Q8 OWASP-Top10-2017</h3><p>A1 注入，  A2 失效的身份认证，  A3 敏感信息泄露，  A4 XML外部实体(XXE)， A5 失效的访问控制， A6 安全配置错误，  A7 跨站脚本(XSS)，  A8 不安全的反序列化，  A9 使用含有已知漏洞的组件，  A10 不足的日志记录和监控<br>OWASP_Top_10_2017_中文版v1.2.pdf</p>
+<h3 id="Q9-网络安全事件应急响应（如，一业务主站被挂黑页的处理流程及应对方法）"><a href="#Q9-网络安全事件应急响应（如，一业务主站被挂黑页的处理流程及应对方法）" class="headerlink" title="Q9 网络安全事件应急响应（如，一业务主站被挂黑页的处理流程及应对方法）"></a>Q9 网络安全事件应急响应（如，一业务主站被挂黑页的处理流程及应对方法）</h3><ol>
+<li>取证，登录服务器，备份，检查服务器敏感目录，查毒（搜索后门文件 - 注意文件的时间，用户，后缀等属性），调取日志（系统日志，中间件日志，WAF日 志等）；</li>
+<li>处理，恢复备份（快照回滚，最近一次），确定入侵方法（漏洞检测，并进行修复）</li>
+<li>溯源，查入侵IP，入侵手法的确定等</li>
+<li>记录，归档——–预防-事件检测-抑制-根除-恢复-跟踪-记录<br>通用漏洞的应对等其他安全应急事件</li>
+</ol>
+<h3 id="Q10-提交过的漏洞"><a href="#Q10-提交过的漏洞" class="headerlink" title="Q10 提交过的漏洞"></a>Q10 提交过的漏洞</h3><p> 国内外的漏洞提交平台，各SRC等</p>
+<h3 id="Q11-其他优势"><a href="#Q11-其他优势" class="headerlink" title="Q11 其他优势"></a>Q11 其他优势</h3><p>1.新兴技术的研究（IOT安全，区块链，人工智能，机器学习等）<br>2.个人博客（原创文章），投稿，人脉，安全峰会，安全研究Paper, 安全议题分享等<br>3.比赛（CTF，团队比赛等），线下培训<br>4.在校经历（获奖，个人项目，团队活动，担任学生干部等）<br>5.英语 CET-4，CET-6</p>
+<h3 id="Q12-读过的技术书籍（学习的途径）"><a href="#Q12-读过的技术书籍（学习的途径）" class="headerlink" title="Q12 读过的技术书籍（学习的途径）"></a>Q12 读过的技术书籍（学习的途径）</h3><p>《白帽子讲web安全》、《ios应用逆向工程-第2版》、《加密与解密-第3版》、《汇编语言-第2版》、《OWASP-MSTG》</p>
+<h2 id="00x04-问面试官的问题"><a href="#00x04-问面试官的问题" class="headerlink" title="00x04 问面试官的问题"></a>00x04 问面试官的问题</h2><p>q1 贵公司，信息安全部门的规模，发展等<br>q2 任职后的工作职责，内容，出差，时间等<br>q3 劳动合同（实习生签三方协议和转正问题），是否解决户口<br>q4 薪资（税后），奖金，股票期权，福利，活动等</p>
+<h2 id="00x05-面试总结"><a href="#00x05-面试总结" class="headerlink" title="00x05 面试总结"></a>00x05 面试总结</h2><ol>
+<li>记录面试官的问题和自己的回答</li>
+<li>查漏补缺</li>
+<li>收获</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+    <div>
+
+    <div>
+      
+         <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div> 
+      
+</div>
+
+
+
+    </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/安全岗找工作/" rel="tag"><i class="fa fa-tag"></i> 安全岗找工作</a>
+          
+            <a href="/tags/渗透测试工程师/" rel="tag"><i class="fa fa-tag"></i> 渗透测试工程师</a>
+          
+            <a href="/tags/WEB安全工程师/" rel="tag"><i class="fa fa-tag"></i> WEB安全工程师</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/23082ae8.html" rel="next" title="DVWA学习">
+                <i class="fa fa-chevron-left"></i> DVWA学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/pandatou.jpeg" alt="7iny">
+            
+              <p class="site-author-name" itemprop="name">7iny</p>
+              <p class="site-description motion-element" itemprop="description">时间会给出一切答案</p>
+          </div>
+          
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+			
+          </nav>
+		  
+          
+          
+
+          
+          
+          
+		  
+          
+		  
+		  
+			<div align="center">
+				<script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5smd0paxslb&amp;s=220&amp;m=0&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script>
+			</div>
+          
+
+
+        </div>
+		<div style="">
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+		
+		
+			<span id="span_dt_dt">
+				<script type="text/javascript">
+					function show_date_time() {
+						window.setTimeout("show_date_time()", 1e3),
+						BirthDay = new Date("1/30/2019 00:00:00"),
+						today = new Date,
+						timeold = today.getTime() - BirthDay.getTime(),
+						sectimeold = timeold / 1e3,
+						secondsold = Math.floor(sectimeold),
+						msPerDay = 864e5,
+						e_daysold = timeold / msPerDay,
+						daysold = Math.floor(e_daysold),
+						e_hrsold = 24 * (e_daysold - daysold),
+						hrsold = Math.floor(e_hrsold),
+						e_minsold = 60 * (e_hrsold - hrsold),
+						minsold = Math.floor(60 * (e_hrsold - hrsold)),
+						seconds = Math.floor(60 * (e_minsold - minsold)),
+						span_dt_dt.innerHTML = "7inyの博客已运行" + daysold + "天"
+					}
+					show_date_time()
+				</script>
+			</span>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">2.</span> <span class="nav-text">参考资料</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#面试流程详细版"><span class="nav-number">3.</span> <span class="nav-text">面试流程详细版</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#00x01-现场面试准备"><span class="nav-number">3.1.</span> <span class="nav-text">00x01 现场面试准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#00x02-对于电话面试"><span class="nav-number">3.2.</span> <span class="nav-text">00x02 对于电话面试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#00x03-面试官问的问题"><span class="nav-number">3.3.</span> <span class="nav-text">00x03 面试官问的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q1-自我介绍"><span class="nav-number">3.3.1.</span> <span class="nav-text">Q1 自我介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q2-一个授权网站的渗透测试思路，流程（给你一个授权网站，怎么做？）"><span class="nav-number">3.3.2.</span> <span class="nav-text">Q2 一个授权网站的渗透测试思路，流程（给你一个授权网站，怎么做？）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1）信息收集"><span class="nav-number">3.3.2.1.</span> <span class="nav-text">1）信息收集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2）漏洞挖掘"><span class="nav-number">3.3.2.2.</span> <span class="nav-text">2）漏洞挖掘</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3）漏洞利用-权限提升"><span class="nav-number">3.3.2.3.</span> <span class="nav-text">3）漏洞利用 | 权限提升</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4）清除测试数据-输出报告"><span class="nav-number">3.3.2.4.</span> <span class="nav-text">4）清除测试数据 | 输出报告</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-复测"><span class="nav-number">3.3.2.5.</span> <span class="nav-text">5) 复测</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q3-一个APP的逆向分析思路（给你一个APP，怎么做？）"><span class="nav-number">3.3.3.</span> <span class="nav-text">Q3 一个APP的逆向分析思路（给你一个APP，怎么做？）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q4-简述某一漏洞的原理和渗透手法（SQL注入，XSS，CSRF等）"><span class="nav-number">3.3.4.</span> <span class="nav-text">Q4 简述某一漏洞的原理和渗透手法（SQL注入，XSS，CSRF等）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q5-编程语言"><span class="nav-number">3.3.5.</span> <span class="nav-text">Q5 编程语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q6-WAF-bypass"><span class="nav-number">3.3.6.</span> <span class="nav-text">Q6 WAF bypass</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q7-Kali的使用（Linux系统）"><span class="nav-number">3.3.7.</span> <span class="nav-text">Q7 Kali的使用（Linux系统）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q8-OWASP-Top10-2017"><span class="nav-number">3.3.8.</span> <span class="nav-text">Q8 OWASP-Top10-2017</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q9-网络安全事件应急响应（如，一业务主站被挂黑页的处理流程及应对方法）"><span class="nav-number">3.3.9.</span> <span class="nav-text">Q9 网络安全事件应急响应（如，一业务主站被挂黑页的处理流程及应对方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q10-提交过的漏洞"><span class="nav-number">3.3.10.</span> <span class="nav-text">Q10 提交过的漏洞</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q11-其他优势"><span class="nav-number">3.3.11.</span> <span class="nav-text">Q11 其他优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q12-读过的技术书籍（学习的途径）"><span class="nav-number">3.3.12.</span> <span class="nav-text">Q12 读过的技术书籍（学习的途径）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#00x04-问面试官的问题"><span class="nav-number">3.4.</span> <span class="nav-text">00x04 问面试官的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#00x05-面试总结"><span class="nav-number">3.5.</span> <span class="nav-text">00x05 面试总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+    
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">7iny</span>
+		  
+<!--注释Site words total count
+   
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">54.7k</span>
+  
+-->
+</div>
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/src/clipboard.js"></script>  
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+
+<!--音乐播放器-->
+<link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":55,"height":150},"mobile":{"show":false},"log":false,"tagMode":false});</script></body>
+</html>
+<!--富强民主点击特效-->
+<script type="text/javascript"> 
+/* 鼠标特效 */ 
+var a_idx = 0; 
+var b_idx = 0; 
+/*   文字和颜色数组 */
+var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善"); 
+var b = new Array("#FF0000","#FF7F00"," #FFFF00","#00FF00","#00FFFF","#0000FF","#8B00FF","#FF0000","#FF7F00"," #FFFF00","#00FF00","#00FFFF","#0000FF","#8B00FF");
+jQuery(document).ready(function($) { 
+    $("body").click(function(e) { 
+       
+        var $i = $("<span/>").text(a[a_idx]); 
+          a_idx=parseInt(12*Math.random()); //文字随机数
+          b_idx=parseInt(14*Math.random()); //颜色随机数
+        var x = e.pageX, 
+        y = e.pageY; 
+        $i.css({ 
+            "z-index": 999, 
+            "font-size":"1.3em",            //字体大小
+            "top": y - 20, 
+            "left": x, 
+            "position": "absolute", 
+            "font-weight": "bold", 
+            "color": b[b_idx] 
+        }); 
+        $("body").append($i); 
+        $i.animate({ 
+            "top": y - 180, 
+            "opacity": 0 
+        }, 
+        1500, 
+        function() { 
+            $i.remove(); 
+        }); 
+    }); 
+}); 
+</script>
+<!--富强民主点击特效-->
+
+<!-- 花飘落特效
+<script type="text/javascript">
+  var windowWidth = $(window).width();
+  if (windowWidth > 480) {
+    document.write('<script type="text/javascript" src="/js/src/sakura.js"><\/script>');
+  }
+</script>
+-->
