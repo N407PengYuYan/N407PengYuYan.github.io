@@ -25,9 +25,9 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/FEeBHaoHB72ydF-gRWABGw==/3444769937959625.jpg?param=130y130',
       },
           {
-        name: "我变了 我没变",
-        artist: '张碧晨',
-        url: 'https://music.163.com/song/media/outer/url?id=566436038.mp3',
+        name: "Last Dance",
+        artist: '沙拉酱merry',
+        url: 'https://music.163.com/song/media/outer/url?id=1428814757.mp3',
         cover: 'http://p1.music.126.net/YOh14VmZHW6riDYUeIkjeA==/109951163115353027.jpg?param=130y130',
       },
     ]
